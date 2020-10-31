@@ -1,0 +1,48 @@
+// .card-head {
+//   margin-bottom: 10px;
+//   color: $white;
+// }
+
+// .card-content {
+//   background-color: $blue;
+//   height: 415px;
+// }
+
+// .text {
+//   color: $white;
+//   line-height: 24px;
+// }
+
+.panel {
+  background-color: transparent;
+  //   border: none;
+  color: $white;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  background-color: $blue;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  line-height: 24px;
+  padding: 14px;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+.sub-heading {
+  color: $yellow;
+  display: block;
+  font-weight: 700;
+}
+
+.content {
+  display: block;
+  font-weight: 400;
+}

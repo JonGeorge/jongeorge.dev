@@ -1,27 +1,44 @@
 $white: #ececec;
 $darkblue: #222831;
+$blue: #2c3846;
 $yellow: #f5c05a;
 
 @import "reactstrap-variable-overrides";
 @import "~bootstrap/scss/bootstrap";
+// @import "./Header.scss";
 @import "./About.scss";
+@import "./ProjectCard.scss";
 
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat-ExtraBold.ttf"),
     url("./fonts/Montserrat-ExtraBold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Bold.ttf"),
+    url("./fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat-Medium.ttf"),
     url("./fonts/Montserrat-Medium.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-Regular.ttf"),
+    url("./fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
 body {
   font-family: Montserrat;
-  color: #f5c05a;
+  // color: #f5c05a;
   margin: 0 66px;
 }
