@@ -1,3 +1,10 @@
+$white: #ececec;
+$darkblue: #222831;
+$yellow: #f5c05a;
+
+@import "reactstrap-variable-overrides";
+@import "~bootstrap/scss/bootstrap";
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat-ExtraBold.ttf"),
@@ -14,16 +21,6 @@
 
 body {
   font-family: Montserrat;
-  background-color: #222831;
   color: #f5c05a;
   margin: 0 66px;
-}
-
-.header {
-  padding-top: 25px;
-}
-
-.title {
-  font-size: 24px;
-  font-weight: bold;
 }
