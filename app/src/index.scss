@@ -5,7 +5,9 @@ $yellow: #f5c05a;
 
 @import "reactstrap-variable-overrides";
 @import "~bootstrap/scss/bootstrap";
-// @import "./Header.scss";
+
+@import "./App.css";
+@import "./Header.scss";
 @import "./About.scss";
 @import "./ProjectCard.scss";
 
@@ -39,6 +41,6 @@ $yellow: #f5c05a;
 
 body {
   font-family: Montserrat;
-  // color: #f5c05a;
+  color: #f5c05a;
   margin: 0 66px;
 }

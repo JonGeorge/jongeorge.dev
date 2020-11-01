@@ -1,6 +1,10 @@
 // Body
 $body-bg: $darkblue;
 
+// Navbar
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 0;
+
 // Navbar title
 $navbar-dark-active-color: $yellow;
 $navbar-dark-hover-color: none;
@@ -12,6 +16,7 @@ $navbar-dark-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w
 // Nav links
 $navbar-dark-color: $yellow;
 // $navbar-dark-active-color: $white; // TODO: Set active menu item color
+// $nav-link-padding-x: 1.25rem; // Media query superscedes this
 
 // Cards
 $card-bg: $blue;
