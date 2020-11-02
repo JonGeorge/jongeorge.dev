@@ -1,30 +1,39 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Card, CardBody, CardTitle } from "reactstrap";
+import { Card, CardBody, CardTitle } from "reactstrap";
 
 class ProjectCard extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const title = this.props.title;
+    const clients = this.props.clients;
+    const contributions = this.props.contributions;
+    const description = this.props.description;
+
     return (
       <Card className="panel">
-        <CardTitle>Authorization to Operate as a Service</CardTitle>
+        <CardTitle>{title}</CardTitle>
+
         <CardBody>
-          <div className="section">
+          <div className="card-section">
             <span className="sub-heading">Client</span>
-            <span className="content">National Cancer Institute</span>
-            <span className="content">
-              Center for Biomedical Informatics and Information Technology
-            </span>
+            {clients.map((client) => {
+              return <span className="content">{client}</span>;
+            })}
           </div>
-          <div className="section">
+
+          <div className="card-section">
             <span className="sub-heading">Contributions</span>
-            <span className="content">Data design and architecture</span>
-            <span className="content">Front-end development</span>
+            {contributions.map((contribution) => {
+              return <span className="content">{contribution}</span>;
+            })}
           </div>
-          <div className="section">
+
+          <div className="card-section">
             <span className="sub-heading">Project</span>
-            <span className="content">
-              Workflow ecosystem I have zero cycles for this. Pre launch high
-              touch client nor optics or drink the Kool-aid, but drill down.
-            </span>
+            <span className="content">{description}</span>
           </div>
         </CardBody>
       </Card>
