@@ -8,19 +8,29 @@ import placeholder from "./placeholder.json";
 class Projects extends Component {
   constructor() {
     super();
-    this.state = {
-      projects: placeholder.projects,
-    };
+    this.state = { isLoading: false, projects: [] };
   }
 
   componentDidMount() {
-    // this.setState({ projects: projects });
-    // queryAllProjects().then((res) => console.log(res.projects));
+    fetch("/api/v1/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        this.setState({ projects: data });
+      })
+      .catch(console.log);
   }
 
   render() {
     const projects = this.state.projects;
     return (
+      //   <div>
+      //     <p>{this.state.isLoading ? "LOADING ..." : ""}</p>
+      //     {projects.map((project) => (
+      //       <p>{project.title}</p>
+      //     ))}
+      //   </div>
+
       <Container fluid>
         <Row>
           {projects.map((project, i) => {
@@ -28,8 +38,9 @@ class Projects extends Component {
               <Col xs="12" xl="4">
                 <ProjectCard
                   title={project.title}
-                  clients={project.clients}
-                  contributions={project.contributions}
+                  clientCompany={project.clientCompany}
+                  clientDepartment={project.clientDepartment}
+                  contributions={project.contribution}
                   description={project.description}
                 />
               </Col>

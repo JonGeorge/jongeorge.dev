@@ -8,7 +8,8 @@ class ProjectCard extends Component {
 
   render() {
     const title = this.props.title;
-    const clients = this.props.clients;
+    const clientCompany = this.props.clientCompany;
+    const clientDepartment = this.props.clientDepartment;
     const contributions = this.props.contributions;
     const description = this.props.description;
 
@@ -19,9 +20,8 @@ class ProjectCard extends Component {
         <CardBody>
           <div className="card-section">
             <span className="sub-heading">Client</span>
-            {clients.map((client) => {
-              return <span className="content">{client}</span>;
-            })}
+            <span className="content">{clientCompany}</span>
+            <span className="content">{clientDepartment}</span>
           </div>
 
           <div className="card-section">
