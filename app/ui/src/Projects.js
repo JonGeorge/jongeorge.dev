@@ -3,8 +3,6 @@ import { Col, Container, Row } from "reactstrap";
 
 import ProjectCard from "./ProjectCard";
 
-import placeholder from "./placeholder.json";
-
 class Projects extends Component {
   constructor() {
     super();
@@ -15,7 +13,6 @@ class Projects extends Component {
     fetch("/api/v1/projects")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         this.setState({ projects: data });
       })
       .catch(console.log);
