@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import { Card, CardBody, CardTitle } from "reactstrap";
 
 class ProjectCard extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const title = this.props.title;
@@ -26,8 +23,8 @@ class ProjectCard extends Component {
 
           <div className="card-section">
             <span className="sub-heading">Contributions</span>
-            {contributions.map((contribution) => {
-              return <span className="content">{contribution}</span>;
+            {contributions.map((contribution, i) => {
+              return <span key={i} className="content">{contribution}</span>;
             })}
           </div>
 

@@ -32,7 +32,7 @@ class Projects extends Component {
         <Row>
           {projects.map((project, i) => {
             return (
-              <Col xs="12" xl="4">
+              <Col xs="12" xl="4" key={i}>
                 <ProjectCard
                   title={project.title}
                   clientCompany={project.clientCompany}

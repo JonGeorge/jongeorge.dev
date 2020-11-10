@@ -1,9 +1,14 @@
 import React, { Component } from "react";
-// import Timeline from "./Timeline";
+import Timeline from "./Timeline";
 
 class Resume extends Component {
   render() {
-    return <div className="timeline">{/* <Timeline /> */}</div>;
+    return (
+      <div className="timeline">
+        <center>
+          <Timeline />
+        </center>
+      </div>);
   }
 }
 
