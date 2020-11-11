@@ -1,5 +1,65 @@
-.line {
-  width: 20%;
-  color: $yellow;
-  border-bottom: 3px;
+.timeline {
+  width: 100%;
+  position: relative;
+  color: $white;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $yellow;
+  }
+
+  .entry {
+    position: relative;
+    flex-grow: 1;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 25px;
+      border: 3px solid $white;
+      border-radius: 100%;
+      background-color: $darkblue;
+    }
+
+    &.active:before {
+      background-color: $white;
+    }
+
+    &:first-child .date {
+      right: 67px;
+    }
+
+    &:not(:first-child) {
+      text-align: center;
+      .date {
+        left: 12px;
+      }
+    }
+
+    &:last-child {
+      text-align: right;
+      .date {
+        left: 40px;
+      }
+    }
+
+    .date {
+      position: relative;
+      top: 28px;
+    }
+  }
+
+  .hide {
+    visibility: hidden;
+  }
 }
