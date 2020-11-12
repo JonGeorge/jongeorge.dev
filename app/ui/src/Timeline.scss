@@ -3,7 +3,7 @@
   min-width: 537px;
   position: relative;
   color: $white;
-  margin-bottom: 50px;
+  margin-bottom: 78px;
   display: flex;
   justify-content: space-between;
 
@@ -55,8 +55,13 @@
     }
 
     .date {
+      font-style: italic;
       position: relative;
       top: 28px;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 
