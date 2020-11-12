@@ -18,7 +18,7 @@ class Timeline extends Component {
 
           return (
             <div className={classes} onClick={() => this.props.onClick(entry.index)} key={entry.index}>
-              <div className="hide">{entry.text}</div>
+              <div className="date hide">{entry.text}</div>
             </div>
           );
         })}
