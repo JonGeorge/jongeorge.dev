@@ -1,0 +1,7 @@
+FROM node:18 as build
+LABEL authors="jgeorge"
+RUN ["mkdir", "/jongeorge"]
+WORKDIR "/jongeorge"
+ENV HOST="0.0.0.0"
+EXPOSE 3000
+CMD ["npm", "run", "dev", "--", "--host=0.0.0.0"]
