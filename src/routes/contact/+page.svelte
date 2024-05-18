@@ -1,1 +1,1 @@
-<p>contact</p>
+<h1 class="is-size-3-mobile is-size-2-tablet">Contact</h1>
