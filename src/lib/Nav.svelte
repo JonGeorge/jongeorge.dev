@@ -1,8 +1,8 @@
 <script lang="ts">
-    let isActive = false;
+    let mobileNavIsDisplayed = false;
 
     function toggleNav() {
-        isActive = !isActive;
+        mobileNavIsDisplayed = !mobileNavIsDisplayed;
     }
 </script>
 
@@ -10,7 +10,7 @@
     <div class="navbar-brand">
         <a href="/">Jon George</a>
 
-        <a class="navbar-burger {isActive ? 'is-active' : ''}"
+        <a class="navbar-burger {mobileNavIsDisplayed ? 'is-active' : ''}"
            on:click={toggleNav}
            href="#0"
            role="button"
@@ -26,12 +26,12 @@
         </a>
     </div>
 
-    <div id="nav-items" class="navbar-menu {isActive ? 'is-active' : ''}">
+    <div id="nav-items" class="navbar-menu {mobileNavIsDisplayed ? 'is-active' : ''}">
         <div class="navbar-end">
-            <a href="/" class="navbar-item is-tab">Home</a>
-            <a href="/about" class="navbar-item is-tab">About</a>
-            <a href="/projects" class="navbar-item is-tab">Projects</a>
-            <a href="/contact" class="navbar-item is-tab">Contact</a>
+            <a on:click={mobileNavIsDisplayed ? toggleNav : ""} href="/" class="navbar-item is-tab">Home</a>
+            <a on:click={mobileNavIsDisplayed ? toggleNav : ""} href="/about" class="navbar-item is-tab">About</a>
+            <a on:click={mobileNavIsDisplayed ? toggleNav : ""} href="/projects" class="navbar-item is-tab">Projects</a>
+            <a on:click={mobileNavIsDisplayed ? toggleNav : ""} href="/contact" class="navbar-item is-tab">Contact</a>
         </div>
     </div>
 </nav>
