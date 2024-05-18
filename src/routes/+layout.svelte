@@ -1,9 +1,9 @@
 <script>
-    import "../app.css";
-    import "$lib/Nav.svelte";
+    // import "../app.css";
+
+    // Components
     import Nav from "$lib/Nav.svelte";
 </script>
-<h1>Jon George</h1>
 <Nav></Nav>
 <slot></slot>
 
