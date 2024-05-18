@@ -28,18 +28,10 @@
 
     <div id="nav-items" class="navbar-menu {isActive ? 'is-active' : ''}">
         <div class="navbar-end">
-            <div class="navbar-item is-tab">
-                <a href="/">Home</a>
-            </div>
-            <div class="navbar-item is-tab">
-                <a href="/about">About</a>
-            </div>
-            <div class="navbar-item is-tab">
-                <a href="/projects">Projects</a>
-            </div>
-            <div class="navbar-item is-tab">
-                <a href="/contact">Contact</a>
-            </div>
+            <a href="/" class="navbar-item is-tab">Home</a>
+            <a href="/about" class="navbar-item is-tab">About</a>
+            <a href="/projects" class="navbar-item is-tab">Projects</a>
+            <a href="/contact" class="navbar-item is-tab">Contact</a>
         </div>
     </div>
 </nav>
