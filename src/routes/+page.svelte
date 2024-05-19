@@ -42,7 +42,7 @@
                     <span>GitHub</span></button>
             </a>
         </p>
-        
+
         <p class="control">
             <a href="https://www.linkedin.com/in/jon-georgex/">
                 <button class="button is-link">
