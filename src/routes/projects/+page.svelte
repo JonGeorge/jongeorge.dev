@@ -6,7 +6,7 @@
 </script>
 
 <div class="content">
-    {JSON.stringify(data)}
+    <!--{JSON.stringify(data)}-->
 
     <h1>Projects</h1>
 
