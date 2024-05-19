@@ -6,9 +6,9 @@
     }
 </script>
 
-<nav class="navbar" aria-label="main navigation">
+<nav class="navbar mb-5" aria-label="main navigation">
     <div class="navbar-brand">
-        <a href="/">Jon George</a>
+        <a href="/" class="is-align-content-center ">Jon George</a>
 
         <a class="navbar-burger {mobileNavIsDisplayed ? 'is-active' : ''}"
            on:click={toggleNav}
