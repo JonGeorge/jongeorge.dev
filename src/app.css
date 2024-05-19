@@ -4,3 +4,9 @@ body {
     margin: 35px auto 0 auto;
     padding: 0 35px;
 }
+
+@media screen and (min-width: 1024px)  {
+    body {
+        padding: 0 120px;
+    }
+}
