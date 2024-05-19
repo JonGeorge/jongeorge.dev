@@ -1,5 +1,6 @@
 import {attributes as atoAttributes} from "$lib/content/FISMA ATO Streamlining Tool.md";
 import {attributes as ouoAttributes} from "$lib/content/Official Use Only Labels.md";
+import {attributes as covidAttributes} from "$lib/content/NIH COVID-19 Biorepository.md";
 
 export async function load() {
     // Loop through .md files and get titles
@@ -18,8 +19,9 @@ export async function load() {
     // return {titles};
 
     const projectSummaries = [
+        covidAttributes,
         atoAttributes,
-        ouoAttributes
+        ouoAttributes,
     ];
     return {projectSummaries};
 

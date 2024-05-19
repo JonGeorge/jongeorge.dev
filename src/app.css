@@ -1,5 +1,12 @@
 body {
-    max-width: 1200px !important;
-    margin: 2rem auto 0 auto;
-    padding: 0 5rem;
+    max-width: 1200px;
+    min-width: 410px;
+    margin: 35px auto 0 auto;
+    padding: 0 35px;
+}
+
+@media screen and (min-width: 1024px)  {
+    body {
+        padding: 0 120px;
+    }
 }
