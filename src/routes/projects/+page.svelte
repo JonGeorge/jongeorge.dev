@@ -12,13 +12,14 @@
 
     {#each data.projectSummaries as project}
         <div class="card">
-            <header class="card-header">
+            <header class="card-header is-shadowless">
                 <p class="card-header-title">{project.title}</p>
             </header>
 
             <div class="card-content">
                 <div class="content">
                     {project.description}
+                    <br/>
                     <br/>
                     {project.date}
                 </div>
