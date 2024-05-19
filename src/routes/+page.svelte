@@ -33,15 +33,15 @@
                 </button>
             </a>
         </p>
-        <p class="control">
-            <a href="https://www.linkedin.com/in/jon-georgex/">
-                <button class="button is-link">
-                <span class="icon">
-                    <i class="fa-solid fa-face-smile"></i>
-                </span>
-                    <span>Say hello</span>
-                </button>
-            </a>
-        </p>
+<!--        <p class="control">-->
+<!--            <a href="https://www.linkedin.com/in/jon-georgex/">-->
+<!--                <button class="button is-link">-->
+<!--                <span class="icon">-->
+<!--                    <i class="fa-solid fa-face-smile"></i>-->
+<!--                </span>-->
+<!--                    <span>Say hello</span>-->
+<!--                </button>-->
+<!--            </a>-->
+<!--        </p>-->
     </div>
 </div>
