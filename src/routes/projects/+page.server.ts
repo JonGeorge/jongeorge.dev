@@ -19,9 +19,9 @@ export async function load() {
     // return {titles};
 
     const projectSummaries = [
+        covidAttributes,
         atoAttributes,
         ouoAttributes,
-        covidAttributes,
     ];
     return {projectSummaries};
 
