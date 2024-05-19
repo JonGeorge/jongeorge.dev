@@ -15,7 +15,7 @@
 
     <div class="field is-grouped mt-6">
         <p class="control">
-            <a href="https://github.com/JonGeorge/jongeorge.dev">
+            <a href="https://github.com/JonGeorge">
                 <button class="button is-link">
                 <span class="icon">
                     <i class="fa-brands fa-github"></i>
