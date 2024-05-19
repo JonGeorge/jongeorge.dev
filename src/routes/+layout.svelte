@@ -1,5 +1,5 @@
 <script>
-    // import "../app.css";
+    import "../app.css";
 
     // Components
     import Nav from "$lib/Nav.svelte";
@@ -8,6 +8,6 @@
 <slot></slot>
 
 <style>
-    
+
 </style>
 
