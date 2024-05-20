@@ -18,7 +18,7 @@
 
     <div class="field is-grouped mt-6">
         <p class="control">
-            <a href="https://github.com/JonGeorge">
+            <a href="https://github.com/JonGeorge" target="_blank">
                 <button class="button is-link">
                 <span class="icon">
                     <i class="fa-brands fa-github"></i>
@@ -28,7 +28,7 @@
         </p>
 
         <p class="control">
-            <a href="https://www.linkedin.com/in/jon-georgex/">
+            <a href="https://www.linkedin.com/in/jon-georgex/" target="_blank">
                 <button class="button is-link">
                 <span class="icon">
                     <i class="fa-brands fa-linkedin-in"></i>
@@ -64,7 +64,7 @@
                     </span>
                 </a>
                 {#if (project.site)}
-                    <a href={project.site} class="card-footer-item">See the live project
+                    <a href={project.site} class="card-footer-item" target="_blank">See the live project
                         <span class="icon" style="padding-bottom: 3px">
                             <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
                         </span>
