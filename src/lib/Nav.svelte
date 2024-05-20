@@ -15,7 +15,7 @@
             </svg>
         </a>
 
-        <a class="navbar-burger {mobileNavIsDisplayed ? 'is-active' : ''}"
+        <a class="is-hidden-mobile navbar-burger {mobileNavIsDisplayed ? 'is-active' : ''}"
            on:click={toggleNav}
            href={null}
            role="button"
@@ -42,7 +42,7 @@
             <!--<a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/resume" class="navbar-item is-tab">Philosophy</a>-->
 
         </div>
-        <div class="navbar-end">
+        <div class="navbar-end is-hidden-mobile">
 
             <div class="field is-grouped">
                 <p class="control">
