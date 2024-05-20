@@ -9,11 +9,11 @@
         to the successful delivery of their product or service.
     </p>
     <p class="block">
-        I can read and write code just as easily as I can create
-        and present a slide deck to leadership. Using creative
+        I am just as comfortable reading and writing code as I am creating
+        and presenting slide decks to leadership. By using creative
         problem solving, design thinking, risk management, and
-        effective prioritization, I work toward achieving the
-        most critical business outcomes.
+        effective prioritization, I drive impactful outcomes that align
+        with critical business goals.
     </p>
 
     <div class="field is-grouped mt-6">
