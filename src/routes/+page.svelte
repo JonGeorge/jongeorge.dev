@@ -58,13 +58,19 @@
             </div>
 
             <footer class="card-footer">
-                <!--<a href={project.uri} class="card-footer-item">Ask a question</a>-->
-                <!--<a href={project.uri} class="card-footer-item">See the live site</a>-->
                 <a href={project.uri} class="card-footer-item">Read more
                     <span class="icon">
                         <i class="fa-solid fa-angle-right"></i>
                     </span>
                 </a>
+                {#if (project.site)}
+                    <a href={project.site} class="card-footer-item">See the live project
+                        <span class="icon" style="padding-bottom: 3px">
+                            <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                        </span>
+                    </a>
+                {/if}
+
             </footer>
         </div>
     {/each}
