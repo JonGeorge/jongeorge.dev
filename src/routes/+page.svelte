@@ -16,32 +16,11 @@
         with critical business goals.
     </p>
 
-    <div class="field is-grouped mt-6">
-        <p class="control">
-            <a href="https://github.com/JonGeorge" target="_blank">
-                <button class="button is-link">
-                <span class="icon">
-                    <i class="fa-brands fa-github"></i>
-                </span>
-                    <span>GitHub</span></button>
-            </a>
-        </p>
 
-        <p class="control">
-            <a href="https://www.linkedin.com/in/jon-georgex/" target="_blank">
-                <button class="button is-link">
-                <span class="icon">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </span>
-                    <span>LinkedIn</span>
-                </button>
-            </a>
-        </p>
-    </div>
 </div>
 
 <!--PROJECTS-->
-<div class="content">
+<div class="content mt-6">
     {#each data.projectSummaries as project}
         <div class="card">
             <header class="card-header is-shadowless">
