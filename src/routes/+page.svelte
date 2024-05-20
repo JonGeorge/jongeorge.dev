@@ -5,12 +5,18 @@
 <h1 class="title block">Hi, I'm Jon!</h1>
 <div class="content">
     <p class="block">
-        I lead software teams and customers
-        to the successful delivery of their product or service.
+        I lead software teams through ideation, planning,
+        design, and development.
     </p>
     <p class="block">
-        I am just as comfortable reading and writing code as I am creating
-        and presenting slide decks to leadership. By using creative
+        My ability to translate technical solutions into plain language
+        for customers builds trust, aligns development with customer needs
+        and expectations, and ensures the successful delivery
+        of products and services.
+    </p>
+    <p class="block">
+        I am equally adept at reading and writing code as I am at creating
+        and presenting slides to leadership. By using creative
         problem solving, design thinking, risk management, and
         effective prioritization, I drive impactful outcomes that align
         with critical business goals.
