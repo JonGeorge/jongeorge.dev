@@ -33,9 +33,12 @@
     <div id="nav-items" class="navbar-menu {mobileNavIsDisplayed ? 'is-active' : ''}">
         <div class="navbar-end">
 <!--            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/" class="navbar-item is-tab">Home</a>-->
-            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/projects" class="navbar-item is-tab">Projects</a>
-            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/about" class="navbar-item is-tab">About</a>
+<!--            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/projects" class="navbar-item is-tab">Projects</a>-->
+<!--            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/about" class="navbar-item is-tab">About</a>-->
 <!--            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/contact" class="navbar-item is-tab">Contact</a>-->
+<!--            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/guiding-principles" class="navbar-item is-tab">Guiding Principles</a>-->
+<!--            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/philosophy" class="navbar-item is-tab">Philosophy</a>-->
+<!--            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/resume" class="navbar-item is-tab">Philosophy</a>-->
         </div>
     </div>
 </nav>
