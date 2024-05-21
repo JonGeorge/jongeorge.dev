@@ -22,6 +22,9 @@
         with critical business goals.
     </p>
 
+    <p class="block has-text-centered mt-6">
+    * * *
+    </p>
 
 </div>
 
