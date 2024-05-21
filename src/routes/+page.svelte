@@ -1,15 +1,35 @@
 <script>
-
     export let data;
-
-
 </script>
 
+<h1 class="title block">Hi, I'm Jon!</h1>
 <div class="content">
-    <!--{JSON.stringify(data)}-->
+    <p class="block">
+        I lead software teams through ideation, planning,
+        design, and development.
+    </p>
+    <p class="block">
+        My ability to translate technical solutions into plain language
+        for customers builds trust, aligns development with customer needs
+        and expectations, and ensures the successful delivery
+        of products and services.
+    </p>
+    <p class="block">
+        I am equally adept at reading and writing code as I am at creating
+        and presenting slides to leadership. By using creative
+        problem solving, design thinking, risk management, and
+        effective prioritization, I drive impactful outcomes that align
+        with critical business goals.
+    </p>
 
-    <h1>Projects</h1>
+    <p class="block has-text-centered mt-6">
+    * * *
+    </p>
 
+</div>
+
+<!--PROJECTS-->
+<div class="content mt-6">
     {#each data.projectSummaries as project}
         <div class="card">
             <header class="card-header is-shadowless">
@@ -26,13 +46,19 @@
             </div>
 
             <footer class="card-footer">
-                <!--<a href={project.uri} class="card-footer-item">Ask a question</a>-->
-                <!--<a href={project.uri} class="card-footer-item">See the live site</a>-->
                 <a href={project.uri} class="card-footer-item">Read more
                     <span class="icon">
                         <i class="fa-solid fa-angle-right"></i>
                     </span>
                 </a>
+                {#if (project.site)}
+                    <a href={project.site} class="card-footer-item" target="_blank">See the live project
+                        <span class="icon" style="padding-bottom: 3px">
+                            <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                        </span>
+                    </a>
+                {/if}
+
             </footer>
         </div>
     {/each}
@@ -40,7 +66,5 @@
 </div>
 
 <style>
-    h1 {
-        margin-bottom: 1.5rem;
-    }
+
 </style>
