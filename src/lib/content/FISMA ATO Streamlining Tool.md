@@ -20,7 +20,7 @@ The time it takes to complete an ATO was decreased from 3+ months to about 2 wee
 
 #### Current state
 Through user observations, interviews, and discussions about the existing processes, we were able to get an understanding of the current state. An excerpt is shown below to demonstrate the number of people involved in the ATO process and the complexity of the information captured during this phase.
-![Business process modeling notation for FAST](../FISMA_ATO_Streamlining_Tool_solution.png)
+![Business process modeling notation for FAST](../src/lib/assets/FISMA_ATO_Streamlining_Tool_solution.png)
 
 
 #### Other considerations
