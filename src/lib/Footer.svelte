@@ -70,4 +70,8 @@
     a {
         color: #d4d6d7;
     }
+
+    a:hover {
+        color: #ffffff;
+    }
 </style>
