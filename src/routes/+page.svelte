@@ -1,6 +1,7 @@
 <script>
     import awsLogo from "$lib/assets/logo-aws.svg";
     import snLogo from "$lib/assets/logo-sn.avif";
+
     export let data;
 </script>
 
@@ -34,29 +35,31 @@
 <!--PROJECTS-->
 <div class="content mt-6">
     {#each data.projectSummaries as project}
-        <div class="card">
-            <header class="card-header is-shadowless">
-                <p class="card-header-title">{project.title}</p>
+        <div class="card mt-6">
+            <header class="card-header is-shadowless has-background-success-20">
+                <p class="card-header-title has-text-success-100">{project.title}</p>
             </header>
 
             <div class="card-content">
-                <div class="content">
-                    {project.description}
-                    <br/>
-                    <br/>
-                    {project.date}
+                {project.description}
+                <br/>
+                <br/>
+                <div class="tag is-warning has-text-weight-semibold">
+                    {project.role}
                 </div>
             </div>
 
             <footer class="card-footer">
-                <a href={project.uri} class="card-footer-item">Read more
+                <a href={project.uri} class="card-footer-item">
+                    Read more
                     <span class="icon">
                         <i class="fa-solid fa-angle-right"></i>
                     </span>
                 </a>
                 {#if (project.site)}
-                    <a href={project.site} class="card-footer-item" target="_blank">See the live project
-                        <span class="icon" style="padding-bottom: 3px">
+                    <a href={project.site} class="card-footer-item" target="_blank">
+                        See the live project
+                        <span class="icon pl-1" style="padding-bottom: 3px">
                             <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
                         </span>
                     </a>
@@ -68,7 +71,16 @@
 </div>
 
 <style>
-.card {
+    .card-content {
+        background-color: #fafff5;
+    }
 
-}
+    .card-footer-item {
+        background-color: #fafff5;
+    }
+
+    .card-footer-item:hover {
+        background-color: #f3f8ed;
+    }
+
 </style>
