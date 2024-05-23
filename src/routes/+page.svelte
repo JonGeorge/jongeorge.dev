@@ -1,4 +1,7 @@
 <script>
+    import awsLogo from "$lib/assets/logo-aws.svg";
+    import snLogo from "$lib/assets/logo-sn.avif";
+    import uipathLogo from "$lib/assets/logo-uipath.svg";
     export let data;
 </script>
 
@@ -22,8 +25,10 @@
         with critical business goals.
     </p>
 
-    <p class="block has-text-centered mt-6">
-    * * *
+    <p class="block has-text-centered mt-1">
+        <img src={snLogo} alt="ServiceNow Logo" width="250">
+        <img src={awsLogo} alt="AWS Logo" width="80" class="ml-5">
+        <img src={uipathLogo} alt="UI Path Logo" width="100" class="ml-5">
     </p>
 
 </div>
@@ -62,9 +67,10 @@
             </footer>
         </div>
     {/each}
-
 </div>
 
 <style>
+.card {
 
+}
 </style>
