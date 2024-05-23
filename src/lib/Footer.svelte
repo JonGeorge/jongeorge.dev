@@ -59,12 +59,6 @@
         padding: 0 35px;
     }
 
-    @media screen and (min-width: 1024px) {
-        main-content {
-            padding: 0 120px;
-        }
-    }
-
     footer {
         background-color: #2d2d2d;
         position: absolute;
