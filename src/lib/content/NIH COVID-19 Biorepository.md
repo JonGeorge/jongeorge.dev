@@ -29,7 +29,9 @@ Additionally, the internal review board (IRB) needed a way to track the influx o
 Lastly, there was a need to report on the various COVID-19 related studies being undertaken by the NIH. Information sharing across the enterprise was critical for this project to be deemed a success.
 
 ### Solution
-![NIH COVID-19 Biorepository Data Flow](../NIH_COVID-19_Biorepository_solution.png)
+
+[//]: # (![NIH COVID-19 Biorepository Data Flow]&#40;../NIH_COVID-19_Biorepository_solution.png&#41;)
+![NIH COVID-19 Biorepository Data Flow](../src/lib/assets/NIH_COVID-19_Biorepository_solution.png)
 
 Server-side
 1. Use the Request and Requested Item tables to manage requests submitted from the portal.

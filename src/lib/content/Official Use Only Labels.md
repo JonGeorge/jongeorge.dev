@@ -14,7 +14,7 @@ We created mechanisms for generating, displaying, printing and managing OUO labe
 ### Outcomes
 Implemented platform wide "Official Use Only" labels with a management interface and printing capability. The Idaho National Laboratory met the Department of Energy mandate for displaying the appropriate label in all required locations.
 
-![Example OUO Label](../OUO_Label_example.png)
+![Example OUO Label](../src/lib/assets/OUO_Label_example.png)
 
 ### Project Brief
 The Idaho National Laboratory (INL) is a Department of Energy (DoE) national laboratory focused on nuclear energy research. The DoE is mandated to display "Official use only" (OUO) labels on certain digital and hard copy forms and documents.
@@ -35,7 +35,7 @@ OUO labels need to be occasionally updated with new information, or may be remov
 5. UI Macros did not play nicely with Service Portal's AngularJS, and vice versa. We also needed to identify the catalog item being displayed and get its associated OUO label data. To pass this data from the client side portal to the server, a new OUO widget on the SC Task portal page was the most viable option.
 6. To address printing, a custom UI Action allows the user to open a UI Page with the form data formatted for 8.5" x 11" paper.
 
-![OUO Label Diagram](../OUO_Label_solution.png)
+![OUO Label Diagram](../src/lib/assets/OUO_Label_solution.png)
 
 Implementing this solution means that the users would have to follow this process to create and maintain OUO labels:
 1. During the creation of a new catalog item, the user may associate an existing OUO label with the catalog item or create a new one.
