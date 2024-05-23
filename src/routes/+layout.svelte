@@ -15,11 +15,8 @@
 <style>
     .main-content {
         max-width: 960px;
-        margin: 35px auto 0 auto;
-        padding-left: 45px;
-        padding-right: 45px;
-        /**/
-        padding-bottom: 525px;
+        margin: 0 auto;
+        padding: 35px 45px 525px 45px;
     }
 
     @media screen and (min-width: 1024px)  {
@@ -31,6 +28,7 @@
     @media screen and (min-width: 768px)  {
         .main-content {
             padding-bottom: 375px;
+            padding-top: 35px;
         }
     }
 </style>
