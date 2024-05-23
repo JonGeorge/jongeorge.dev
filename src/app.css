@@ -1,12 +1,7 @@
 body {
-    max-width: 1200px;
+    width: 100%;
     min-width: 410px;
-    margin: 35px auto 0 auto;
-    padding: 0 35px;
+    min-height: 100vh;
+    position: relative;
 }
 
-@media screen and (min-width: 1024px)  {
-    body {
-        padding: 0 120px;
-    }
-}
