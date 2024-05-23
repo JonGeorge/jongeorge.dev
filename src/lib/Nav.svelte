@@ -47,7 +47,7 @@
             <div class="field is-grouped">
                 <p class="control">
                     <a href="https://github.com/JonGeorge" target="_blank">
-                        <button class="button ">
+                        <button class="button is-ghost">
                 <span class="icon">
                     <i class="fa-brands fa-github"></i>
                 </span>
@@ -57,7 +57,7 @@
 
                 <p class="control">
                     <a href="https://www.linkedin.com/in/jon-georgex/" target="_blank">
-                        <button class="button">
+                        <button class="button is-ghost">
                 <span class="icon">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </span>
