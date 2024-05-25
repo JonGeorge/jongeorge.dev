@@ -3,12 +3,6 @@
         <div class="columns">
 
             <div class="column is-four-fifths">
-                <div class="block">
-                    <a href="/projects">
-                        <span class="icon"><i class="fa-solid fa-list-check fa-lg"></i></span>
-                        <span>View projects</span>
-                    </a>
-                </div>
 
                 <div class="block">
                     <a href="https://github.com/JonGeorge/jongeorge.dev" target="_blank">
@@ -18,8 +12,15 @@
                 </div>
 
                 <div class="block">
+                    <a href="/projects">
+                        <span class="icon"><i class="fa-solid fa-list-check fa-lg"></i></span>
+                        <span>View projects</span>
+                    </a>
+                </div>
+
+                <div class="block">
                     <a href="https://www.linkedin.com/in/jon-georgex/details/recommendations/" target="_blank">
-                        <span class="icon"><i class="fa-solid fa-comment-dots fa-lg"></i></span>
+                        <span class="icon"><i class="fa-solid fa-star fa-lg"></i></span>
                         <span>View recommendations</span>
                     </a>
                 </div>
@@ -68,5 +69,9 @@
 
     a {
         color: #d4d6d7;
+    }
+
+    a:hover {
+        color: #ffffff;
     }
 </style>

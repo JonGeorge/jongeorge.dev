@@ -1,42 +1,12 @@
 <script>
+    import Projects from "$lib/Projects.svelte";
 
     export let data;
-
-
 </script>
 
 <div class="content">
-    <!--{JSON.stringify(data)}-->
-
     <h1>Projects</h1>
-
-    {#each data.projectSummaries as project}
-        <div class="card">
-            <header class="card-header is-shadowless">
-                <p class="card-header-title">{project.title}</p>
-            </header>
-
-            <div class="card-content">
-                <div class="content">
-                    {project.description}
-                    <br/>
-                    <br/>
-                    {project.date}
-                </div>
-            </div>
-
-            <footer class="card-footer">
-                <!--<a href={project.uri} class="card-footer-item">Ask a question</a>-->
-                <!--<a href={project.uri} class="card-footer-item">See the live site</a>-->
-                <a href={project.uri} class="card-footer-item">Read more
-                    <span class="icon">
-                        <i class="fa-solid fa-angle-right"></i>
-                    </span>
-                </a>
-            </footer>
-        </div>
-    {/each}
-
+    <Projects projects={data.projectSummaries}/>
 </div>
 
 <style>
