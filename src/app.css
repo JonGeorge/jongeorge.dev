@@ -1,3 +1,9 @@
+[data-theme=dark],
+.theme-dark {
+    --bulma-scheme-main: hsl(232.28deg 67.86% 13.03%);
+    --bulma-text: hsl(0deg 0% 100%);
+}
+
 body {
     width: 100%;
     min-width: 410px;
