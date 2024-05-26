@@ -31,7 +31,7 @@
         </a>
     </div>
 
-    <div id="nav-items" class="navbar-menu is-shadowless {mobileNavIsDisplayed ? 'is-active' : ''}">
+    <div id="nav-items" class="navbar-menu p-0 is-shadowless {mobileNavIsDisplayed ? 'is-active' : ''}">
         <div class="navbar-start">
             <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/" class="navbar-item is-tab">Home</a>
             <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/projects" class="navbar-item is-tab">Projects</a>
