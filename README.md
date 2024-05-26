@@ -1,6 +1,6 @@
 # Hello
-I'm Jon, and this project is a showcase of my work as a software engineer and architect throughout the last ten years.
+I'm Jon, and [jongeorge.dev](https://jongeorge.dev) is my portfolio of work.
 
-JonGeorge.dev is new and the initial development is in progress.
+The site is new and development is in progress, so features and content are still being created.
 
-In the meantime, feel free to connect on LinkedIn! [https://www.linkedin.com/in/jon-georgex/](https://www.linkedin.com/in/jon-georgex/)
+Feel free to connect on LinkedIn! [https://www.linkedin.com/in/jon-georgex/](https://www.linkedin.com/in/jon-georgex/)
