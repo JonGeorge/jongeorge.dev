@@ -51,4 +51,4 @@ Since the information types and security controls may change, I sought after a w
 
 During the development of the FAST application the [Open Security Controls Assessment Language (OSCAL)](https://pages.nist.gov/OSCAL/)was actively being developed by NIST. This was exactly what we needed - an way to programmatically retrieve the latest data from NIST. The features being developed would have allowed for our team to consistently offer the latest schema for ATO forms, the most up-to-date information categories, and the most appropriate security controls. 
 
-One year later, the [first version of OSCAL](https://github.com/usnistgov/oscal-content/tree/main) was released. 
+18 months later, the [first version of OSCAL](https://github.com/usnistgov/oscal-content/tree/main) was released. 
