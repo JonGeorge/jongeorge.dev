@@ -15,7 +15,7 @@
             </svg>
         </a>
 
-        <a class="is-hidden-mobile navbar-burger {mobileNavIsDisplayed ? 'is-active' : ''}"
+        <a class="navbar-burger {mobileNavIsDisplayed ? 'is-active' : ''}"
            on:click={toggleNav}
            href={null}
            role="button"
@@ -31,18 +31,19 @@
         </a>
     </div>
 
-    <div id="nav-items" class="navbar-menu is-shadowless {mobileNavIsDisplayed ? 'is-active' : ''}">
+    <div id="nav-items" class="navbar-menu p-2 is-shadowless {mobileNavIsDisplayed ?
+    'is-active' : ''}">
         <div class="navbar-start">
-            <!--<a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/" class="navbar-item is-tab">Home</a>-->
-            <!--<a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/projects" class="navbar-item is-tab">Projects</a>-->
+            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/" class="navbar-item is-tab">Home</a>
+            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/projects" class="navbar-item is-tab">Projects</a>
+            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/resume" class="navbar-item is-tab">Resume</a>
+            <a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/contact" class="navbar-item is-tab">Contact</a>
             <!--<a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/about" class="navbar-item is-tab">About</a>-->
-            <!--<a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/contact" class="navbar-item is-tab">Contact</a>-->
             <!--<a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/guiding-principles" class="navbar-item is-tab">Guiding Principles</a>-->
             <!--<a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/philosophy" class="navbar-item is-tab">Philosophy</a>-->
-            <!--<a on:click={mobileNavIsDisplayed ? toggleNav : null} href="/resume" class="navbar-item is-tab">Philosophy</a>-->
 
         </div>
-        <div class="navbar-end is-hidden-mobile">
+        <div class="navbar-end">
 
             <div class="field is-grouped">
                 <p class="control">
