@@ -67,13 +67,17 @@
 </div>
 
 <h2 class="title has-text-centered mt-6 is-size-4 pt-4">Project Highlights</h2>
-<hr class="m-auto">
+<hr class="margin-hr">
 <Projects projects={data.projectSummaries}/>
 
 <style>
     hr {
         border-top: 1px solid var(--bulma-link);
         width: 10rem;
+    }
+
+    .margin-hr {
+        margin: 0 auto -15px auto;
     }
 
     .column {

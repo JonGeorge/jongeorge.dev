@@ -1,7 +1,7 @@
 <script>
     export let projects;
 </script>
-<div class="content mt-6">
+<div class="content">
     {#each projects as project}
         <div class="card mt-6 is-shadowless">
             <header class="card-header is-shadowless">
