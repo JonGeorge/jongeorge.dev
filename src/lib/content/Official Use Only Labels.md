@@ -5,6 +5,7 @@ for: for the Idaho National Laboratories
 role: Principal Developer
 date: September 2022
 uri: /project/ouo
+duration: 3 months
 ---
 ### Summary
 I was the technical lead on a project to create "Official Use Only" (OUO) labels across the ServiceNow platform. OUO labels were created based on the specs, design and guidance provided by the Department of Energy.
