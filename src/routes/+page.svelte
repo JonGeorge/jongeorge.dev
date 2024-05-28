@@ -21,8 +21,8 @@
 
     onDestroy(() => {
         if (htmlElement && htmlElement.style)
-            htmlElement.style.scrollSnapType = "y proximity"
-    })
+            htmlElement.style.scrollSnapType = "";
+    });
 </script>
 
 <div class="section is-align-content-center landing-padding">
@@ -46,12 +46,14 @@
             with critical business goals.
         </p>
     </div>
-    <div class="icon ">
-        <i class="has-text-link fa-solid fa-chevron-down"></i>
-    </div>
+    <a href="#tools">
+        <div class="icon ">
+            <i class="has-text-link fa-solid fa-chevron-down"></i>
+        </div>
+    </a>
 </div>
 
-<div class="section is-align-content-center landing-padding">
+<div class="section is-align-content-center landing-padding" id="tools">
     <h2 class="title has-text-centered mt-6 is-size-4 mobile-scroll-point-start">Tools</h2>
     <hr class="m-auto">
     <div class="columns mt-5 mb-6 is-column-gap-2">
@@ -84,12 +86,14 @@
             </div>
         </div>
     </div>
-    <div class="icon ">
-        <i class="has-text-link fa-solid fa-chevron-down"></i>
-    </div>
+    <a href="#projects">
+        <div class="icon">
+            <i class="has-text-link fa-solid fa-chevron-down"></i>
+        </div>
+    </a>
 </div>
 
-<div class="section is-align-content-center">
+<div class="section is-align-content-center" id="projects">
     <h2 class="title has-text-centered mt-6 is-size-4 pt-4 scroll-point-start">Project Highlights</h2>
     <hr class="margin-hr">
     <Projects projects={data.projectSummaries}/>
@@ -108,7 +112,7 @@
         padding-bottom: 20rem;
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) {
         .landing-padding {
             padding: 0 0 20rem 0;
         }
