@@ -5,7 +5,7 @@
     {#each projects as project}
         <div class="card mt-6 is-shadowless">
             <header class="card-header is-shadowless">
-                <p class="card-header-title">{project.title}</p>
+                <p class="card-header-title scroll-point-start">{project.title}</p>
             </header>
 
             <div class="card-content">

@@ -1,4 +1,4 @@
-<footer class="footer mt-auto">
+<footer class="footer mt-auto scroll-point-start">
     <div class="main-content">
         <div class="columns">
 

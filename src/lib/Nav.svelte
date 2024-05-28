@@ -6,7 +6,7 @@
     }
 </script>
 
-<nav class="navbar mb-5" aria-label="main navigation">
+<nav class="navbar mb-5 scroll-point-start" aria-label="main navigation">
     <div class="navbar-brand">
         <a href="/" class="pt-4 mr-4">
             <svg width="47" viewBox="0 0 115 115" fill="none" xmlns="http://www.w3.org/2000/svg">

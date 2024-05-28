@@ -19,5 +19,32 @@ body {
     min-width: 410px;
     min-height: 100vh;
     position: relative;
+    scroll-snap-type: y mandatory;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-point-start {
+    scroll-snap-align: start;
+}
+
+.scroll-point-center {
+    scroll-snap-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .mobile-scroll-point-start {
+
+        scroll-snap-align: start;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .desktop-scroll-point-center {
+
+        scroll-snap-align: center;
+    }
 }
 
