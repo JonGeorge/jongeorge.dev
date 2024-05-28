@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import awsLogoWhite from "$lib/assets/logo-aws-white.svg";
     import snLogoWhite from "$lib/assets/logo-sn-white.avif";
     import jsLogo from "$lib/assets/logo-js.svg";
@@ -9,8 +9,20 @@
     import visioLogo from "$lib/assets/logo-visio.svg";
 
     import Projects from "$lib/Projects.svelte";
+    import {onDestroy, onMount} from "svelte";
 
     export let data;
+    let htmlElement: HTMLElement;
+    onMount(() => {
+        htmlElement = document.documentElement;
+        htmlElement.style.scrollSnapType = "y mandatory";
+    });
+
+
+    onDestroy(() => {
+        if (htmlElement && htmlElement.style)
+            htmlElement.style.scrollSnapType = "y proximity"
+    })
 </script>
 
 <div class="section is-align-content-center landing-padding">
@@ -63,7 +75,7 @@
 
         </div>
         <div class="column has-text-centered has-radius-normal mt-4">
-            <p class="mt-4 mobile-scroll-point-start">Designs with</p>
+            <p class="mt-4 mb-4 mobile-scroll-point-start">Designs with</p>
             <img src={figmaLogo} alt="Figma Logo" width="40">
             <img src={drawioLogo} alt="Draw.io Logo" width="60" class="ml-5 mt-2">
             <div class="pb-4">
