@@ -1,7 +1,17 @@
 [data-theme=dark],
 .theme-dark {
-    --bulma-scheme-main: hsl(232.28deg 67.86% 13.03%);
-    --bulma-text: hsl(0deg 0% 100%);
+    --bulma-scheme-main: hsl(208.57deg 38.18% 10.78%);
+
+    --bulma-text: hsl(46deg 15% 83%);
+    --bulma-text-h: 46;
+    --bulma-text-s: 15%;
+    --bulma-text-l: 83%;
+    --bulma-text-strong-l: 83%;
+
+    --bulma-link: #dda15e;
+    --bulma-link-h: 32;
+    --bulma-link-s: 65%;
+    --bulma-link-l: 62%;
 }
 
 body {

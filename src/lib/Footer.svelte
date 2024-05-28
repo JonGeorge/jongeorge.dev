@@ -61,17 +61,8 @@
     }
 
     footer {
-        background-color: #2d2d2d;
         position: absolute;
         bottom: 0;
         width: 100%;
-    }
-
-    a {
-        color: #d4d6d7;
-    }
-
-    a:hover {
-        color: #ffffff;
     }
 </style>

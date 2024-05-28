@@ -36,14 +36,14 @@
     <hr class="m-auto">
     <div class="columns mt-5 mb-6 is-column-gap-2">
         <div class="column has-text-centered has-radius-normal mt-4">
-            <p class="has-text-grey-lighter mt-4">Builds with</p>
+            <p class="mt-4">Builds with</p>
             <div>
                 <img src={snLogoWhite} alt="ServiceNow Logo" width="250">
             </div>
             <img src={awsLogoWhite} alt="AWS Logo" width="80" class="ml-5">
         </div>
         <div class="column has-text-centered has-radius-normal mt-4">
-            <p class="has-text-grey-lighter mt-4 mb-5">Fluent in</p>
+            <p class="mt-4 mb-5">Fluent in</p>
             <div>
                 <img src={jsLogo} alt="JavaScript Logo" width="60" class=" ">
                 <img src={pythonLogo} alt="Python Logo" width="60" class="ml-5 ">
@@ -55,7 +55,7 @@
 
         </div>
         <div class="column has-text-centered has-radius-normal mt-4">
-            <p class="has-text-grey-lighter mt-4">Designs with</p>
+            <p class="mt-4">Designs with</p>
             <img src={figmaLogo} alt="Figma Logo" width="40">
             <img src={drawioLogo} alt="Draw.io Logo" width="60" class="ml-5 mt-2">
             <div class="pb-4">
@@ -78,9 +78,5 @@
 
     .margin-hr {
         margin: 0 auto -15px auto;
-    }
-
-    .column {
-        background-color: hsl(231.43deg 45.65% 18.04%);
     }
 </style>

@@ -5,7 +5,7 @@
     {#each projects as project}
         <div class="card mt-6 is-shadowless">
             <header class="card-header is-shadowless">
-                <p class="card-header-title has-text-success-100">{project.title}</p>
+                <p class="card-header-title">{project.title}</p>
             </header>
 
             <div class="card-content">
@@ -33,20 +33,5 @@
 </div>
 
 <style>
-    .card-header {
-        background-image: linear-gradient(76.35deg, #065443 -4.11%, #422080 94.75%);
-    }
-
-    .card-content {
-        background-color: hsl(231.43deg 45.65% 18.04%);
-    }
-
-    .card-footer-item {
-        background-color: hsl(231.43deg 45.65% 18.04%);
-    }
-
-    .card-footer-item:hover {
-        background-color: hsl(231.43deg 45.54% 16.2%);
-    }
 
 </style>
