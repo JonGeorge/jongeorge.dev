@@ -91,8 +91,16 @@
 
     }
 
+
     .landing-padding {
         padding-bottom: 20rem;
+    }
+
+    @media screen and (max-width: 768px){
+        .landing-padding {
+            padding: 0 0 20rem 0;
+        }
+
     }
 
     .icon {
