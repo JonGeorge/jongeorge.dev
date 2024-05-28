@@ -21,8 +21,8 @@
 
     onDestroy(() => {
         if (htmlElement && htmlElement.style)
-            htmlElement.style.scrollSnapType = "y proximity"
-    })
+            htmlElement.style.scrollSnapType = "";
+    });
 </script>
 
 <div class="section is-align-content-center landing-padding">
