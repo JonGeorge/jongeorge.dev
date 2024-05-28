@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import awsLogoWhite from "$lib/assets/logo-aws-white.svg";
     import snLogoWhite from "$lib/assets/logo-sn-white.avif";
     import jsLogo from "$lib/assets/logo-js.svg";
@@ -9,8 +9,20 @@
     import visioLogo from "$lib/assets/logo-visio.svg";
 
     import Projects from "$lib/Projects.svelte";
+    import {onDestroy, onMount} from "svelte";
 
     export let data;
+    let htmlElement: HTMLElement;
+    onMount(() => {
+        htmlElement = document.documentElement;
+        htmlElement.style.scrollSnapType = "y mandatory";
+    });
+
+
+    onDestroy(() => {
+        if (htmlElement && htmlElement.style)
+            htmlElement.style.scrollSnapType = "y proximity"
+    })
 </script>
 
 <div class="section is-align-content-center landing-padding">

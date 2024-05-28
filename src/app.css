@@ -22,10 +22,6 @@ body {
     scroll-snap-type: y mandatory;
 }
 
-html {
-    scroll-snap-type: y mandatory;
-}
-
 .scroll-point-start {
     scroll-snap-align: start;
 }
