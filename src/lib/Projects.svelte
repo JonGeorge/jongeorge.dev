@@ -12,9 +12,9 @@
                 {project.description}
                 <br/>
                 <br/>
-                <div class="tag is-warning has-text-weight-semibold">
+                <div class="tag is-warning">
                     {project.role}
-                </div> <div class="tag is-background-info-15 has-text-weight-semibold">
+                </div> <div class="tag is-background-info-15">
                     Timeline: {project.duration}
                 </div>
             </div>
@@ -33,5 +33,9 @@
 </div>
 
 <style>
+    .tag {
+        font-family: sans-serif;
+        font-weight: bold;
+    }
 
 </style>

@@ -6,7 +6,6 @@ role: Senior Software Engineer
 uri: /project/fast
 duration: 18 months
 ---
-# Background
 
 #### What is an ATO?
 An "Authorization to Operate" (ATO) is an official decision by an Authorizing Official to allow the use of a technology system in government. The decision to grant an ATO is preceded by an extensive review of the system's security and privacy controls. This review process ensures that systems meet certain cybersecurity requirements to safeguard IT infrastructure and data.
@@ -19,7 +18,6 @@ System owners must document the types of information that their system uses, and
 #### Receiving approval
 After completing the ATO process successfully, an approval is provided by an Authorizing Official. Generally the approval is represented by a document, signed by the Authorizing Official, indicating that the system is authorized to operate. If approval is not granted, the system owner works with the security team to update their system and revise the documents.
 
-# Project
 #### Problem Statement
 The ATO process is lengthy and resource intensive. For low-risk systems, it takes 3 to 6 months to complete the ATO process; for high-risk systems it can take upwards of 12 months or longer.
 
