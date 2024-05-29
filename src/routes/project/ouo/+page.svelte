@@ -1,9 +1,5 @@
 <script>
     import {toc, html, attributes} from "$lib/content/Official Use Only Labels.md";
+    import Project from "$lib/content/Project.svelte";
 </script>
-<h1 class="is-size-3-mobile is-size-2-tablet">{attributes.title}</h1>
-<h1 class="is-size-5-mobile is-size-3-tablet">{attributes.for}</h1>
-<br/>
-<div class="content">
-    {@html html}
-</div>
+<Project {html} {attributes}/>
