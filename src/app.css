@@ -12,6 +12,10 @@
     --bulma-link-h: 32;
     --bulma-link-s: 65%;
     --bulma-link-l: 62%;
+
+    --bulma-body-font-size: 1.1em;
+    --bulma-body-line-height: 1.7;
+    --bulma-weight-bold: 800;
 }
 
 html {
