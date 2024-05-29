@@ -10,17 +10,10 @@ uri: /project/covid
 site: https://service.cancer.gov/nih-covid-19-dashboard?xpage=landing_pub
 duration: 2 weeks
 ---
-# Background
-#### Why me?
+#### Background
 In December of 2019, just a one month before the first confirmed COVID-19 case in the United States, I developed a proof-of-concept application called Bio-medical Specimen Tracker. This application stored information about diabetes-related specimens involved in research studies within the Division of Cancer, Epidemiology, and Genetics (DCEG). The use case for the proof-of-concept closely aligned with the need to track COVID-19 specimens.
 
-#### The call
 During the second week of March 2020, I received a phone call from one of the project manager's on my team. "Jon we need you to build an a bio-repository for COVID-19 specimens. It has to be delivered within two-weeks." I immediately began running calculations for the project phases and timeline. I provided a short list of specific people I needed on my team to make this happen: a business analyst and a UX designer that I previously worked with on another project. At this point, our mission was clear as mud.
-
-# Project
-> *"Give me six hours to chop down a tree and I will spend the first four sharpening the ax."* 
->
->\-  Abraham Lincoln
 
 #### Problem
 The NIH was inundated with millions of COVID-19 specimens, thousands of requests to conduct research, and no way to support the surge.
