@@ -16,7 +16,8 @@
     .main-content {
         max-width: 960px;
         margin: 0 auto;
-        padding: 35px 45px 525px 45px;
+        padding: 35px 45px 175px 45px;
+        /*padding: 35px 45px 525px 45px;*/
         font-family: Nunito, sans-serif;
         font-weight: lighter;
     }
@@ -29,7 +30,8 @@
 
     @media screen and (min-width: 768px) {
         .main-content {
-            padding-bottom: 375px;
+            /*padding-bottom: 375px;*/
+            padding-bottom: 175px;
             padding-top: 35px;
         }
     }
