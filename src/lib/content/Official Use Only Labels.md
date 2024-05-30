@@ -1,6 +1,6 @@
 ---
 title: Official Use Only Labels
-description: By programmatically generating, displaying, printing and managing "Official Use Only" labels, we reduced manual work by 10 hours per week and increased overall data quality by 22%.
+description: By programmatically generating, displaying, printing and managing "Official Use Only" labels, this feature reduced manual work by about 10 hours per week and increased overall data quality by approximately 22%.
 for: for the Idaho National Laboratories
 role: Principal Developer
 date: September 2022
