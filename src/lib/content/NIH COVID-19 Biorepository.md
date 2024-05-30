@@ -1,8 +1,6 @@
 ---
 title: NIH COVID-19 Bio-repository
-description: A repository of COVID-19 specimen data, together with an approval process for COVID-19 studies, allowed
-  scientists to extract insights and trends from dashboards containing data for COVID-19 specimens and their associated
-  studies.
+description: A repository of COVID-19 specimen data, with an integrated approval process for COVID-19 studies, allowed scientists to extract insights and trends from dashboards containing data for COVID-19 specimens and their associated studies during the onset of the pandemic.
 for: for the National Institutes of Health
 role: Senior Software Engineer
 date: March 2020

@@ -1,6 +1,6 @@
 ---
 title: Official Use Only Labels
-description:  By programmatically generating, displaying, printing and managing "Official Use Only" labels in ServiceNow forms and portal widgets, the organization remained compliant through an enterprise transition to the ServiceNow platform.
+description: By programmatically generating, displaying, printing and managing "Official Use Only" labels, we reduced manual work by 10 hours per week and increased overall data quality by 22%.
 for: for the Idaho National Laboratories
 role: Principal Developer
 date: September 2022
