@@ -1,7 +1,7 @@
 ---
 title: FISMA ATO Streamlining Tool
 for: for the National Cancer Institute
-description: Through a combination of automation and process streamlining, this internal application decreased the time it takes to submit, review, and deliver a signed "Authority to Operate" by 82%.
+description: Through a combination of automation and process streamlining, this internal application reduced the time it takes to submit, review, and deliver a signed "Authority to Operate" by 82%.
 role: Senior Software Engineer
 uri: /project/fast
 duration: 18 months

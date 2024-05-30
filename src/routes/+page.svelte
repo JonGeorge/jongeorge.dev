@@ -34,7 +34,7 @@
         </p>
         <p class="block">
             My ability to translate technical solutions into plain language
-            for customers builds trust, aligns development with customer needs
+            builds trust, keeps development aligned with customer needs
             and expectations, and ensures the successful delivery
             of products and services.
         </p>
