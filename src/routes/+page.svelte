@@ -47,7 +47,7 @@
         </p>
     </div>
     <a href="#tools">
-        <div class="icon ">
+        <div class="icon">
             <i class="has-text-link fa-solid fa-chevron-down"></i>
         </div>
     </a>
@@ -121,9 +121,8 @@
 
     .icon {
         display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5vh;
+        margin: 0 auto;
+        height: 100px;
         animation: updown 3s ease infinite;
     }
 
@@ -133,7 +132,7 @@
         }
 
         70% {
-            transform: translateY(100%);
+            transform: translateY(30%);
         }
 
         100% {
