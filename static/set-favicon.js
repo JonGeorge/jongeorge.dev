@@ -3,6 +3,7 @@ const darkThemeFavicon = document.querySelector("link#dark-theme-favicon");
 
 const matcher = window.matchMedia('(prefers-color-scheme: light)');
 matcher.addEventListener('change', setFavicon);
+setFavicon();
 
 function setFavicon(){
     if (matcher.matches) {
