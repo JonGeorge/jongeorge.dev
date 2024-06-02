@@ -38,4 +38,9 @@
         font-weight: bold;
     }
 
+    .card-content {
+        padding-left: 17px;
+        padding-right: 0;
+    }
+
 </style>
