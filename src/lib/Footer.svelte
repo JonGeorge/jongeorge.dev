@@ -47,6 +47,13 @@
                     </a>
                 </div>
 
+                <div class="block">
+                    <a href="/fingerprint">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <span>Fingerprint</span>
+                    </a>
+                </div>
+
 <!--                <div class="block">-->
 <!--                    <a href="https://www.linkedin.com/in/jon-georgex/" target="_blank">-->
 <!--                        <span class="icon"><i class="fa-solid fa-comment"></i></span>-->
