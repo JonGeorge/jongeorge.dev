@@ -2,14 +2,8 @@ import {Button} from "@/components/Button";
 import {Separator} from "@/components/Separator";
 import {Card} from "@/components/Card";
 
-import robotIcon from '@/images/robot.svg';
-import serviceIcon from '@/images/hand-holding-dollar.svg';
-import rocketIcon from '@/images/rocket.svg';
-import dataIcon from '@/images/table-list.svg';
-import arrowTrendIcon from '@/images/arrow-trend-up.svg';
-import headsetIcon from '@/images/headset.svg';
-import jonGeorgeImage from '@/images/jongeorge.jpeg';
-import jonRoleImage from '@/images/jonsrole.svg';
+import { RobotIcon, ServiceIcon, RocketIcon, DataIcon, ArrowTrendUpIcon, HeadsetIcon, JonsRoleImage } from '@/components/Icons';
+import jonGeorgeImage from '../../../public/images/jongeorge.avif';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,7 +22,7 @@ export default function Home() {
                             <p>Software Engineer & Entrepreneur</p>
                         </div>
                         <Image height="360" src={jonGeorgeImage} alt="Profile photo"
-                               className="rounded-2xl m-auto" unoptimized/>
+                               className="rounded-2xl m-auto" unoptimized priority/>
                     </div>
                     <div className="flex lg:w-1/2 flex-col lg:pl-7">
                         <h1 className="text-2xl font-bold hidden lg:block">Hi, I’m
@@ -59,29 +53,28 @@ export default function Home() {
                 <div className="flex flex-wrap gap-7 m-auto max-w-7xl">
                     <Card title="Workflow Automation"
                           text="Saved a customer 15,000+ hours of manual work per year by introducing automated business rules."
-                          icon={robotIcon}/>
+                          icon={RobotIcon}/>
                     <Card title="Service Engineering"
                           text="Streamlined access to 1,000+ state and local government services for 330k users."
-                          icon={serviceIcon}/>
+                          icon={ServiceIcon}/>
                     <Card title="Digital Transformation"
                           text="Migrated 150+ users from a failing Microsoft Access database and shared spreadsheets to a robust and modern reporting system."
-                          icon={rocketIcon}/>
+                          icon={RocketIcon}/>
                     <Card title="Data Management"
                           text="Tracked metrics, automated approvals, and displayed dashboard insights for scientific research of 1M+ specimens."
-                          icon={dataIcon}/>
+                          icon={DataIcon}/>
                     <Card title="Process Optimization"
                           text="Reduced cybersecurity processing time by 82% for systems categorized as low risk."
-                          icon={arrowTrendIcon}/>
+                          icon={ArrowTrendUpIcon}/>
                     <Card title="Case Management"
                           text="Built and supported an integrated system that allows 100+ employees to work 5M+ cases."
-                          icon={headsetIcon}/>
+                          icon={HeadsetIcon}/>
                 </div>
                 <div className="mb-5"></div>
 
-                <Separator label={"My role"}/>
+                <Separator label={"My role"} />
 
-                <Image src={jonRoleImage} alt={"Diagram"} className="w-full lg:w-2/3 xl:w-1/2 ml-auto mr-auto mb-20"/>
-
+                <JonsRoleImage className="w-full lg:w-2/3 xl:w-1/2 ml-auto mr-auto mb-20"/>
                 <div className="flex flex-wrap gap-7 m-auto max-w-7xl">
                     <div className="flex flex-col flex-12/12 md:flex-2/12 gap-7">
                         <h2 className="text-2xl font-bold">Diplomatic operations</h2>
