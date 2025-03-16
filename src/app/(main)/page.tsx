@@ -65,7 +65,6 @@ export default function Home() {
                                         Get in touch
                                     </Button>
                                 </Link>
-
                         </div>
 
                     </div>
