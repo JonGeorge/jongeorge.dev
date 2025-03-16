@@ -67,11 +67,13 @@ function MobileNavLink(
     >,
 ) {
     return (
+        <motion.div whileHover={{scale:1.2, x: 75}}>
         <PopoverButton
             as={Link}
             className="block text-base/7 tracking-tight text-gray-300"
             {...props}
         />
+        </motion.div>
     )
 }
 
@@ -81,24 +83,18 @@ export function Header() {
             <nav>
                 <Container className="relative z-50 flex justify-between py-8">
 
-                    <div className="relative z-10 flex items-center gap-16">
+                    <div className="relative z-20 flex lg:order-2 items-center gap-16">
                         <Link href="/" aria-label="Home">
                             <Logo className="w-13"/>
                         </Link>
                     </div>
 
-
-
-
-
-
-
-                    <div className="flex items-center">
+                    <div className="flex lg:order-1 items-center">
                         <Popover className="">
                             {({open}) => (
                                 <>
                                     <PopoverButton
-                                        className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-200 p-2 hover:bg-gray-800/50 hover:stroke-gray-300 focus:not-data-focus:outline-hidden active:stroke-gray-400 cursor-pointer"
+                                        className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-200 p-2 hover:bg-neutral-800/50 hover:stroke-gray-300 focus:not-data-focus:outline-hidden active:stroke-gray-400 cursor-pointer"
                                         aria-label="Toggle site navigation"
                                     >
                                         {({open}) =>
@@ -109,6 +105,7 @@ export function Header() {
                                             )
                                         }
                                     </PopoverButton>
+
                                     <AnimatePresence initial={false}>
                                         {open && (
                                             <>
@@ -118,7 +115,7 @@ export function Header() {
                                                     initial={{opacity: 0}}
                                                     animate={{opacity: 1}}
                                                     exit={{opacity: 0}}
-                                                    className="fixed inset-0 z-0 bg-gray-900/50 backdrop-blur-xs"
+                                                    className="fixed inset-0 z-0 bg-neutral-950/50 backdrop-blur-xs"
                                                 />
                                                 <PopoverPanel
                                                     static
@@ -130,9 +127,9 @@ export function Header() {
                                                         y: -32,
                                                         transition: {duration: 0.2},
                                                     }}
-                                                    className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-900 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
+                                                    className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-neutral-800/75 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                                                 >
-                                                    <Container>
+                                                    <Container className="mb-7">
                                                     <div className="space-y-4">
                                                         <MobileNavLink
                                                             href="/#about">
@@ -140,7 +137,7 @@ export function Header() {
                                                         </MobileNavLink>
                                                         <MobileNavLink
                                                             href="/#accomplishments">
-                                                            Impact
+                                                            Accomplishments
                                                         </MobileNavLink>
                                                         <MobileNavLink
                                                             href="/#my_role">
@@ -149,7 +146,7 @@ export function Header() {
                                                     </div>
 
                                                     <div
-                                                        className="mt-8 flex  gap-4">
+                                                        className="mt-8 flex lg:hidden gap-4">
                                                         <Link
                                                             href="https://www.linkedin.com/in/jon-georgex/"
                                                             target="_blank"
@@ -177,13 +174,16 @@ export function Header() {
 
 
 
-                    <div className="hidden lg:flex items-center">
+                    <div className="hidden lg:flex order-3 items-center z-20">
                         <div className="flex gap-3">
 
-                            <motion.div whileHover={{rotate: 12}} transition={{
-                                type: "spring",
-                                stiffness: 750
-                            }}>
+                            <motion.div
+                                whileHover={{rotate: 12}}
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 750
+                                 }}
+                                >
                                 <Link
                                     href="https://www.linkedin.com/in/jon-georgex/"
                                     target="_blank" rel="noopener noreferrer">
