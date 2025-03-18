@@ -1,3 +1,5 @@
+'use client'
+
 import {Button} from "@/components/Button";
 import {Separator} from "@/components/Separator";
 import {Card} from "@/components/Card";
@@ -15,27 +17,30 @@ import jonGeorgeImage from '../../../public/images/jongeorge.avif';
 import Image from "next/image";
 import Link from "next/link";
 import {Container} from "@/components/Container";
-
+import AnimatedNumber from "@/components/AnimatedNumber";
+import {useState} from "react";
+import {motion} from "framer-motion";
 
 export default function Home() {
     return (
         <Container>
             <div
                 className="grid grid-rows-[20px_0fr_20px] min-h-screen lg:mt-16 font-[family-name:var(--font-geist-sans)]">
-                <main className="flex flex-col gap-8 mb-24 row-start-2 items-center sm:items-start">
+                <main
+                    className="flex flex-col gap-8 mb-24 row-start-2 items-center sm:items-start">
                     <div className="flex flex-wrap flex-col lg:flex-row " id="about">
 
-                            <div className="mb-4 lg:hidden">
-                                <h1 className="text-2xl font-bold ">
-                                    Hi, I’m Jon George
-                                </h1>
-                                <p>Software Engineer & Entrepreneur</p>
-                            </div>
+                        <div className="mb-4 lg:hidden">
+                            <h1 className="text-2xl font-bold ">
+                                Hi, I’m Jon George
+                            </h1>
+                            <p>Software Engineer & Entrepreneur</p>
+                        </div>
 
-                            <Image height="360" width="360" src={jonGeorgeImage}
-                                   alt="Profile photo"
-                                   className="rounded-2xl" unoptimized
-                                   priority/>
+                        <Image height="360" width="360" src={jonGeorgeImage}
+                               alt="Profile photo"
+                               className="rounded-2xl" unoptimized
+                               priority/>
 
                         <div className="flex lg:w-1/2 flex-col lg:pl-7">
                             <h1 className="text-2xl font-bold hidden lg:block">Hi,
@@ -46,28 +51,35 @@ export default function Home() {
                             <p className="mt-7 lg:max-w-full ">
                                 I design and build software products that automate
                                 processes, boost enterprise productivity, and harness
-                                the
-                                power of data for decision making.<br/><br/>
+                                the power of data for decision making.<br/><br/>
 
-                                From rapid prototyping to polished final products, I
-                                deliver craftsmanship that brings ideas to life using
-                                a
-                                proactive and calculated approach.<br/><br/>
+                                From product strategy, to rapid prototyping, to
+                                polished final products, I deliver craftsmanship that
+                                brings ideas to life using a proactive and calculated
+                                approach.<br/><br/>
 
                                 If you believe we’d work well together, let’s
                                 connect!<br/><br/>
                             </p>
 
-                                <Link href="https://www.linkedin.com/in/jon-georgex/"
-                                      target="_blank" rel="noopener noreferrer"
-                                      className="lg:w-1/3 md:w-1/2 w-full">
-                                    <Button className="w-full">
-                                        Get in touch
-                                    </Button>
-                                </Link>
+                            <Link href="https://www.linkedin.com/in/jon-georgex/"
+                                  target="_blank" rel="noopener noreferrer"
+                                  className="lg:w-1/3 md:w-1/2 w-full">
+                                <Button className="w-full">
+                                    Get in touch
+                                </Button>
+                            </Link>
                         </div>
 
                     </div>
+                    <Separator label={""}/>
+
+                    <motion.div >
+                        <AnimatedNumber value={100}/>
+                    </motion.div>
+
+                    {/*<Button onClick={() => setValue(value+10583)}>+100</Button>*/}
+                    <Separator label={"Experience"}/>
                     <Separator label={"Accomplishments"}/>
 
                     <div className="flex flex-wrap gap-7 m-auto max-w-7xl">

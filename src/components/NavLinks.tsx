@@ -1,13 +1,9 @@
 'use client'
 
-import { useRef, useState } from 'react'
 import Link from 'next/link'
 import { AnimatePresence, motion } from 'framer-motion'
 
 export function NavLinks() {
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
-    const timeoutRef = useRef<number | null>(null)
-
     return [
         ['About', '/#about'],
         ['Accomplishments', '/#accomplishments'],
