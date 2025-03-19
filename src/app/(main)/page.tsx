@@ -18,8 +18,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {Container} from "@/components/Container";
 import AnimatedNumber from "@/components/AnimatedNumber";
-import {useState} from "react";
-import {motion} from "framer-motion";
 
 export default function Home() {
     return (
@@ -28,10 +26,10 @@ export default function Home() {
                 className="grid grid-rows-[20px_0fr_20px] min-h-screen lg:mt-16 font-[family-name:var(--font-geist-sans)]">
                 <main
                     className="flex flex-col gap-8 mb-24 row-start-2 items-center sm:items-start">
-                    <div className="flex flex-wrap flex-col lg:flex-row " id="about">
+                    <div className="flex flex-wrap flex-col lg:flex-row" id="about">
 
                         <div className="mb-4 lg:hidden">
-                            <h1 className="text-2xl font-bold ">
+                            <h1 className="text-3xl font-bold ">
                                 Hi, I’m Jon George
                             </h1>
                             <p>Software Engineer & Entrepreneur</p>
@@ -39,11 +37,11 @@ export default function Home() {
 
                         <Image height="360" width="360" src={jonGeorgeImage}
                                alt="Profile photo"
-                               className="rounded-2xl" unoptimized
+                               className="rounded-2xl h-[360px]" unoptimized
                                priority/>
 
                         <div className="flex lg:w-1/2 flex-col lg:pl-7">
-                            <h1 className="text-2xl font-bold hidden lg:block">Hi,
+                            <h1 className="text-3xl mb-2 hidden lg:block">Hi,
                                 I’m
                                 Jon George</h1>
                             <p className="hidden lg:block">Software Engineer &
@@ -70,15 +68,20 @@ export default function Home() {
                                 </Button>
                             </Link>
                         </div>
-
                     </div>
-                    <Separator label={""}/>
+                    
+                    <div className="flex flex-col w-full mt-48 sm:items-center">
+                        <h1 className="text-3xl mb-2">Measurable, <span className="whitespace-nowrap">real-world impact</span></h1>
+                        <div className="sm:text-center">My childhood dream was to make a positive difference in the world. <span className="whitespace-nowrap">Here's how it's going.</span></div>
+                    </div>
 
-                    <motion.div >
-                        <AnimatedNumber value={100}/>
-                    </motion.div>
+                    <div className="flex flex-col md:flex-row w-full m-auto ">
+                        <AnimatedNumber value={332} message="automation scripts written"/>
+                        <AnimatedNumber value={14} message="enterprise applications/systems delivered"/>
+                        <AnimatedNumber prefix="$" value={9} postfix="M" message="saved across all customers"/>
+                        <AnimatedNumber value={6} message="government agencies served"/>
+                    </div>
 
-                    {/*<Button onClick={() => setValue(value+10583)}>+100</Button>*/}
                     <Separator label={"Experience"}/>
                     <Separator label={"Accomplishments"}/>
 
