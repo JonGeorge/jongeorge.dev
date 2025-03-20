@@ -66,10 +66,10 @@ function MobileNavLink(
     >,
 ) {
     return (
-        <motion.div whileHover={{scale:1.2, x: 75}}>
+        <motion.div whileHover={{x: 10}}>
         <PopoverButton
             as={Link}
-            className="block text-base/7 tracking-tight text-gray-300"
+            className="block text-base/7 tracking-tight text-gray-300 w-fit"
             {...props}
         />
         </motion.div>
@@ -129,7 +129,7 @@ export function Header() {
                                                     className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-neutral-800/75 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
                                                 >
                                                     <Container className="mb-7">
-                                                    <div className="space-y-4">
+                                                    <div className="space-y-4 w-fit">
                                                         <MobileNavLink
                                                             href="/">
                                                             Home
