@@ -21,7 +21,6 @@ import AnimatedNumber from "@/components/AnimatedNumber";
 import CACILogo from "@/app/public/CACI_International_logo.svg";
 import HowardCountyLogo from "@/app/public/howard county md logo.svg";
 import ICFLogo from "@/app/public/ICF logo.svg";
-import RBRLogo from "@/app/public/rbr-tech_logo_website_graphic-anti-alias.avif"
 import NIHLogo from "@/app/public/nih-logo-white.png";
 import USSFLogo from "@/app/public/Seal_of_the_United_States_Space_Force.svg";
 import USAFLogo
@@ -136,25 +135,25 @@ export default function Home() {
                         <Separator label={"Previous work"}/>
                         <div className="grid grid-cols-3 gap-16 items-center mb-24">
                             <Image src={ICFLogo} alt="ICF logo" width="90"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                             <Image src={CACILogo} alt="CACI logo" width="120"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                             <Image src={TeamLogicLogo} alt="TeamlogicIT logo"
                                    width="130"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                             <Image src={NIHLogo} alt="NIH logo"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                             <Image src={HowardCountyLogo} alt="Howard County logo"
                                    width="300"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                             <Image src={INLLogo} alt="INL logo" width="300"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                             <Image src={DODLogo} alt="DOD seal" width="200"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                             <Image src={USAFLogo} alt="USAF seal" width="200"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                             <Image src={USSFLogo} alt="USSF seal" width="200"
-                                   className="sm:mx-auto"/>
+                                   className="sm:mx-auto" unoptimized/>
                         </div>
                         </Container>
                     </div>

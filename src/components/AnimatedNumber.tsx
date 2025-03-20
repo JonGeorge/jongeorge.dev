@@ -2,7 +2,6 @@
 
 import {
     motion,
-    useAnimation,
     useInView,
     useSpring,
     useTransform
@@ -17,12 +16,12 @@ type AnimatedNumberProps = {
 }
 
 export default function AnimatedNumber({value, message, prefix, postfix}: AnimatedNumberProps) {
-    let [newValue, setNewValue] = useState(value > 10000? (value - (value * .05)) : 0);
+    const [newValue, setNewValue] = useState(value > 10000? (value - (value * .05)) : 0);
     const ref = useRef(null);
     const inView = useInView(ref, {once: true});
 
-    let spring = useSpring(newValue, {mass: 0.8, stiffness: 125, damping: 50});
-    let display = useTransform(spring, (current) =>
+    const spring = useSpring(newValue, {mass: 0.8, stiffness: 125, damping: 50});
+    const display = useTransform(spring, (current) =>
        `${prefix ? prefix : ""}${Math.round(current).toLocaleString()}${postfix ? postfix : ""}`
     )
 
