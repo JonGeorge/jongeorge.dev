@@ -1,97 +1,210 @@
+'use client'
+
 import {Button} from "@/components/Button";
 import {Separator} from "@/components/Separator";
 import {Card} from "@/components/Card";
 
-import { RobotIcon, ServiceIcon, RocketIcon, DataIcon, ArrowTrendUpIcon, HeadsetIcon, JonsRoleImage } from '@/components/Icons';
+import {
+    RobotIcon,
+    ServiceIcon,
+    RocketIcon,
+    DataIcon,
+    ArrowTrendUpIcon,
+    HeadsetIcon,
+    JonsRoleImage
+} from '@/components/Icons';
 import jonGeorgeImage from '../../../public/images/jongeorge.avif';
 import Image from "next/image";
 import Link from "next/link";
-
+import {Container} from "@/components/Container";
+import AnimatedNumber from "@/components/AnimatedNumber";
+import CACILogo from "@/app/public/CACI_International_logo.svg";
+import HowardCountyLogo from "@/app/public/howard county md logo.svg";
+import ICFLogo from "@/app/public/ICF logo.svg";
+import NIHLogo from "@/app/public/nih-logo-white.png";
+import USSFLogo from "@/app/public/Seal_of_the_United_States_Space_Force.svg";
+import USAFLogo
+    from "@/app/public/Seal_of_the_United_States_Department_of_the_Air_Force.svg";
+import DODLogo
+    from "@/app/public/Seal_of_the_United_States_Department_of_Defense.svg";
+import INLLogo from "@/app/public/inl3.png";
+import TeamLogicLogo from "@/app/public/team-logic-it-1.svg";
 
 export default function Home() {
     return (
-        <div
-            className="grid grid-rows-[20px_0fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 md:gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <main
-                className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
-            >
-                <div className="flex flex-wrap m-auto items-center" id="about">
-                    <div className="lg:w-1/3">
+            <div
+                className="grid grid-rows-[20px_0fr_20px] min-h-screen lg:mt-16 font-[family-name:var(--font-geist-sans)]">
+                <main
+                    className="flex flex-col gap-8 mb-24 row-start-2 items-center sm:items-start">
+                   <Container>
+                    <div className="flex flex-wrap flex-col lg:flex-row" id="about">
+
                         <div className="mb-4 lg:hidden">
-                            <h1 className="text-2xl font-bold ">Hi, I’m Jon George</h1>
+                            <h1 className="text-3xl font-bold ">
+                                Hi, I’m Jon George
+                            </h1>
                             <p>Software Engineer & Entrepreneur</p>
                         </div>
-                        <Image height="360" src={jonGeorgeImage} alt="Profile photo"
-                               className="rounded-2xl m-auto" unoptimized priority/>
+
+                        <Image height="360" width="360" src={jonGeorgeImage}
+                               alt="Profile photo"
+                               className="rounded-2xl h-[360px]" unoptimized
+                               priority/>
+
+                        <div className="flex lg:w-1/2 flex-col lg:pl-7">
+                            <h1 className="text-4xl mb-2 hidden lg:block">Hi,
+                                I’m
+                                Jon George</h1>
+                            <p className="hidden text-lg lg:block">Software Engineer
+                                &
+                                Entrepreneur</p>
+                            <p className="mt-7 text-lg lg:max-w-full ">
+                                I design and build software products that automate
+                                processes, boost enterprise productivity, and harness
+                                the power of data for decision making.<br/><br/>
+
+                                From product strategy, to rapid prototyping, to
+                                polished final products, I deliver craftsmanship that
+                                brings ideas to life using a proactive and calculated
+                                approach.<br/><br/>
+
+                                If you believe we’d work well together, let’s
+                                connect!<br/><br/>
+                            </p>
+
+                            <Link href="https://www.linkedin.com/in/jon-georgex/"
+                                  target="_blank" rel="noopener noreferrer"
+                                  className="lg:w-1/3 md:w-1/2 w-full">
+                                <Button className="w-full">
+                                    <span className="text-lg">Get in touch</span>
+                                </Button>
+                            </Link>
+                        </div>
                     </div>
-                    <div className="flex lg:w-1/2 flex-col lg:pl-7">
-                        <h1 className="text-2xl font-bold hidden lg:block">Hi, I’m
-                            Jon George</h1>
-                        <p className="hidden lg:block">Software Engineer &
-                            Entrepreneur</p>
-                        <p className="mt-4">
-                            I design and build software products that automate
-                            processes, boost enterprise productivity, and harness the
-                            power of data for decision making.<br/><br/>
+                   </Container>
 
-                            From rapid prototyping to polished final products, I
-                            deliver craftsmanship that brings ideas to life using a
-                            proactive and calculated approach.<br/><br/>
-
-                            If you believe we’d work well together, let’s
-                            connect!<br/><br/>
-                        </p>
-                        <Button className="lg:w-1/3 md:w-1/2 w-full">
-                            <Link href="https://www.linkedin.com/in/jon-georgex/" target="_blank" rel="noopener noreferrer">Get in
-                                touch</Link>
-                        </Button>
-                    </div>
-
-                </div>
-                <Separator label={"Accomplishments"}/>
-
-                <div className="flex flex-wrap gap-7 m-auto max-w-7xl">
-                    <Card title="Workflow Automation"
-                          text="Saved a customer 15,000+ hours of manual work per year by introducing automated business rules."
-                          icon={RobotIcon}/>
-                    <Card title="Service Engineering"
-                          text="Streamlined access to 1,000+ state and local government services for 330k users."
-                          icon={ServiceIcon}/>
-                    <Card title="Digital Transformation"
-                          text="Migrated 150+ users from a failing Microsoft Access database and shared spreadsheets to a robust and modern reporting system."
-                          icon={RocketIcon}/>
-                    <Card title="Data Management"
-                          text="Tracked metrics, automated approvals, and displayed dashboard insights for scientific research of 1M+ specimens."
-                          icon={DataIcon}/>
-                    <Card title="Process Optimization"
-                          text="Reduced cybersecurity processing time by 82% for systems categorized as low risk."
-                          icon={ArrowTrendUpIcon}/>
-                    <Card title="Case Management"
-                          text="Built and supported an integrated system that allows 100+ employees to work 5M+ cases."
-                          icon={HeadsetIcon}/>
-                </div>
-                <div className="mb-5"></div>
-
-                <Separator label={"My role"} />
-
-                <JonsRoleImage className="w-full lg:w-2/3 xl:w-1/2 ml-auto mr-auto mb-20"/>
-                <div className="flex flex-wrap gap-7 m-auto max-w-7xl">
-                    <div className="flex flex-col flex-12/12 md:flex-2/12 gap-7">
-                        <h2 className="text-2xl font-bold">Diplomatic operations</h2>
-                        <p>Most importantly, I believe in treating everyone with respect and navigating situations with tact, consideration, and empathy for all.</p>
-                    </div>
-                    <div className="flex flex-col flex-12/12 md:flex-2/12 gap-7">
-                        <h2 className="text-2xl font-bold">High-stakes delivery</h2>
-                        <p>When the stakes are high, the pressure is on, and stakeholders want a high likelihood of success, I provide the expertise and focus needed to deliver results.</p>
-                    </div>
-                    <div className="flex flex-col flex-12/12 md:flex-2/12 gap-7">
-                        <h2 className="text-2xl font-bold">Flexible approach</h2>
-                        <p>I read and write code just as well as I strategize, create a deck, and present to the C-Suite. This ability to fill gaps where they are needed is a force for good on any team.</p>
+                    <Container>
+                    <div id="impact" className="flex flex-col w-full mt-48 sm:items-center">
+                        <h1 className="text-4xl mb-2">Measurable, <span
+                            className="whitespace-nowrap">real-world impact</span>
+                        </h1>
+                        {/*<div className="sm:text-center">Progress toward making a*/}
+                        {/*    positive difference in the world.*/}
+                        {/*</div>*/}
                     </div>
 
-                </div>
+                    <div className="flex flex-col md:flex-row w-full mx-auto mb-24">
+                        <AnimatedNumber value={332}
+                                        message="automation scripts written"/>
+                        <AnimatedNumber value={14}
+                                        message="enterprise applications delivered"/>
+                        <AnimatedNumber prefix="$" value={9} postfix="M"
+                                        message="saved across all customers"/>
+                        <AnimatedNumber value={6}
+                                        message="government agencies served"/>
+                    </div>
 
-            </main>
-        </div>
+                    {/*<Separator label={"Accomplishments"}/>*/}
+
+
+
+                        <div className="flex flex-wrap gap-7 m-auto max-w-7xl mb-24">
+                            <Card title="Workflow Automation"
+                                  text="Saved a customer 15,000+ hours of manual work per year by introducing automated business rules."
+                                  icon={RobotIcon}/>
+                            <Card title="Service Engineering"
+                                  text="Streamlined access to 1,000+ state and local government services for 330k users."
+                                  icon={ServiceIcon}/>
+                            <Card title="Digital Transformation"
+                                  text="Migrated 150+ users from a failing Microsoft Access database and shared spreadsheets to a robust and modern reporting system."
+                                  icon={RocketIcon}/>
+                            <Card title="Data Management"
+                                  text="Tracked metrics, automated approvals, and displayed dashboard insights for scientific research of 1M+ specimens."
+                                  icon={DataIcon}/>
+                            <Card title="Process Optimization"
+                                  text="Reduced cybersecurity processing time by 82% for systems categorized as low risk."
+                                  icon={ArrowTrendUpIcon}/>
+                            <Card title="Case Management"
+                                  text="Built and supported an integrated system that allows 100+ employees to work 5M+ cases."
+                                  icon={HeadsetIcon}/>
+                        </div>
+                    </Container>
+
+                    <div className="bg-neutral-900 w-full">
+                        <Container>
+                        <Separator label={"Previous work"}/>
+                        <div className="grid grid-cols-3 gap-16 items-center mb-24">
+                            <Image src={ICFLogo} alt="ICF logo" width="90"
+                                   className="sm:mx-auto" unoptimized/>
+                            <Image src={CACILogo} alt="CACI logo" width="120"
+                                   className="sm:mx-auto" unoptimized/>
+                            <Image src={TeamLogicLogo} alt="TeamlogicIT logo"
+                                   width="130"
+                                   className="sm:mx-auto" unoptimized/>
+                            <Image src={NIHLogo} alt="NIH logo"
+                                   className="sm:mx-auto" unoptimized/>
+                            <Image src={HowardCountyLogo} alt="Howard County logo"
+                                   width="300"
+                                   className="sm:mx-auto" unoptimized/>
+                            <Image src={INLLogo} alt="INL logo" width="300"
+                                   className="sm:mx-auto" unoptimized/>
+                            <Image src={DODLogo} alt="DOD seal" width="200"
+                                   className="sm:mx-auto" unoptimized/>
+                            <Image src={USAFLogo} alt="USAF seal" width="200"
+                                   className="sm:mx-auto" unoptimized/>
+                            <Image src={USSFLogo} alt="USSF seal" width="200"
+                                   className="sm:mx-auto" unoptimized/>
+                        </div>
+                        </Container>
+                    </div>
+
+
+
+                    {/*<Separator label={"Guiding Principles"}/>*/}
+
+                    {/*<Separator label={"My role"}/>*/}
+                    <div id="my_role" className="content-center w-full">
+                    <Container>
+                        <h1 className="text-4xl mb-2 text-center mt-24">
+                            {/*A rare blend of skill, talent, focus, and drive*/}
+                            A rare blend of talent and drive
+                        </h1>
+                    <JonsRoleImage
+                        className="w-full md:w-[36rem] xl:w-[42rem] mx-auto mb-8"/>
+                    </Container>
+                    </div>
+
+                    <Container>
+                    <div className="flex flex-wrap gap-7 m-auto max-w-7xl">
+                        <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
+                            <h2 className="text-2xl font-bold">Empathetic perspective</h2>
+                            <p className="text-lg">Most importantly, I believe in
+                                treating everyone with
+                                respect and navigating situations with tact,
+                                consideration, and empathy for all.</p>
+                        </div>
+                        <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
+                            <h2 className="text-2xl font-bold">High-stakes
+                                delivery</h2>
+                            <p className="text-lg">When the stakes are high, the
+                                pressure is on, and
+                                stakeholders want a high likelihood of success, I
+                                provide the expertise and focus needed to deliver
+                                results.</p>
+                        </div>
+                        <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
+                            <h2 className="text-2xl font-bold">Flexible approach</h2>
+                            <p className="text-lg">I read and write code just as well
+                                as I strategize,
+                                create a deck, and present to the C-Suite. This
+                                ability to fill gaps where they are needed is a force
+                                for good on any team.</p>
+                        </div>
+
+                    </div>
+                    </Container>
+
+                </main>
+            </div>
     );
 }
