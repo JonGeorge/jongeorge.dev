@@ -39,7 +39,7 @@ export default function AnimatedNumber({value, message, prefix, postfix}: Animat
                 <motion.div ref={ref} className="mb-4 mx-auto text-6xl">
                     {display}
                 </motion.div>
-                <span className="text-center">
+                <span className="text-center text-lg mx-4">
                 {message}
                 </span>
             </div>

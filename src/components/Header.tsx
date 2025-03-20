@@ -11,7 +11,6 @@ import {AnimatePresence, motion} from 'framer-motion'
 
 import {Container} from '@/components/Container'
 import {Logo} from '@/components/Logo'
-import {NavLinks} from '@/components/NavLinks'
 import React from "react";
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -132,12 +131,16 @@ export function Header() {
                                                     <Container className="mb-7">
                                                     <div className="space-y-4">
                                                         <MobileNavLink
+                                                            href="/">
+                                                            Home
+                                                        </MobileNavLink>
+                                                        <MobileNavLink
                                                             href="/#about">
                                                             About
                                                         </MobileNavLink>
                                                         <MobileNavLink
-                                                            href="/#accomplishments">
-                                                            Accomplishments
+                                                            href="/#customers">
+                                                            Customers
                                                         </MobileNavLink>
                                                         <MobileNavLink
                                                             href="/#my_role">
