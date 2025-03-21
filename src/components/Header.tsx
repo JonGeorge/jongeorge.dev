@@ -147,6 +147,10 @@ export function Header() {
                                                             Previous work
                                                         </MobileNavLink>
                                                         <MobileNavLink
+                                                            href="/#customers">
+                                                            Customers
+                                                        </MobileNavLink>
+                                                        <MobileNavLink
                                                             href="/#my_role">
                                                             My Role
                                                         </MobileNavLink>
