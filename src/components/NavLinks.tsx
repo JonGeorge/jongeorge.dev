@@ -5,20 +5,22 @@ import { motion } from 'framer-motion'
 
 export function NavLinks() {
     return [
+        ['Home', '/'],
+        ['Impact', '/#impact'],
         ['About', '/#about'],
-        ['Accomplishments', '/#accomplishments'],
+        ['Previous work', '/#previous_work'],
         ['My Role', '/#my_role']
     ].map(([label, href], index) => (
-        <motion.div key={"nav-link" + index} className="flex  ">
+        <div key={"nav-link" + index} className="flex">
         <Link
             key={label}
             href={href}
-            className="relative -mx-3 -my-2 px-3 py-2 text-md text-gray-100"
+            className="relative text-md text-gray-100 text-center"
         >
             <motion.div whileHover={{scale: 1.1}} className="relative z-10 px-5">{label}</motion.div>
         </Link>
 
-        <span className={"pl-5 pr-5"}>/</span>
-    </motion.div>
+        {/*<span className={""}>/</span>*/}
+    </div>
     ))
 }
