@@ -18,13 +18,6 @@ export function Footer() {
                         </div>
 
                     </div>
-                    <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
-
-                            <nav className="flex">
-                                <NavLinks />
-                            </nav>
-
-                    </div>
                 </div>
                 <div className="flex flex-col items-center border-t border-gray-200 pt-8 pb-12 md:flex-row-reverse md:justify-between md:pt-6">
 

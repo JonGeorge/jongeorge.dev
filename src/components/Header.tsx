@@ -189,10 +189,12 @@ export function Header() {
                         <div className="flex gap-3">
 
                             <motion.div
-                                whileHover={{rotate: 12}}
+                                whileHover={{rotate: 5, scale: 1.2}}
                                 transition={{
                                     type: "spring",
-                                    stiffness: 750
+                                    stiffness: 750,
+                                    duration: 3,
+                                    delay: 0.1
                                  }}
                                 >
                                 <Link
@@ -203,10 +205,14 @@ export function Header() {
                             </motion.div>
 
 
-                            <motion.div whileHover={{rotate: 12}} transition={{
-                                type: "spring",
-                                stiffness: 750
-                            }}>
+                            <motion.div
+                                whileHover={{rotate: 5, scale: 1.2}}
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 750,
+                                            duration: 3,
+                                            delay: 0.1
+                                        }}>
                                 <Link href="https://github.com/JonGeorge"
                                       target="_blank" rel="noopener noreferrer">
                                     <GitHubIcon className="h-7 w-7"/>

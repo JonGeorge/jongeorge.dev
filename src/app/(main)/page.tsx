@@ -84,14 +84,9 @@ export default function Home() {
                    </Container>
 
                     <Container>
-                    <div id="impact" className="flex flex-col w-full mt-48 sm:items-center">
-                        <h1 className="text-4xl mb-2">Measurable, <span
-                            className="whitespace-nowrap">real-world impact</span>
-                        </h1>
-                        {/*<div className="sm:text-center">Progress toward making a*/}
-                        {/*    positive difference in the world.*/}
-                        {/*</div>*/}
-                    </div>
+                        <div className="flex flex-col mt-40 mb-8 items-center">
+                            <h1 className="text-4xl mb-2">Career stats</h1>
+                        </div>
 
                     <div className="flex flex-col md:flex-row w-full mx-auto mb-24">
                         <AnimatedNumber value={332}
@@ -106,7 +101,11 @@ export default function Home() {
 
                     {/*<Separator label={"Accomplishments"}/>*/}
 
-
+                        <div id="impact" className="flex flex-col w-full mt-48 mb-16 sm:items-center">
+                            <h1 className="text-4xl mb-2">Measurable, <span
+                                className="whitespace-nowrap">real-world impact</span>
+                            </h1>
+                        </div>
 
                         <div className="flex flex-wrap gap-7 m-auto max-w-7xl mb-24">
                             <Card title="Workflow Automation"
