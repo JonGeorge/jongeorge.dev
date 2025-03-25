@@ -33,7 +33,7 @@ import TeamLogicLogo from "@/app/public/team-logic-it-1.svg";
 export default function Home() {
     return (
             <div
-                className="grid grid-rows-[20px_0fr_20px] min-h-screen lg:mt-16 font-[family-name:var(--font-geist-sans)]">
+                className="grid grid-rows-[20px_0fr_20px] min-h-screen mt-28 font-[family-name:var(--font-geist-sans)]">
                 <main
                     className="flex flex-col gap-8 mb-24 row-start-2 items-center sm:items-start">
                    <Container>

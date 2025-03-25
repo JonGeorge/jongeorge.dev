@@ -11,18 +11,22 @@ import {AnimatePresence, motion} from 'framer-motion'
 
 import {Container} from '@/components/Container'
 import {Logo} from '@/components/Logo'
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     return (
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white" {...props}>
             <path
-                d="M5 6h14M5 18h14M5 12h14"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
+                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
         </svg>
+        // <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+        //     <path
+        //         d="M5 6h14M5 18h14M5 12h14"
+        //         strokeWidth={2}
+        //         strokeLinecap="round"
+        //         strokeLinejoin="round"
+        //     />
+        // </svg>
     )
 }
 
@@ -38,6 +42,16 @@ function ChevronUpIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         </svg>
     )
 }
+
+function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="white" {...props}>
+            <path
+                d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/>
+        </svg>
+    )
+}
+
 
 function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     return (
@@ -67,22 +81,34 @@ function MobileNavLink(
 ) {
     return (
         <motion.div whileHover={{x: 10}}>
-        <PopoverButton
-            as={Link}
-            className="block text-base/7 tracking-tight text-gray-300 w-fit"
-            {...props}
-        />
+            <PopoverButton
+                as={Link}
+                className="block text-base/7 tracking-tight text-gray-300 w-fit"
+                {...props}
+            />
         </motion.div>
     )
 }
 
 export function Header() {
-    return (
-        <header>
-            <nav>
-                <Container className="relative z-50 flex justify-between py-8">
+    const [scrolled, setScrolled] = useState<boolean>(false);
 
-                    <div className="relative z-20 flex lg:order-2 items-center gap-16">
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [])
+
+    return (
+        <header
+            className={`fixed top-0 left-0 right-0 transition-all duration-500 ${scrolled ? "bg-neutral-950/90 py-2" : "bg-transparent py-4"}`}>
+            <nav>
+                <Container className="relative z-50 flex justify-between">
+
+                    <div className="relative z-20 flex lg:order-2 items-center gap-16 pt-4">
                         <Link href="/" aria-label="Home">
                             <Logo className="w-13"/>
                         </Link>
@@ -93,15 +119,20 @@ export function Header() {
                             {({open}) => (
                                 <>
                                     <PopoverButton
-                                        className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-200 p-2 hover:bg-neutral-800/50 hover:stroke-gray-300 focus:not-data-focus:outline-hidden active:stroke-gray-400 cursor-pointer"
-                                        aria-label="Toggle site navigation"
-                                    >
-                                        {({open}) =>
-                                            open ? (
-                                                <ChevronUpIcon className="h-8 w-8"/>
-                                            ) : (
-                                                <MenuIcon className="h-8 w-8"/>
-                                            )
+                                        className="relative z-20 -m-2 inline-flex items-center rounded-lg stroke-gray-200 p-2 focus:not-data-focus:outline-hidden active:stroke-gray-400 cursor-pointer"
+                                        aria-label="Toggle site navigation">
+
+                                        {
+                                            ({open}) =>
+                                                open ?
+                                                    <motion.div initial={{rotate: 0}} animate={{rotate: open ? 90 : 0}}
+                                                                transition={{duration: 0.3}}>
+                                                        <XIcon className="h-6 w-6"/>
+                                                    </motion.div> :
+                                                    <motion.div initial={{rotate: 0}} animate={{rotate: open ? 90 : 0}}
+                                                                transition={{duration: 0.3}}>
+                                                        <MenuIcon className="h-6 w-6"/>
+                                                    </motion.div>
                                         }
                                     </PopoverButton>
 
@@ -126,53 +157,53 @@ export function Header() {
                                                         y: -32,
                                                         transition: {duration: 0.2},
                                                     }}
-                                                    className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-neutral-800/75 px-6 pt-32 pb-6 shadow-2xl shadow-gray-900/20"
+                                                    className="absolute top-15 inset-x-0 z-0 origin-top rounded-b-2xl bg-neutral-950/90 px-6 pt-10 pb-6 shadow-2xl shadow-gray-900/20"
                                                 >
                                                     <Container className="mb-7">
-                                                    <div className="space-y-4 w-fit">
-                                                        <MobileNavLink
-                                                            href="/">
-                                                            Home
-                                                        </MobileNavLink>
-                                                        <MobileNavLink
-                                                            href="/#about">
-                                                            About
-                                                        </MobileNavLink>
-                                                        <MobileNavLink
-                                                            href="/#impact">
-                                                            Impact
-                                                        </MobileNavLink>
-                                                        <MobileNavLink
-                                                            href="/#previous_work">
-                                                            Previous work
-                                                        </MobileNavLink>
-                                                        <MobileNavLink
-                                                            href="/#customers">
-                                                            Customers
-                                                        </MobileNavLink>
-                                                        <MobileNavLink
-                                                            href="/#my_role">
-                                                            My Role
-                                                        </MobileNavLink>
-                                                    </div>
+                                                        <div className="space-y-4 w-fit">
+                                                            <MobileNavLink
+                                                                href="/">
+                                                                Home
+                                                            </MobileNavLink>
+                                                            <MobileNavLink
+                                                                href="/#about">
+                                                                About
+                                                            </MobileNavLink>
+                                                            <MobileNavLink
+                                                                href="/#impact">
+                                                                Impact
+                                                            </MobileNavLink>
+                                                            <MobileNavLink
+                                                                href="/#previous_work">
+                                                                Previous work
+                                                            </MobileNavLink>
+                                                            <MobileNavLink
+                                                                href="/#customers">
+                                                                Customers
+                                                            </MobileNavLink>
+                                                            <MobileNavLink
+                                                                href="/#my_role">
+                                                                My Role
+                                                            </MobileNavLink>
+                                                        </div>
 
-                                                    <div
-                                                        className="mt-8 flex lg:hidden gap-4">
-                                                        <Link
-                                                            href="https://www.linkedin.com/in/jon-georgex/"
-                                                            target="_blank"
-                                                            rel="noopener noreferrer">
-                                                            <LinkedInIcon
-                                                                className="h-7 w-7"/>
-                                                        </Link>
-                                                        <Link
-                                                            href="https://github.com/JonGeorge"
-                                                            target="_blank"
-                                                            rel="noopener noreferrer">
-                                                            <GitHubIcon
-                                                                className="h-7 w-7"/>
-                                                        </Link>
-                                                    </div>
+                                                        <div
+                                                            className="mt-8 flex lg:hidden gap-4">
+                                                            <Link
+                                                                href="https://www.linkedin.com/in/jon-georgex/"
+                                                                target="_blank"
+                                                                rel="noopener noreferrer">
+                                                                <LinkedInIcon
+                                                                    className="h-7 w-7"/>
+                                                            </Link>
+                                                            <Link
+                                                                href="https://github.com/JonGeorge"
+                                                                target="_blank"
+                                                                rel="noopener noreferrer">
+                                                                <GitHubIcon
+                                                                    className="h-7 w-7"/>
+                                                            </Link>
+                                                        </div>
                                                     </Container>
                                                 </PopoverPanel>
                                             </>
@@ -182,7 +213,6 @@ export function Header() {
                             )}
                         </Popover>
                     </div>
-
 
 
                     <div className="hidden lg:flex order-3 items-center z-20">
@@ -195,8 +225,8 @@ export function Header() {
                                     stiffness: 750,
                                     duration: 3,
                                     delay: 0.1
-                                 }}
-                                >
+                                }}
+                            >
                                 <Link
                                     href="https://www.linkedin.com/in/jon-georgex/"
                                     target="_blank" rel="noopener noreferrer">
@@ -207,12 +237,12 @@ export function Header() {
 
                             <motion.div
                                 whileHover={{rotate: 5, scale: 1.2}}
-                                        transition={{
-                                            type: "spring",
-                                            stiffness: 750,
-                                            duration: 3,
-                                            delay: 0.1
-                                        }}>
+                                transition={{
+                                    type: "spring",
+                                    stiffness: 750,
+                                    duration: 3,
+                                    delay: 0.1
+                                }}>
                                 <Link href="https://github.com/JonGeorge"
                                       target="_blank" rel="noopener noreferrer">
                                     <GitHubIcon className="h-7 w-7"/>
