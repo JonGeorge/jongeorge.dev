@@ -19,27 +19,6 @@ function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
             <path
                 d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
         </svg>
-        // <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-        //     <path
-        //         d="M5 6h14M5 18h14M5 12h14"
-        //         strokeWidth={2}
-        //         strokeLinecap="round"
-        //         strokeLinejoin="round"
-        //     />
-        // </svg>
-    )
-}
-
-function ChevronUpIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-    return (
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
-            <path
-                d="M17 14l-5-5-5 5"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-            />
-        </svg>
     )
 }
 
