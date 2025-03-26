@@ -1,6 +1,5 @@
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
-import { NavLinks } from '@/components/NavLinks'
 import React from "react";
 
 export function Footer() {
@@ -16,13 +15,6 @@ export function Footer() {
                                 <p className="mt-1 text-sm">Software Engineer & Entrepreneur</p>
                             </div>
                         </div>
-
-                    </div>
-                    <div className="group relative -mx-4 flex items-center self-stretch p-4 transition-colors sm:self-auto sm:rounded-2xl lg:mx-0 lg:self-auto lg:p-6">
-
-                            <nav className="flex">
-                                <NavLinks />
-                            </nav>
 
                     </div>
                 </div>

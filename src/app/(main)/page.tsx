@@ -11,7 +11,6 @@ import {
     DataIcon,
     ArrowTrendUpIcon,
     HeadsetIcon,
-    JonsRoleImage
 } from '@/components/Icons';
 import jonGeorgeImage from '../../../public/images/jongeorge.avif';
 import Image from "next/image";
@@ -32,11 +31,11 @@ import TeamLogicLogo from "@/app/public/team-logic-it-1.svg";
 
 export default function Home() {
     return (
-            <div
-                className="grid grid-rows-[20px_0fr_20px] min-h-screen lg:mt-16 font-[family-name:var(--font-geist-sans)]">
-                <main
-                    className="flex flex-col gap-8 mb-24 row-start-2 items-center sm:items-start">
-                   <Container>
+        <div
+            className="grid grid-rows-[20px_0fr_20px] min-h-screen mt-56 font-[family-name:var(--font-geist-sans)]">
+            <main
+                className="flex flex-col gap-8 mb-24 row-start-2 items-center sm:items-start">
+                <Container>
                     <div className="flex flex-wrap flex-col lg:flex-row" id="about">
 
                         <div className="mb-4 lg:hidden">
@@ -81,16 +80,11 @@ export default function Home() {
                             </Link>
                         </div>
                     </div>
-                   </Container>
+                </Container>
 
-                    <Container>
-                    <div id="impact" className="flex flex-col w-full mt-48 sm:items-center">
-                        <h1 className="text-4xl mb-2">Measurable, <span
-                            className="whitespace-nowrap">real-world impact</span>
-                        </h1>
-                        {/*<div className="sm:text-center">Progress toward making a*/}
-                        {/*    positive difference in the world.*/}
-                        {/*</div>*/}
+                <Container>
+                    <div className="flex flex-col mt-40 mb-8 items-center">
+                        <h1 className="text-4xl mb-2">Driven by results and outcomes</h1>
                     </div>
 
                     <div className="flex flex-col md:flex-row w-full mx-auto mb-24">
@@ -106,33 +100,37 @@ export default function Home() {
 
                     {/*<Separator label={"Accomplishments"}/>*/}
 
+                    <div id="impact" className="flex flex-col w-full mt-48 mb-16 sm:items-center">
+                        <h1 className="text-4xl mb-2">Measurable, <span
+                            className="whitespace-nowrap">real-world impact</span>
+                        </h1>
+                    </div>
 
+                    <div className="flex flex-wrap gap-7 m-auto max-w-7xl mb-24">
+                        <Card title="Workflow Automation"
+                              text="Saved a customer 15,000+ hours of manual work per year by introducing automated business rules."
+                              icon={RobotIcon}/>
+                        <Card title="Service Engineering"
+                              text="Streamlined access to 1,000+ state and local government services for 330k users."
+                              icon={ServiceIcon}/>
+                        <Card title="Digital Transformation"
+                              text="Migrated 150+ users from a failing Microsoft Access database and shared spreadsheets to a robust and modern reporting system."
+                              icon={RocketIcon}/>
+                        <Card title="Data Management"
+                              text="Tracked metrics, automated approvals, and displayed dashboard insights for scientific research of 1M+ specimens."
+                              icon={DataIcon}/>
+                        <Card title="Process Optimization"
+                              text="Reduced cybersecurity processing time by 82% for systems categorized as low risk."
+                              icon={ArrowTrendUpIcon}/>
+                        <Card title="Case Management"
+                              text="Built and supported an integrated system that allows 100+ employees to work 5M+ cases."
+                              icon={HeadsetIcon}/>
+                    </div>
+                </Container>
 
-                        <div className="flex flex-wrap gap-7 m-auto max-w-7xl mb-24">
-                            <Card title="Workflow Automation"
-                                  text="Saved a customer 15,000+ hours of manual work per year by introducing automated business rules."
-                                  icon={RobotIcon}/>
-                            <Card title="Service Engineering"
-                                  text="Streamlined access to 1,000+ state and local government services for 330k users."
-                                  icon={ServiceIcon}/>
-                            <Card title="Digital Transformation"
-                                  text="Migrated 150+ users from a failing Microsoft Access database and shared spreadsheets to a robust and modern reporting system."
-                                  icon={RocketIcon}/>
-                            <Card title="Data Management"
-                                  text="Tracked metrics, automated approvals, and displayed dashboard insights for scientific research of 1M+ specimens."
-                                  icon={DataIcon}/>
-                            <Card title="Process Optimization"
-                                  text="Reduced cybersecurity processing time by 82% for systems categorized as low risk."
-                                  icon={ArrowTrendUpIcon}/>
-                            <Card title="Case Management"
-                                  text="Built and supported an integrated system that allows 100+ employees to work 5M+ cases."
-                                  icon={HeadsetIcon}/>
-                        </div>
-                    </Container>
-
-                    <div className="bg-neutral-900 w-full">
-                        <Container>
-                        <Separator label={"Previous work"}/>
+                <div className="bg-neutral-900 w-full">
+                    <Container>
+                        <Separator label={"The teams I have supported"}/>
                         <div className="grid grid-cols-3 gap-16 items-center mb-24">
                             <Image src={ICFLogo} alt="ICF logo" width="90"
                                    className="sm:mx-auto" unoptimized/>
@@ -155,32 +153,15 @@ export default function Home() {
                             <Image src={USSFLogo} alt="USSF seal" width="200"
                                    className="sm:mx-auto" unoptimized/>
                         </div>
-                        </Container>
-                    </div>
-
-
-
-                    {/*<Separator label={"Guiding Principles"}/>*/}
-
-                    {/*<Separator label={"My role"}/>*/}
-                    <div id="my_role" className="content-center w-full">
-                    <Container>
-                        <h1 className="text-4xl mb-2 text-center mt-24">
-                            {/*A rare blend of skill, talent, focus, and drive*/}
-                            A rare blend of talent and drive
-                        </h1>
-                    <JonsRoleImage
-                        className="w-full md:w-[36rem] xl:w-[42rem] mx-auto mb-8"/>
                     </Container>
-                    </div>
+                </div>
 
-                    <Container>
-                    <div className="flex flex-wrap gap-7 m-auto max-w-7xl">
+                <Container>
+                    <div className="flex flex-wrap gap-7 m-auto  mt-24">
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
                             <h2 className="text-2xl font-bold">Empathetic perspective</h2>
                             <p className="text-lg">Most importantly, I believe in
-                                treating everyone with
-                                respect and navigating situations with tact,
+                                treating everyone with respect and navigating situations with tact,
                                 consideration, and empathy for all.</p>
                         </div>
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
@@ -200,11 +181,11 @@ export default function Home() {
                                 ability to fill gaps where they are needed is a force
                                 for good on any team.</p>
                         </div>
-
                     </div>
-                    </Container>
+                </Container>
+                {/*<Separator label={"Guiding Principles"}/>*/}
 
-                </main>
-            </div>
+            </main>
+        </div>
     );
 }
