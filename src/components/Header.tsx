@@ -145,24 +145,8 @@ export function Header() {
                                                                 Home
                                                             </MobileNavLink>
                                                             <MobileNavLink
-                                                                href="/#about">
-                                                                About
-                                                            </MobileNavLink>
-                                                            <MobileNavLink
-                                                                href="/#impact">
-                                                                Impact
-                                                            </MobileNavLink>
-                                                            <MobileNavLink
-                                                                href="/#previous_work">
-                                                                Previous work
-                                                            </MobileNavLink>
-                                                            <MobileNavLink
-                                                                href="/#customers">
-                                                                Customers
-                                                            </MobileNavLink>
-                                                            <MobileNavLink
-                                                                href="/#my_role">
-                                                                My Role
+                                                                href="/approach">
+                                                                My Approach
                                                             </MobileNavLink>
                                                         </div>
 
