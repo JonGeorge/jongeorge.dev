@@ -104,7 +104,7 @@ export function Header() {
                                         {
                                             ({open}) =>
                                                 open ?
-                                                    <motion.div initial={{rotate: 0}} animate={{rotate: open ? 90 : 0}}
+                                                    <motion.div initial={{rotate: 90}} animate={{rotate: open ? 180 : 90}}
                                                                 transition={{duration: 0.3}}>
                                                         <XIcon className="h-6 w-6"/>
                                                     </motion.div> :
