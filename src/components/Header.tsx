@@ -148,6 +148,10 @@ export function Header() {
                                                                 href="/approach">
                                                                 My Approach
                                                             </MobileNavLink>
+                                                            <MobileNavLink
+                                                                href="/principles">
+                                                                Guiding Principles
+                                                            </MobileNavLink>
                                                         </div>
 
                                                         <div
