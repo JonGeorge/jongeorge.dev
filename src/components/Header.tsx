@@ -59,7 +59,7 @@ function MobileNavLink(
     >,
 ) {
     return (
-        <motion.div whileHover={{x: 10}}>
+        <motion.div whileHover={{ scale: 1.1, fontWeight:"bold"}}>
             <PopoverButton
                 as={Link}
                 className="block text-base/7 tracking-tight text-gray-300 w-fit"
