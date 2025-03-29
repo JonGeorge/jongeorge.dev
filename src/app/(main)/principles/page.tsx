@@ -12,19 +12,19 @@ export default function Principles() {
                     <h1 className="text-2xl font-bold ">
                         Don&#39;t mop the ocean
                     </h1>
-                    <p className="text-lg mb-8 mt-4">It&#39;s easy to get lost in the details, chasing perfection where it isn&#39;t needed.  &#34;Don&#39;t mop the ocean&#34; means focusing your energy on the problems that truly matter and have the biggest impact.  Instead of endless tweaking, prioritize delivering
-                        value and solving real user needs first. Sometimes, a good enough solution, delivered quickly, is far more valuable than a flawless one that never sees the light of day.</p>
+                    <p className="text-lg mb-8 mt-4">It&#39;s easy to want to solve big problems - we are problem solvers and innovators.  &#34;Don&#39;t mop the ocean&#34; is a reminder to decompose big problems into smaller, more manageable ones. It means focusing your energy on things that truly matter. Prioritize delivering
+                        immediate value. Sometimes, a good enough solution, delivered quickly, is far more valuable than a more comprehensive one that never sees the light of day.</p>
 
                 <h1 className="text-2xl font-bold ">
                     Make it work, then make it neat
                 </h1>
                 <p className="text-lg mb-8 mt-4">Functionality is the foundation. &#34;Make it work then make it neat&#34; is a reminder to prioritize core functionality and get a working solution in users’ hands quickly. Polish and refinement are important, but they come after proving the concept
-                    and gathering feedback. Don&#39;t let the pursuit of beauty delay delivering a valuable tool.</p>
+                    and gathering feedback. Don&#39;t let the pursuit of beauty or perfection impede the delivery of a valuable tool.</p>
 
                 <h1 className="text-2xl font-bold ">
-                    Create momentum, sprint sparingly
+                    Create momentum, sprint strategically
                 </h1>
-                <p className="text-lg mb-8 mt-4">Progress is a marathon, not a series of frantic bursts. &#34;Build momentum, sprint sparingly&#34; encourages a sustainable pace with consistent progress. While focused bursts of effort have their place, long-term success demands a rhythm of steady
+                <p className="text-lg mb-8 mt-4">Progress is a marathon, not a series of frantic bursts. &#34;Create momentum, sprint strategically&#34; encourages a sustainable pace with consistent progress. While focused bursts of effort have their place, long-term success demands a rhythm of steady
                     advancement, avoiding burnout and maintaining a consistent flow of value.</p>
 
                 <h1 className="text-2xl font-bold ">
