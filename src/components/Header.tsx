@@ -59,7 +59,7 @@ function MobileNavLink(
     >,
 ) {
     return (
-        <motion.div whileHover={{ scale: 1.1, fontWeight:"bold"}}>
+        <motion.div whileHover={{fontWeight: "bold"}}>
             <PopoverButton
                 as={Link}
                 className="block text-base/7 tracking-tight text-gray-300 w-fit"
@@ -104,7 +104,8 @@ export function Header() {
                                         {
                                             ({open}) =>
                                                 open ?
-                                                    <motion.div initial={{rotate: 90}} animate={{rotate: open ? 180 : 90}}
+                                                    <motion.div initial={{rotate: 90}}
+                                                                animate={{rotate: open ? 180 : 90}}
                                                                 transition={{duration: 0.3}}>
                                                         <XIcon className="h-6 w-6"/>
                                                     </motion.div> :
@@ -140,36 +141,67 @@ export function Header() {
                                                 >
                                                     <Container className="mb-7">
                                                         <div className="space-y-4 w-fit">
-                                                            <MobileNavLink
-                                                                href="/">
-                                                                Home
-                                                            </MobileNavLink>
-                                                            <MobileNavLink
-                                                                href="/approach">
-                                                                My Approach
-                                                            </MobileNavLink>
-                                                            <MobileNavLink
-                                                                href="/principles">
-                                                                Guiding Principles
-                                                            </MobileNavLink>
+                                                            {[
+                                                                {menuName: "Home", href: "/"},
+                                                                {menuName: "My Approach", href: "/approach"},
+                                                                {menuName: "Guiding Principles", href: "/principles"}
+                                                            ].map((menuItem, index) => (
+                                                                <motion.div
+                                                                    key={menuItem.href}
+                                                                    initial={{opacity: 0, y: -10}}
+                                                                    animate={{opacity: 1, y: 0}}
+                                                                    transition={{duration: 0.3, delay: index * 0.2}}
+                                                                >
+                                                                    <MobileNavLink
+                                                                        href={menuItem.href}>{menuItem.menuName}</MobileNavLink>
+                                                                </motion.div>
+                                                            ))}
                                                         </div>
 
-                                                        <div
-                                                            className="mt-8 flex lg:hidden gap-4">
-                                                            <Link
-                                                                href="https://www.linkedin.com/in/jon-georgex/"
-                                                                target="_blank"
-                                                                rel="noopener noreferrer">
-                                                                <LinkedInIcon
-                                                                    className="h-7 w-7"/>
-                                                            </Link>
-                                                            <Link
-                                                                href="https://github.com/JonGeorge"
-                                                                target="_blank"
-                                                                rel="noopener noreferrer">
-                                                                <GitHubIcon
-                                                                    className="h-7 w-7"/>
-                                                            </Link>
+                                                        <div className="mt-8 flex lg:hidden gap-4">
+                                                            <motion.div
+                                                                initial={{opacity:0,  x: -10}}
+                                                                animate={{opacity:1, x: 0}}
+                                                                transition={{duration: 0.4, delay: 4 * 0.2}}>
+                                                                <motion.div
+                                                                    whileHover={{rotate: 5, scale: 1.2}}
+                                                                    transition={{
+                                                                        type: "spring",
+                                                                        stiffness: 750,
+                                                                        duration: 3,
+                                                                        delay: 0.1
+                                                                    }}>
+                                                                    <Link
+                                                                        href="https://www.linkedin.com/in/jon-georgex/"
+                                                                        target="_blank"
+                                                                        rel="noopener noreferrer">
+                                                                        <LinkedInIcon
+                                                                            className="h-7 w-7"/>
+                                                                    </Link>
+                                                                </motion.div>
+                                                            </motion.div>
+
+                                                            <motion.div
+                                                                initial={{opacity:0, x: -50}}
+                                                                animate={{ opacity:1, x: 0}}
+                                                                transition={{duration: 0.4, delay: 5 * 0.2}}>
+                                                                <motion.div
+                                                                    whileHover={{rotate: 5, scale: 1.2}}
+                                                                    transition={{
+                                                                        type: "spring",
+                                                                        stiffness: 750,
+                                                                        duration: 3,
+                                                                        delay: 0.1
+                                                                    }}>
+                                                                    <Link
+                                                                        href="https://github.com/JonGeorge"
+                                                                        target="_blank"
+                                                                        rel="noopener noreferrer">
+                                                                        <GitHubIcon
+                                                                            className="h-7 w-7"/>
+                                                                    </Link>
+                                                                </motion.div>
+                                                            </motion.div>
                                                         </div>
                                                     </Container>
                                                 </PopoverPanel>
