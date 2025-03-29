@@ -162,7 +162,7 @@ export function Header() {
                                                             <motion.div
                                                                 initial={{opacity:0,  x: -10}}
                                                                 animate={{opacity:1, x: 0}}
-                                                                transition={{duration: 0.4, delay: 4 * 0.2}}>
+                                                                transition={{duration: 0.2, delay: 4 * 0.2}}>
                                                                 <motion.div
                                                                     whileHover={{rotate: 5, scale: 1.2}}
                                                                     transition={{
@@ -184,7 +184,7 @@ export function Header() {
                                                             <motion.div
                                                                 initial={{opacity:0, x: -50}}
                                                                 animate={{ opacity:1, x: 0}}
-                                                                transition={{duration: 0.4, delay: 5 * 0.2}}>
+                                                                transition={{duration: 0.2, delay: 5 * 0.2}}>
                                                                 <motion.div
                                                                     whileHover={{rotate: 5, scale: 1.2}}
                                                                     transition={{
