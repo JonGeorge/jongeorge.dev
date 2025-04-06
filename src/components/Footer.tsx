@@ -2,7 +2,6 @@ import {Container} from '@/components/Container'
 import React from "react";
 import Link from "next/link";
 import {Logo} from "@/components/Logo";
-import {JSX} from "react/jsx-runtime";
 
 function FooterLink({href, children, target}: { href: string, target?: string, children: React.ReactNode}) {
     return (
@@ -29,7 +28,7 @@ export function Footer() {
                     <div className="flex flex-col row-start-2 text-gray-400">
                         <FooterLink href="https://devpler.com" target="_blank">Cybersecurity Articles</FooterLink>
                         <FooterLink href="https://saveaplaylist.com" target="_blank">Save A Spotify Playlist</FooterLink>
-                        <FooterLink href="https://builderiai.com">Construction Software</FooterLink>
+                        <FooterLink href="https://builderiai.com" target="_blank">Construction Software</FooterLink>
                     </div>
 
                     <div className="flex flex-col text-gray-400">
