@@ -1,26 +1,25 @@
 'use client'
 
 import Link from 'next/link'
-import { motion } from 'framer-motion'
 
 export function NavLinks() {
     return [
         ['Home', '/'],
-        ['Impact', '/#impact'],
-        ['About', '/#about'],
-        ['Previous work', '/#previous_work'],
-        ['My Role', '/#my_role']
+        ['My Approach', '/approach'],
+        ['Guiding Principles', '/principles']
     ].map(([label, href], index) => (
         <div key={"nav-link" + index} className="flex">
-        <Link
-            key={label}
-            href={href}
-            className="relative text-md text-gray-100 text-center"
-        >
-            <motion.div whileHover={{scale: 1.1}} className="relative z-10 px-5">{label}</motion.div>
-        </Link>
-
-        {/*<span className={""}>/</span>*/}
-    </div>
+            <Link
+                key={label}
+                href={href}
+                className=" text-md text-gray-100 text-center group"
+            >
+                <div className="relative">
+                    {label}
+                    <span
+                        className="absolute -bottom-1 left-0 w-full h-0.25 bg-white transform origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
+                </div>
+            </Link>
+        </div>
     ))
 }

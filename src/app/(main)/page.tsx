@@ -32,9 +32,9 @@ import TeamLogicLogo from "@/app/public/team-logic-it-1.svg";
 export default function Home() {
     return (
         <div
-            className="grid grid-rows-[20px_0fr_20px] min-h-screen mt-56 font-[family-name:var(--font-geist-sans)]">
+            className="grid grid-rows-[20px_0fr_20px] min-h-screen mt-24 lg:mt-56 font-[family-name:var(--font-geist-sans)]">
             <main
-                className="flex flex-col gap-8 mb-24 row-start-2 items-center sm:items-start">
+                className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                 <Container>
                     <div className="flex flex-wrap flex-col lg:flex-row" id="about">
 
@@ -98,15 +98,14 @@ export default function Home() {
                                         message="government agencies served"/>
                     </div>
 
-                    {/*<Separator label={"Accomplishments"}/>*/}
 
-                    <div id="impact" className="flex flex-col w-full mt-48 mb-16 sm:items-center">
+                    <div id="impact" className="flex flex-col w-full lg:mt-48 mb-16 sm:items-center">
                         <h1 className="text-4xl mb-2">Measurable, <span
                             className="whitespace-nowrap">real-world impact</span>
                         </h1>
                     </div>
 
-                    <div className="flex flex-wrap gap-7 m-auto max-w-7xl mb-24">
+                    <div className="flex flex-wrap gap-7 m-auto max-w-7xl mb-24 lg:mb-48">
                         <Card title="Workflow Automation"
                               text="Saved a customer 15,000+ hours of manual work per year by introducing automated business rules."
                               icon={RobotIcon}/>
@@ -157,7 +156,7 @@ export default function Home() {
                 </div>
 
                 <Container>
-                    <div className="flex flex-wrap gap-7 m-auto  mt-24">
+                    <div className="flex flex-wrap gap-7 m-auto my-24 lg:my-48">
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
                             <h2 className="text-2xl font-bold">Empathetic perspective</h2>
                             <p className="text-lg">Most importantly, I believe in
@@ -183,7 +182,6 @@ export default function Home() {
                         </div>
                     </div>
                 </Container>
-                {/*<Separator label={"Guiding Principles"}/>*/}
 
             </main>
         </div>
