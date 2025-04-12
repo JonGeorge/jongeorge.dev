@@ -32,52 +32,55 @@ import TeamLogicLogo from "@/app/public/team-logic-it-1.svg";
 export default function Home() {
     return (
         <div
-            className="grid grid-rows-[20px_0fr_20px] min-h-screen mt-24 lg:mt-56 font-[family-name:var(--font-geist-sans)]">
+            className="grid grid-rows-[20px_0fr_20px] min-h-screen mt-24 md:mt-56 font-[family-name:var(--font-geist-sans)]">
             <main
                 className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                 <Container>
-                    <div className="flex flex-wrap flex-col lg:flex-row" id="about">
+                    <div className="flex flex-wrap flex-col md:flex-row" id="about">
 
-                        <div className="mb-4 lg:hidden">
+                        <div className="mb-4 md:hidden">
                             <h1 className="text-3xl font-bold ">
                                 Hi, I’m Jon George
                             </h1>
                             <p>Software Engineer & Entrepreneur</p>
                         </div>
 
-                        <Image height="360" width="360" src={jonGeorgeImage}
-                               alt="Profile photo"
-                               className="rounded-2xl h-[360px]" unoptimized
-                               priority/>
+                        <div className="md:grid md:grid-cols-[360px_auto]">
+                            <Image height="360" width="360" src={jonGeorgeImage}
+                                   alt="Profile photo"
+                                   className="rounded-2xl h-[360px]" unoptimized
+                                   priority/>
 
-                        <div className="flex lg:w-1/2 flex-col lg:pl-7">
-                            <h1 className="text-4xl mb-2 hidden lg:block">Hi,
-                                I’m
-                                Jon George</h1>
-                            <p className="hidden text-lg lg:block">Software Engineer
-                                &
-                                Entrepreneur</p>
-                            <p className="mt-7 text-lg lg:max-w-full ">
-                                I design and build software products that automate
-                                processes, boost enterprise productivity, and harness
-                                the power of data for decision making.<br/><br/>
+                            <div className="flex md:w-full flex-col md:pl-7">
+                                <h1 className="text-4xl mb-2 hidden md:block">Hi,
+                                    I’m
+                                    Jon George
+                                </h1>
+                                <p className="hidden text-lg md:block">Software Engineer
+                                    &
+                                    Entrepreneur</p>
+                                <p className="mt-7 text-lg ">
+                                    I design and build software products that automate
+                                    processes, boost enterprise productivity, and harness
+                                    the power of data for decision making.<br/><br/>
 
-                                From product strategy, to rapid prototyping, to
-                                polished final products, I deliver craftsmanship that
-                                brings ideas to life using a proactive and calculated
-                                approach.<br/><br/>
+                                    From product strategy, to rapid prototyping, to
+                                    polished final products, I deliver craftsmanship that
+                                    brings ideas to life using a proactive and calculated
+                                    approach.<br/><br/>
 
-                                If you believe we’d work well together, let’s
-                                connect!<br/><br/>
-                            </p>
+                                    If you believe we’d work well together, let’s
+                                    connect!<br/><br/>
+                                </p>
 
-                            <Link href="https://www.linkedin.com/in/jon-georgex/"
-                                  target="_blank" rel="noopener noreferrer"
-                                  className="lg:w-1/3 md:w-1/2 w-full">
-                                <Button className="w-full">
-                                    <span className="text-lg">Get in touch</span>
-                                </Button>
-                            </Link>
+                                <Link href="https://www.linkedin.com/in/jon-georgex/"
+                                      target="_blank" rel="noopener noreferrer"
+                                      className="md:w-1/3 md:w-1/2 w-full">
+                                    <Button className="w-full">
+                                        <span className="text-lg">Get in touch</span>
+                                    </Button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </Container>
@@ -158,14 +161,13 @@ export default function Home() {
                 <Container>
                     <div className="flex flex-wrap gap-7 m-auto my-24 lg:my-48">
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
-                            <h2 className="text-2xl font-bold">Empathetic perspective</h2>
-                            <p className="text-lg">Most importantly, I believe in
+                            <h2 className="text-2xl font-bold">Empathetic</h2>
+                            <p className="text-lg">We are all human. I believe in
                                 treating everyone with respect and navigating situations with tact,
                                 consideration, and empathy for all.</p>
                         </div>
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
-                            <h2 className="text-2xl font-bold">High-stakes
-                                delivery</h2>
+                            <h2 className="text-2xl font-bold">Focused</h2>
                             <p className="text-lg">When the stakes are high, the
                                 pressure is on, and
                                 stakeholders want a high likelihood of success, I
@@ -173,7 +175,7 @@ export default function Home() {
                                 results.</p>
                         </div>
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
-                            <h2 className="text-2xl font-bold">Flexible approach</h2>
+                            <h2 className="text-2xl font-bold">Adaptable</h2>
                             <p className="text-lg">I read and write code just as well
                                 as I strategize,
                                 create a deck, and present to the C-Suite. This
