@@ -32,13 +32,13 @@ import TeamLogicLogo from "@/app/public/team-logic-it-1.svg";
 export default function Home() {
     return (
         <div
-            className="grid grid-rows-[20px_0fr_20px] min-h-screen mt-24 lg:mt-56 font-[family-name:var(--font-geist-sans)]">
+            className="grid grid-rows-[20px_0fr_20px] min-h-screen mt-24 md:mt-56 font-[family-name:var(--font-geist-sans)]">
             <main
                 className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                 <Container>
-                    <div className="flex flex-wrap flex-col lg:flex-row" id="about">
+                    <div className="flex flex-wrap flex-col md:flex-row" id="about">
 
-                        <div className="mb-4 lg:hidden">
+                        <div className="mb-4 md:hidden">
                             <h1 className="text-3xl font-bold ">
                                 Hi, I’m Jon George
                             </h1>
@@ -50,14 +50,15 @@ export default function Home() {
                                className="rounded-2xl h-[360px]" unoptimized
                                priority/>
 
-                        <div className="flex lg:w-1/2 flex-col lg:pl-7">
-                            <h1 className="text-4xl mb-2 hidden lg:block">Hi,
+                        <div className="flex md:w-1/2 flex-col md:pl-7">
+                            <h1 className="text-4xl mb-2 hidden md:block">Hi,
                                 I’m
-                                Jon George</h1>
-                            <p className="hidden text-lg lg:block">Software Engineer
+                                Jon George
+                            </h1>
+                            <p className="hidden text-lg md:block">Software Engineer
                                 &
                                 Entrepreneur</p>
-                            <p className="mt-7 text-lg lg:max-w-full ">
+                            <p className="mt-7 text-lg ">
                                 I design and build software products that automate
                                 processes, boost enterprise productivity, and harness
                                 the power of data for decision making.<br/><br/>
@@ -73,7 +74,7 @@ export default function Home() {
 
                             <Link href="https://www.linkedin.com/in/jon-georgex/"
                                   target="_blank" rel="noopener noreferrer"
-                                  className="lg:w-1/3 md:w-1/2 w-full">
+                                  className="md:w-1/3 md:w-1/2 w-full">
                                 <Button className="w-full">
                                     <span className="text-lg">Get in touch</span>
                                 </Button>

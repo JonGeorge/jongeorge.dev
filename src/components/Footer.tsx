@@ -14,7 +14,7 @@ export function Footer() {
         <footer className="border-t border-neutral-900">
             <Container className="py-12">
                 <div
-                    className="flex flex-col items-start justify-between gap-y-12 pb-6 lg:flex-row ">
+                    className="flex flex-col items-start justify-between gap-y-12 pb-6 md:flex-row ">
 
                     <div>
                         <Link href="/">
@@ -29,7 +29,7 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h6 className="mb-1 lg:mb-3">Projects</h6>
+                        <h6 className="mb-1 md:mb-3">Projects</h6>
                         <div className="flex flex-col row-start-2 text-gray-400">
                             <FooterLink href="https://devpler.com" target="_blank">Cybersecurity Articles</FooterLink>
                             <FooterLink href="https://saveaplaylist.com" target="_blank">Save A Spotify
@@ -39,7 +39,7 @@ export function Footer() {
                     </div>
 
                     <div>
-                        <h6 className="mb-1 lg:mb-3">Companies</h6>
+                        <h6 className="mb-1 md:mb-3">Companies</h6>
                         <div className="flex flex-col text-gray-400">
                             <p className="my-2">UX Applied</p>
                             <p className="my-2">SoftwareDB</p>

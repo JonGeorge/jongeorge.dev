@@ -87,13 +87,13 @@ export function Header() {
             <nav>
                 <Container className="relative z-50 flex justify-between">
 
-                    <div className="relative z-20 flex lg:order-2 items-center gap-16 pt-4">
+                    <div className="relative z-20 flex md:order-2 items-center gap-16 pt-4">
                         <Link href="/" aria-label="Home">
                             <Logo className="w-13"/>
                         </Link>
                     </div>
 
-                    <div className="flex lg:order-1 items-center">
+                    <div className="flex md:order-1 items-center">
                         <Popover className="">
                             {({open}) => (
                                 <>
@@ -158,7 +158,7 @@ export function Header() {
                                                             ))}
                                                         </div>
 
-                                                        <div className="mt-8 flex lg:hidden gap-4">
+                                                        <div className="mt-8 flex md:hidden gap-4">
                                                             <motion.div
                                                                 initial={{opacity:0,  x: -10}}
                                                                 animate={{opacity:1, x: 0}}
@@ -214,7 +214,7 @@ export function Header() {
                     </div>
 
 
-                    <div className="hidden lg:flex order-3 items-center z-20">
+                    <div className="hidden md:flex order-3 items-center z-20">
                         <div className="flex gap-3">
 
                             <motion.div
