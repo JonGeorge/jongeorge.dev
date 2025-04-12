@@ -161,14 +161,13 @@ export default function Home() {
                 <Container>
                     <div className="flex flex-wrap gap-7 m-auto my-24 lg:my-48">
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
-                            <h2 className="text-2xl font-bold">Empathetic perspective</h2>
-                            <p className="text-lg">Most importantly, I believe in
+                            <h2 className="text-2xl font-bold">Empathetic</h2>
+                            <p className="text-lg">We are all human. I believe in
                                 treating everyone with respect and navigating situations with tact,
                                 consideration, and empathy for all.</p>
                         </div>
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
-                            <h2 className="text-2xl font-bold">High-stakes
-                                delivery</h2>
+                            <h2 className="text-2xl font-bold">Focused</h2>
                             <p className="text-lg">When the stakes are high, the
                                 pressure is on, and
                                 stakeholders want a high likelihood of success, I
@@ -176,7 +175,7 @@ export default function Home() {
                                 results.</p>
                         </div>
                         <div className="flex flex-col flex-12/12 md:flex-2/12 gap-5">
-                            <h2 className="text-2xl font-bold">Flexible approach</h2>
+                            <h2 className="text-2xl font-bold">Adaptable</h2>
                             <p className="text-lg">I read and write code just as well
                                 as I strategize,
                                 create a deck, and present to the C-Suite. This
