@@ -45,40 +45,42 @@ export default function Home() {
                             <p>Software Engineer & Entrepreneur</p>
                         </div>
 
-                        <Image height="360" width="360" src={jonGeorgeImage}
-                               alt="Profile photo"
-                               className="rounded-2xl h-[360px]" unoptimized
-                               priority/>
+                        <div className="md:grid md:grid-cols-[360px_auto]">
+                            <Image height="360" width="360" src={jonGeorgeImage}
+                                   alt="Profile photo"
+                                   className="rounded-2xl h-[360px]" unoptimized
+                                   priority/>
 
-                        <div className="flex md:w-1/2 flex-col md:pl-7">
-                            <h1 className="text-4xl mb-2 hidden md:block">Hi,
-                                I’m
-                                Jon George
-                            </h1>
-                            <p className="hidden text-lg md:block">Software Engineer
-                                &
-                                Entrepreneur</p>
-                            <p className="mt-7 text-lg ">
-                                I design and build software products that automate
-                                processes, boost enterprise productivity, and harness
-                                the power of data for decision making.<br/><br/>
+                            <div className="flex md:w-full flex-col md:pl-7">
+                                <h1 className="text-4xl mb-2 hidden md:block">Hi,
+                                    I’m
+                                    Jon George
+                                </h1>
+                                <p className="hidden text-lg md:block">Software Engineer
+                                    &
+                                    Entrepreneur</p>
+                                <p className="mt-7 text-lg ">
+                                    I design and build software products that automate
+                                    processes, boost enterprise productivity, and harness
+                                    the power of data for decision making.<br/><br/>
 
-                                From product strategy, to rapid prototyping, to
-                                polished final products, I deliver craftsmanship that
-                                brings ideas to life using a proactive and calculated
-                                approach.<br/><br/>
+                                    From product strategy, to rapid prototyping, to
+                                    polished final products, I deliver craftsmanship that
+                                    brings ideas to life using a proactive and calculated
+                                    approach.<br/><br/>
 
-                                If you believe we’d work well together, let’s
-                                connect!<br/><br/>
-                            </p>
+                                    If you believe we’d work well together, let’s
+                                    connect!<br/><br/>
+                                </p>
 
-                            <Link href="https://www.linkedin.com/in/jon-georgex/"
-                                  target="_blank" rel="noopener noreferrer"
-                                  className="md:w-1/3 md:w-1/2 w-full">
-                                <Button className="w-full">
-                                    <span className="text-lg">Get in touch</span>
-                                </Button>
-                            </Link>
+                                <Link href="https://www.linkedin.com/in/jon-georgex/"
+                                      target="_blank" rel="noopener noreferrer"
+                                      className="md:w-1/3 md:w-1/2 w-full">
+                                    <Button className="w-full">
+                                        <span className="text-lg">Get in touch</span>
+                                    </Button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </Container>
