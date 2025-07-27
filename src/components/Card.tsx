@@ -1,8 +1,8 @@
 import React from "react";
 
-type Props = {
-    title: string,
-    text: string,
+interface CardProps {
+    title: string
+    text: string
     icon: React.ComponentType<IconProps>
 }
 
@@ -11,7 +11,7 @@ interface IconProps {
     fill?: string
 }
 
-export function Card({...props}: Props) {
+export function Card({...props}: CardProps) {
     const Icon = props.icon;
     return (
         <>

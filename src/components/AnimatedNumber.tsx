@@ -8,10 +8,10 @@ import {
 } from "framer-motion";
 import {useEffect, useRef, useState} from "react";
 
-type AnimatedNumberProps = {
-    value: number,
-    message: string,
-    prefix?: string,
+interface AnimatedNumberProps {
+    value: number
+    message: string
+    prefix?: string
     postfix?: string
 }
 
