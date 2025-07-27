@@ -8,9 +8,6 @@ type Props = {
 
 interface IconProps {
     className?: string
-}
-
-interface IconProps {
     fill?: string
 }
 
