@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import React from "react";
-
-type ResponsiveContainer = React.ComponentPropsWithoutRef<'div'>
+import { ResponsiveContainer } from '@/types'
 
 export function Container({
     className,

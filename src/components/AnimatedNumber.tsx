@@ -7,11 +7,7 @@ import {
     useTransform
 } from "framer-motion";
 import {useEffect, useRef, useState} from "react";
-
-type PositiveInteger = number
-type DisplayPrefix = string
-type DisplaySuffix = string
-type NumberDescription = string
+import { PositiveInteger, DisplayPrefix, DisplaySuffix, NumberDescription } from '@/types';
 
 interface AnimatedNumberProps {
     targetValue: PositiveInteger

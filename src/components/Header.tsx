@@ -12,8 +12,9 @@ import {AnimatePresence, motion} from 'framer-motion'
 import {Container} from '@/components/Container'
 import {Logo} from '@/components/Logo'
 import React, {useEffect, useState} from "react";
+import { SVGComponentProps } from '@/types';
 
-function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function MenuIcon(props: SVGComponentProps) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white" {...props}>
             <path
@@ -22,7 +23,7 @@ function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     )
 }
 
-function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function XIcon(props: SVGComponentProps) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="white" {...props}>
             <path
@@ -32,7 +33,7 @@ function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 
-function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function LinkedInIcon(props: SVGComponentProps) {
     return (
         <svg viewBox="0 0 480 480" fill="white" aria-hidden="true"
              xmlns="http://www.w3.org/2000/svg" {...props}>
@@ -42,7 +43,7 @@ function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     )
 }
 
-function GitHubIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function GitHubIcon(props: SVGComponentProps) {
     return (
         <svg viewBox="0 0 480 480" fill="white" aria-hidden="true"
              xmlns="http://www.w3.org/2000/svg" {...props}>

@@ -1,14 +1,5 @@
 import React from "react";
-
-type CardTitle = string
-type CardDescription = string
-type CSSClassName = string
-type SVGFillColor = string
-
-interface IconProps {
-    className?: CSSClassName
-    fill?: SVGFillColor
-}
+import { CardTitle, CardDescription, IconProps } from '@/types';
 
 interface CardProps {
     title: CardTitle

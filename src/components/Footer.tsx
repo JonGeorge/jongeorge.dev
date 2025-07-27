@@ -2,9 +2,7 @@ import {Container} from '@/components/Container'
 import React from "react";
 import Link from "next/link";
 import {Logo} from "@/components/Logo";
-
-type ExternalURL = string
-type LinkTarget = '_blank' | '_self' | '_parent' | '_top'
+import { ExternalURL, LinkTarget } from '@/types';
 
 interface FooterLinkProps {
     href: ExternalURL

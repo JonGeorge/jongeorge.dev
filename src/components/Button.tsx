@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import clsx from 'clsx'
-
-type SolidButtonColor = 'cyan' | 'white' | 'gray'
-type OutlineButtonColor = 'gray'
+import { SolidButtonColor, OutlineButtonColor } from '@/types'
 
 const baseButtonStyles = {
     solid: 'inline-flex justify-center rounded-lg py-2 px-3 text-sm font-semibold transition-colors',
