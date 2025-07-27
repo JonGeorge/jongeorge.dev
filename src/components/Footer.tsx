@@ -2,8 +2,15 @@ import {Container} from '@/components/Container'
 import React from "react";
 import Link from "next/link";
 import {Logo} from "@/components/Logo";
+import { ExternalURL, LinkTarget } from '@/types';
 
-function FooterLink({href, children, target}: { href: string, target?: string, children: React.ReactNode }) {
+interface FooterLinkProps {
+    href: ExternalURL
+    target?: LinkTarget
+    children: React.ReactNode
+}
+
+function FooterLink({href, children, target}: FooterLinkProps) {
     return (
         <Link href={href} target={target} className="my-2 hover:text-gray-100 w-fit">{children}</Link>
     );

@@ -1,4 +1,6 @@
-export function Logomark(props: React.ComponentPropsWithoutRef<'svg'>) {
+import { SVGComponentProps } from '@/types';
+
+export function Logomark(props: SVGComponentProps) {
     return (
 
         <svg width="34" height="22" viewBox="0 0 34 22" fill="none"
@@ -11,7 +13,7 @@ export function Logomark(props: React.ComponentPropsWithoutRef<'svg'>) {
     )
 }
 
-export function Logo(props: React.ComponentPropsWithoutRef<'svg'>) {
+export function Logo(props: SVGComponentProps) {
     return (
         <svg viewBox="0 0 115 115" fill="none"
              xmlns="http://www.w3.org/2000/svg" {...props}>
