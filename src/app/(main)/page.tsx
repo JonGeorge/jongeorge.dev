@@ -91,14 +91,14 @@ export default function Home() {
                     </div>
 
                     <div className="flex flex-col md:flex-row w-full mx-auto mb-24">
-                        <AnimatedNumber value={332}
-                                        message="automation scripts written"/>
-                        <AnimatedNumber value={14}
-                                        message="enterprise applications delivered"/>
-                        <AnimatedNumber prefix="$" value={9} postfix="M"
-                                        message="saved across all customers"/>
-                        <AnimatedNumber value={6}
-                                        message="government agencies served"/>
+                        <AnimatedNumber targetValue={332}
+                                        description="automation scripts written"/>
+                        <AnimatedNumber targetValue={14}
+                                        description="enterprise applications delivered"/>
+                        <AnimatedNumber prefix="$" targetValue={9} suffix="M"
+                                        description="saved across all customers"/>
+                        <AnimatedNumber targetValue={6}
+                                        description="government agencies served"/>
                     </div>
 
 

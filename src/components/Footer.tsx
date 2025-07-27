@@ -3,9 +3,12 @@ import React from "react";
 import Link from "next/link";
 import {Logo} from "@/components/Logo";
 
+type ExternalURL = string
+type LinkTarget = '_blank' | '_self' | '_parent' | '_top'
+
 interface FooterLinkProps {
-    href: string
-    target?: string
+    href: ExternalURL
+    target?: LinkTarget
     children: React.ReactNode
 }
 
