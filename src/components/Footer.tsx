@@ -41,7 +41,7 @@ export function Footer() {
                             <FooterLink href="https://devpler.com" target="_blank">Cybersecurity Articles</FooterLink>
                             <FooterLink href="https://saveaplaylist.com" target="_blank">Save A Spotify
                                 Playlist</FooterLink>
-                            <FooterLink href="https://builderiai.com" target="_blank">Construction Software</FooterLink>
+                            <FooterLink href="https://explodex.ai" target="_blank">Ordnance Detection</FooterLink>
                         </div>
                     </div>
 
@@ -50,7 +50,7 @@ export function Footer() {
                         <div className="flex flex-col text-gray-400">
                             <p className="my-2">UX Applied</p>
                             <p className="my-2">SoftwareDB</p>
-                            <p className="my-2">Handcrafted</p>
+                            <p className="my-2">Bookrim</p>
 
                             {/*<FooterLink href="#">UX Applied</FooterLink>*/}
                             {/*<FooterLink href="#">SoftwareDB</FooterLink>*/}
