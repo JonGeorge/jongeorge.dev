@@ -12,7 +12,7 @@ interface FooterLinkProps {
 
 function FooterLink({href, children, target}: FooterLinkProps) {
     return (
-        <Link href={href} target={target} className="my-2 hover:text-gray-100 w-fit">{children}</Link>
+        <Link href={href} className="my-2 hover:text-gray-100 w-fit" target={target} rel="noreferrer noopener">{children}</Link>
     );
 }
 
@@ -38,10 +38,9 @@ export function Footer() {
                     <div>
                         <h6 className="mb-1 md:mb-3">Projects</h6>
                         <div className="flex flex-col row-start-2 text-gray-400">
-                            <FooterLink href="https://devpler.com" target="_blank">Cybersecurity Articles</FooterLink>
-                            <FooterLink href="https://saveaplaylist.com" target="_blank">Save A Spotify
-                                Playlist</FooterLink>
-                            <FooterLink href="https://explodex.ai" target="_blank">Ordnance Detection</FooterLink>
+                            <FooterLink href="https://saveaplaylist.com" target="_blank">Save A Spotify Playlist</FooterLink>
+                            <FooterLink href="https://devpler.com" target="_blank">Software Engineering Articles</FooterLink>
+                            <FooterLink href="https://explodex.ai" target="_blank">Ordnance Detection and Identification</FooterLink>
                         </div>
                     </div>
 
@@ -51,6 +50,7 @@ export function Footer() {
                             <p className="my-2">UX Applied</p>
                             <p className="my-2">SoftwareDB</p>
                             <p className="my-2">Bookrim</p>
+                            <p className="my-2">ØFFx</p>
 
                             {/*<FooterLink href="#">UX Applied</FooterLink>*/}
                             {/*<FooterLink href="#">SoftwareDB</FooterLink>*/}
