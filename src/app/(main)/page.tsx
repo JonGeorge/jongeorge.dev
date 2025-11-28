@@ -132,7 +132,7 @@ export default function Home() {
 
                 <div className="bg-neutral-900 w-full">
                     <Container>
-                        <Separator label={"The teams I have supported"}/>
+                        <Separator label={"The teams I have supported"} className="text-white"/>
                         <div className="grid grid-cols-3 gap-16 items-center mb-24">
                             <Image src={ICFLogo} alt="ICF logo" width="90"
                                    className="sm:mx-auto" unoptimized/>
