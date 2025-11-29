@@ -99,6 +99,8 @@ export function Header() {
                         <Popover className="">
                             {({open}) => (
                                 <>
+                                    <ThemeToggle className="md:hidden mr-5 align-top"/>
+
                                     <PopoverButton
                                         className="relative z-20 -m-2 inline-flex items-center rounded-lg stroke-gray-200 p-2 focus:not-data-focus:outline-hidden active:stroke-gray-400 cursor-pointer"
                                         aria-label="Toggle site navigation">
@@ -205,12 +207,12 @@ export function Header() {
                                                                 </motion.div>
                                                             </motion.div>
 
-                                                            <motion.div
-                                                                initial={{opacity:0, x: -90}}
-                                                                animate={{ opacity:1, x: 0}}
-                                                                transition={{duration: 0.2, delay: 6 * 0.2}}>
-                                                                <ThemeToggle />
-                                                            </motion.div>
+                                                            {/*<motion.div*/}
+                                                            {/*    initial={{opacity:0, x: -90}}*/}
+                                                            {/*    animate={{ opacity:1, x: 0}}*/}
+                                                            {/*    transition={{duration: 0.2, delay: 6 * 0.2}}>*/}
+                                                            {/*    <ThemeToggle />*/}
+                                                            {/*</motion.div>*/}
                                                         </div>
                                                     </Container>
                                                 </PopoverPanel>
@@ -224,8 +226,10 @@ export function Header() {
 
 
                     <div className="hidden md:flex order-3 items-center z-20">
-                        <div className="flex gap-3">
 
+                        <ThemeToggle className="mr-5 align-middle"/>
+
+                        <div className="flex gap-3">
                             <motion.div
                                 whileHover={{rotate: 5, scale: 1.2}}
                                 transition={{
@@ -257,7 +261,7 @@ export function Header() {
                                 </Link>
                             </motion.div>
 
-                            <ThemeToggle />
+
                         </div>
                     </div>
 
