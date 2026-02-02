@@ -48,7 +48,7 @@ export function Footer() {
                         <h6 className="mb-1 md:mb-3 text-gray-900 dark:text-gray-100">Companies</h6>
                         <div className="flex flex-col text-gray-600 dark:text-gray-400">
                             <p className="my-2">UX Applied</p>
-                            <p className="my-2">SoftwareDB</p>
+                            <FooterLink href="https://softwaredb.com" target="_blank">SoftwareDB</FooterLink>
                             <p className="my-2">Bookrim</p>
                             <p className="my-2">ØFFx</p>
 
