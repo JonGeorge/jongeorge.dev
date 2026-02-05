@@ -51,12 +51,10 @@ export default function Home() {
                                 </a>, a platform for tracking your software stack,
                                 rating your tools, and seeing what other people are using.
                                 The data is the foundation everything else sits on. Before anyone can share software
-                                they use or
-                                rate their tools, the software needs to be in our database. Right now that
-                                means researching every modern software tool (and some older ones still in use).
-                                I&apos;m organizing them into categories, normalizing naming across vendors, and figuring out
-                                the
-                                right level of granularity (do Slack and Discord belong in the same category, or not?).
+                                they use or rate their tools, the software needs to be in our database. Right now that
+                                means researching and organizing every modern software tool, normalizing naming across
+                                vendors, and figuring out the right level of granularity (do Slack and Discord belong in
+                                the same category, or not?).
                             </p>
                             <p>
                                 Also, I&apos;m growing the training dataset for{" "}
@@ -96,18 +94,22 @@ export default function Home() {
                                 Outside of work, I&apos;m making SoftwareDB because I&apos;m genuinely obsessed with
                                 software tools. Text editors, terminal emulators, browsers, IDEs, I care about this
                                 stuff and there&apos;s no good place to see what people are running
-                                and what they&apos;re switching to. The SoftwareDB waitlist is open and I&apos;m deep in the MVP.
+                                and what they&apos;re switching to. The SoftwareDB waitlist is open and I&apos;m deep in
+                                the MVP.
                             </p>
                             <p>
                                 I&apos;m also working on Explodex, AI software that detects and identifies explosives
                                 in photos and video. We&apos;ve built a full data pipeline with provenance tracking that
-                                feeds into our training data, and the mission is simple: significantly reduce cognitive load
+                                feeds into our training data, and the mission is simple: significantly reduce cognitive
+                                load
                                 for the people who need to defuse bombs when it matters most.
                             </p>
                             <p>
                                 I&apos;m based in Maryland. When I&apos;m not at a screen I&apos;m racing cyclocross,
-                                running 5Ks and 10Ks, or lifting. I recently went keto. I have a Saint Bernard who is not on keto.
-                                I&apos;m unreasonably obsessed with cables — ethernet, VGA, SATA, every type of USB — because you never
+                                running 5Ks and 10Ks, or lifting. I recently went keto. I have a Saint Bernard who is
+                                not on keto.
+                                I&apos;m unreasonably obsessed with cables — ethernet, VGA, SATA, every type of USB —
+                                because you never
                                 know when you&apos;ll need one. And I will die on the hill that ThinkPads are the best
                                 laptops ever made, even though I use a MacBook that I&apos;m terrified of scratching.
                             </p>

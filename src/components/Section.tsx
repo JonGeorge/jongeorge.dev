@@ -20,7 +20,7 @@ export function Section({ id, title, children, className, first }: SectionProps)
     <section
       id={id}
       ref={ref}
-      className={clsx(first ? 'pb-16 md:pb-24' : 'py-16 md:py-24', className)}
+      className={clsx(first ? 'pb-16' : 'py-16', className)}
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
