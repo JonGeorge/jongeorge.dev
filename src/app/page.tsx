@@ -11,8 +11,8 @@ import type {SectionId} from '@/types'
 import softwareDBScreenshot from '../../public/images/SoftwareDB Screenshot.png'
 import savePlaylistScreenshot from '../../public/images/Save a playlist Screeshot.png'
 import explodexScreenshot from '../../public/images/ExplodexAi Screenshot.png'
-import devplerScreenshot from '../../public/images/Devpler Screenshot.png'
-import nihCovidScreenshot from '../../public/images/NIH COVID Biorepository app.png'
+// import devplerScreenshot from '../../public/images/Devpler Screenshot.png'
+// import nihCovidScreenshot from '../../public/images/NIH COVID Biorepository app.png'
 import jonGeorgePhoto from '../../public/images/jongeorge.avif'
 
 const SECTION_IDS: SectionId[] = ['now', 'about', 'projects', 'writing']
@@ -43,7 +43,7 @@ export default function Home() {
                     <Section id="now" title="Now" first>
                         <div className="text-[var(--color-text-muted)] text-lg leading-relaxed space-y-4">
                             <p>
-                                I'm currently building out the database for{" "}
+                                I&apos;m currently building out the database for{" "}
                                 <a href={"https://softwaredb.com/"}
                                    target="_blank" rel="noopener noreferrer"
                                    className="text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors underline underline-offset-4 decoration-[var(--color-accent)]/30"
@@ -54,12 +54,12 @@ export default function Home() {
                                 they use or
                                 rate their tools, the software needs to be in our database. Right now that
                                 means researching every modern software tool (and some older ones still in use).
-                                I'm organizing them into categories, normalizing naming across vendors, and figuring out
+                                I&apos;m organizing them into categories, normalizing naming across vendors, and figuring out
                                 the
                                 right level of granularity (do Slack and Discord belong in the same category, or not?).
                             </p>
                             <p>
-                                Also, I'm growing the training dataset for{" "}
+                                Also, I&apos;m growing the training dataset for{" "}
                                 <a href={"https://explodex.ai/"}
                                    target="_blank" rel="noopener noreferrer"
                                    className="text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors underline underline-offset-4 decoration-[var(--color-accent)]/30"
@@ -93,7 +93,7 @@ export default function Home() {
                                 people have what they need, but I never stopped building.
                             </p>
                             <p>
-                                Outside of work, I'm making SoftwareDB because I&apos;m genuinely obsessed with
+                                Outside of work, I&apos;m making SoftwareDB because I&apos;m genuinely obsessed with
                                 software tools. Text editors, terminal emulators, browsers, IDEs, I care about this
                                 stuff and there&apos;s no good place to see what people are running
                                 and what they&apos;re switching to. The SoftwareDB waitlist is open and I&apos;m deep in the MVP.
