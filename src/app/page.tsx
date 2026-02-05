@@ -139,7 +139,7 @@ export default function Home() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <ProjectCard
                                 title="SoftwareDB"
-                                description="The Letterboxd for software. Track your stack, rate your tools, see what others are switching to."
+                                description="Track your software stack. Rate your tools. See what others are switching to."
                                 href="https://softwaredb.com"
                                 image={softwareDBScreenshot}
                                 tags={['Next.js', 'TypeScript', 'PostgreSQL']}
@@ -147,27 +147,27 @@ export default function Home() {
                             />
                             <ProjectCard
                                 title="Save A Spotify Playlist"
-                                description="Export and backup your Spotify playlists before they disappear."
+                                description="Export and backup your Spotify playlists before they disappear. Because Spotify won't do it for you."
                                 href="https://saveaplaylist.com"
                                 image={savePlaylistScreenshot}
                             />
                             <ProjectCard
                                 title="Explodex"
-                                description="AI-powered ordnance detection and identification."
+                                description="AI-powered ordnance detection and identification. Computer vision that helps keep people safe."
                                 href="https://explodex.ai"
                                 image={explodexScreenshot}
                                 tags={['AI', 'Computer Vision']}
                             />
                             <ProjectCard
                                 title="NIH COVID Biorepository"
-                                description="Internal tool built at NIH during early COVID to manage COVID specimen collection and tracking."
+                                description="Specimen collection and tracking system built for NIH during the COVID-19 response. Live on cancer.gov."
                                 href="https://service.cancer.gov/nih-covid-19-dashboard?xpage=landing_pub"
                                 image={nihCovidScreenshot}
                                 tags={['ServiceNow', 'AWS']}
                             />
                             <ProjectCard
                                 title="Devpler"
-                                description="Long-form writing about software engineering."
+                                description="Writing about building software, picking tools, and working through hard problems."
                                 href="https://devpler.com"
                                 image={devplerScreenshot}
                             />
