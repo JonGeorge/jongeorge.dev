@@ -43,31 +43,35 @@ export default function Home() {
                     <Section id="now" title="Now" first>
                         <div className="text-[var(--color-text-muted)] text-lg leading-relaxed space-y-4">
                             <p>
-                                Building out the software tool database for{" "}
+                                I'm currently building out the database for{" "}
                                 <a href={"https://softwaredb.com/"}
                                    target="_blank" rel="noopener noreferrer"
                                    className="text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors underline underline-offset-4 decoration-[var(--color-accent)]/30"
                                 >SoftwareDB
-                                </a>.
-                                This is the foundation everything else sits on — before anyone can log their stack or
-                                rate their tools, the catalog needs to be comprehensive and accurate. Right now that
-                                means researching categories, normalizing naming across vendors, and figuring out the
+                                </a>, a platform for tracking your software stack,
+                                rating your tools, and seeing what other people are using.
+                                The data is the foundation everything else sits on. Before anyone can share software
+                                they use or
+                                rate their tools, the software needs to be in our database. Right now that
+                                means researching every modern software tool (and some older ones still in use).
+                                I'm organizing them into categories, normalizing naming across vendors, and figuring out
+                                the
                                 right level of granularity (do Slack and Discord belong in the same category, or not?).
                             </p>
                             <p>
-                                Also growing the training dataset for{" "}
+                                Also, I'm growing the training dataset for{" "}
                                 <a href={"https://explodex.ai/"}
                                    target="_blank" rel="noopener noreferrer"
                                    className="text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors underline underline-offset-4 decoration-[var(--color-accent)]/30"
                                 >Explodex
                                 </a>. Turns out high-quality ordnance imagery
-                                isn&apos;t easy to come by — nobody&apos;s just sitting on a nicely labeled photo
+                                isn&apos;t easy to come by, nobody&apos;s just sitting on a nicely labeled photo
                                 library of bombs. We&apos;re at about 10k images and hitting 97% accuracy on test data,
-                                which feels good but I know we have a long way to go.
+                                which feels good, but I know we have a long way to go.
                             </p>
                             <p>
-                                I&apos;m currently reading the Dune series for the first time. Can&apos;t believe this book was
-                                written in 1965. And no, I haven&apos;t seen the movies.
+                                Currently reading the Dune series for the first time. Can&apos;t believe this
+                                book was written in 1965. And no, I haven&apos;t seen the movies.
                             </p>
                         </div>
                     </Section>
@@ -76,67 +80,43 @@ export default function Home() {
                     <Section id="about" title="About">
                         <div className="text-[var(--color-text-muted)] text-lg leading-relaxed space-y-4">
                             <p>
-                                I&apos;m a technical manager and system architect in government tech. My day job is
-                                designing large-scale systems on ServiceNow and AWS — the kind that regularly process
-                                15+ million records and quietly keep federal agencies running. I lead a team of
+                                I&apos;m a technical manager and systems architect in government. My day job is
+                                designing large scale systems on ServiceNow and AWS. The kind of systems that regularly
+                                process 15+ million records and quietly keep federal agencies running. I lead a team of
                                 twenty, but I still design and write code every day.
                             </p>
                             <p>
                                 I built internal tools at NIH during the early days of COVID, led engineering on a
                                 security tool that cut ATO timelines from three months to two weeks, and was the lead
-                                architect on a reusable component library used across dozens of project teams. The
-                                balance has shifted toward system design, technical governance, and making sure my
-                                people have what they need — but I never stopped building.
+                                architect on a reusable component library used across dozens of project teams at CACI.
+                                The balance has shifted toward system design, technical governance, and making sure my
+                                people have what they need, but I never stopped building.
                             </p>
                             <p>
-                                Outside of work, I&apos;m building SoftwareDB — a platform for tracking your software
-                                stack,
-                                rating your tools, and seeing what other people are using. I&apos;m building it because
-                                I&apos;m
-                                genuinely obsessed with software tools. Text editors, terminal emulators, browsers, IDEs
-                                — I care about this stuff and there&apos;s no good place to see what people are running
-                                and
-                                what they&apos;re switching to. The waitlist is open and I&apos;m deep in the MVP.
+                                Outside of work, I'm making SoftwareDB because I&apos;m genuinely obsessed with
+                                software tools. Text editors, terminal emulators, browsers, IDEs, I care about this
+                                stuff and there&apos;s no good place to see what people are running
+                                and what they&apos;re switching to. The SoftwareDB waitlist is open and I&apos;m deep in the MVP.
                             </p>
                             <p>
-                                I&apos;m also working on Explodex — AI software that detects and identifies explosives
-                                in
-                                photos and video. We&apos;ve built a full data pipeline with provenance tracking that
-                                feeds
-                                into our training data, and the mission is simple: significantly reduce cognitive load
+                                I&apos;m also working on Explodex, AI software that detects and identifies explosives
+                                in photos and video. We&apos;ve built a full data pipeline with provenance tracking that
+                                feeds into our training data, and the mission is simple: significantly reduce cognitive load
                                 for the people who need to defuse bombs when it matters most.
                             </p>
                             <p>
                                 I&apos;m based in Maryland. When I&apos;m not at a screen I&apos;m racing cyclocross,
-                                running 5Ks and
-                                10Ks, or lifting. I recently went keto. I have a Saint Bernard who is not on keto.
-                                I&apos;m
-                                unreasonably obsessed with cables — ethernet, VGA, every type of USB — because you never
+                                running 5Ks and 10Ks, or lifting. I recently went keto. I have a Saint Bernard who is not on keto.
+                                I&apos;m unreasonably obsessed with cables — ethernet, VGA, SATA, every type of USB — because you never
                                 know when you&apos;ll need one. And I will die on the hill that ThinkPads are the best
                                 laptops ever made, even though I use a MacBook that I&apos;m terrified of scratching.
                             </p>
-
-                            {/*<p>*/}
-                            {/*  By day, I&apos;m a technical leader building systems that process*/}
-                            {/*  millions of records for government and enterprise clients. By night, I*/}
-                            {/*  build products for people like me &mdash; developers who care about*/}
-                            {/*  their tools.*/}
-                            {/*</p>*/}
-                            {/*<p>*/}
-                            {/*  I&apos;ve spent years thinking about how software gets built at scale.*/}
-                            {/*  Now I&apos;m applying that to something smaller and more personal:*/}
-                            {/*  helping developers understand their own software stacks.*/}
-                            {/*</p>*/}
-                            {/*<p>*/}
-                            {/*  When I&apos;m not building, I&apos;m [placeholder for hobbies/personal*/}
-                            {/*  detail].*/}
-                            {/*</p>*/}
                         </div>
                     </Section>
 
                     {/* Projects */}
                     <Section id="projects" title="Projects">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                             <ProjectCard
                                 title="SoftwareDB"
                                 description="Track your software stack. Rate your tools. See what others are switching to."
@@ -146,31 +126,34 @@ export default function Home() {
                                 featured
                             />
                             <ProjectCard
-                                title="Save A Spotify Playlist"
-                                description="Export and backup your Spotify playlists before they disappear. Because Spotify won't do it for you."
-                                href="https://saveaplaylist.com"
-                                image={savePlaylistScreenshot}
-                            />
-                            <ProjectCard
                                 title="Explodex"
                                 description="AI-powered ordnance detection and identification. Computer vision that helps keep people safe."
                                 href="https://explodex.ai"
                                 image={explodexScreenshot}
                                 tags={['AI', 'Computer Vision']}
+                                featured
                             />
                             <ProjectCard
-                                title="NIH COVID Biorepository"
-                                description="Specimen collection and tracking system built for NIH during the COVID-19 response. Live on cancer.gov."
-                                href="https://service.cancer.gov/nih-covid-19-dashboard?xpage=landing_pub"
-                                image={nihCovidScreenshot}
-                                tags={['ServiceNow', 'AWS']}
+                                title="Save A Spotify Playlist"
+                                description="Export and backup your Spotify playlists before they disappear. Because Spotify won't do it for you."
+                                href="https://saveaplaylist.com"
+                                image={savePlaylistScreenshot}
+                                tags={['Serverless', 'NodeJS']}
+                                featured
                             />
-                            <ProjectCard
-                                title="Devpler"
-                                description="Writing about building software, picking tools, and working through hard problems."
-                                href="https://devpler.com"
-                                image={devplerScreenshot}
-                            />
+                            {/*<ProjectCard*/}
+                            {/*    title="NIH COVID Biorepository"*/}
+                            {/*    description="Specimen collection and tracking system built for NIH during the COVID-19 response. Live on cancer.gov."*/}
+                            {/*    href="https://service.cancer.gov/nih-covid-19-dashboard?xpage=landing_pub"*/}
+                            {/*    image={nihCovidScreenshot}*/}
+                            {/*    tags={['ServiceNow', 'AWS']}*/}
+                            {/*/>*/}
+                            {/*<ProjectCard*/}
+                            {/*    title="Devpler"*/}
+                            {/*    description="Writing about building software, picking tools, and working through hard problems."*/}
+                            {/*    href="https://devpler.com"*/}
+                            {/*    image={devplerScreenshot}*/}
+                            {/*/>*/}
                         </div>
                     </Section>
 

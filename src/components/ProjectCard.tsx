@@ -22,7 +22,7 @@ export function ProjectCard({ title, description, href, image, tags, featured }:
       className={clsx(
         'group block rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-surface)]',
         href && 'transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:border-[var(--color-accent)]',
-        featured && 'md:col-span-2'
+        featured && 'md:col-span-1'
       )}
     >
       {image && (
@@ -40,11 +40,6 @@ export function ProjectCard({ title, description, href, image, tags, featured }:
       <div className="p-5">
         <h3 className="font-serif text-xl font-semibold text-[var(--color-text-primary)] mb-2 group-hover:text-[var(--color-accent)] transition-colors">
           {title}
-          {href && (
-            <span className="inline-block ml-1.5 transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-0.5">
-              &#x2197;
-            </span>
-          )}
         </h3>
         <p className="text-[var(--color-text-muted)] mb-3 leading-relaxed">
           {description}
