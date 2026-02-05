@@ -3,6 +3,7 @@
 import { NavLink } from '@/components/NavLink'
 import { SocialIcons } from '@/components/SocialIcons'
 import { ThemeToggle } from '@/components/ThemeToggle'
+// import {Logo, Logomark} from "@/components/Logo";
 
 interface LeftColumnProps {
   activeSection: string
@@ -20,7 +21,11 @@ export function LeftColumn({ activeSection, photo }: LeftColumnProps) {
   return (
     <aside className="md:sticky md:top-0 md:h-screen md:w-[45%] lg:w-[40%] md:flex md:flex-col md:justify-between md:py-24 px-6 pt-16 pb-8 md:px-0">
       <div>
-        {photo && (
+      {/*  <div className={"w-9 h-auto m-auto mb-8"}>*/}
+      {/*    <Logo className=""/>*/}
+      {/*</div>*/}
+
+      {photo && (
           <div className="mb-8">
             {photo}
           </div>
