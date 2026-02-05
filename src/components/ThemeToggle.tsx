@@ -21,7 +21,7 @@ function MoonIcon(props: SVGComponentProps) {
   )
 }
 
-export function ThemeToggle({...props}: {className?: string}) {
+export function ThemeToggle({ className }: { className?: string }) {
   const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
@@ -30,9 +30,7 @@ export function ThemeToggle({...props}: {className?: string}) {
   }, [])
 
   if (!mounted) {
-    return (
-      <div className="h-7 w-7" />
-    )
+    return <div className="h-5 w-5" />
   }
 
   const toggleTheme = () => {
@@ -43,21 +41,21 @@ export function ThemeToggle({...props}: {className?: string}) {
     <motion.button
       type="button"
       onClick={toggleTheme}
-      className={"relative inline-flex items-center justify-center cursor-pointer " + props.className}
+      className={`relative inline-flex items-center justify-center cursor-pointer text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)] transition-colors duration-200 ${className ?? ''}`}
       whileHover={{ rotate: 5, scale: 1.2 }}
       transition={{
-        type: "spring",
+        type: 'spring',
         stiffness: 750,
         duration: 3,
-        delay: 0.1
+        delay: 0.1,
       }}
       aria-label="Toggle theme"
     >
-      {
-          resolvedTheme === 'dark' ?
-          (<SunIcon className="h-7 w-7 text-white dark:text-white" />) :
-          (<MoonIcon className="h-7 w-7 text-gray-900 dark:text-white" />)
-      }
+      {resolvedTheme === 'dark' ? (
+        <SunIcon className="h-5 w-5" />
+      ) : (
+        <MoonIcon className="h-5 w-5" />
+      )}
     </motion.button>
   )
 }

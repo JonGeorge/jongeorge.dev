@@ -1,2 +1,36 @@
 @config "../../tailwind.config.ts";
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+:root {
+  --color-bg: #f8f6f2;
+  --color-bg-surface: #ffffff;
+  --color-text-primary: #2c2a26;
+  --color-text-muted: #6b6860;
+  --color-accent: #a07d3f;
+  --color-accent-hover: #8b6c35;
+  --color-border: #e0ddd6;
+}
+
+.dark {
+  --color-bg: #1a1a18;
+  --color-bg-surface: #242420;
+  --color-text-primary: #e8e4df;
+  --color-text-muted: #8a857d;
+  --color-accent: #b8975a;
+  --color-accent-hover: #caa96b;
+  --color-border: #2a2a26;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
+
+section[id] {
+  scroll-margin-top: 2rem;
+}
