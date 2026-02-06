@@ -1,28 +1,21 @@
-# JonGeorge.dev
+# jg.dev
 
-Personal portfolio website showcasing my software engineering experience.
+Personal site for [Jon George](https://jg.dev) — technical leader, founder of [SoftwareDB](https://softwaredb.com), and builder of things.
 
-## Tech Stack
+Single-page site with a sticky left column and scrolling content. Inspired by [brittanychiang.com](https://brittanychiang.com/).
 
-- **Next.js 15** - React framework with static export
-- **TypeScript** - Type-safe development
-- **Tailwind CSS 4** - Utility-first styling
-- **Framer Motion** - Smooth animations
-- **Headless UI** - Accessible components
+## Sections
 
-## Project Structure
+- **Now** — What I'm currently working on. Updated regularly.
+- **About** — Background, interests, and what I care about.
+- **Projects** — Active projects: SoftwareDB, Explodex, Save A Playlist.
+- **Writing** — Blog posts and external writing via [devpler.com](https://devpler.com).
 
-```
-src/
-├── app/           # Next.js app router pages
-├── components/    # Reusable React components
-└── types/         # Shared TypeScript definitions
-```
 
-## Features
+## Links
 
-- Responsive design with mobile-first approach
-- Animated number counters and smooth transitions
-- Static site generation for optimal performance
-- Type-safe component architecture
-- Accessible navigation and interactions
+- **Site:** [jg.dev](https://jg.dev)
+- **X:** [@jongeorgedev](https://x.com/jongeorgedev)
+- **Bluesky:** [@jg.dev](https://bsky.app/profile/jg.dev)
+- **Blog:** [devpler.com](https://devpler.com)
+- **SoftwareDB:** [softwaredb.com](https://softwaredb.com)
