@@ -2,7 +2,7 @@
 
 Personal site for [Jon George](https://jg.dev) — technical leader, founder of [SoftwareDB](https://softwaredb.com), and builder of things.
 
-Single-page site with a sticky left column and scrolling content. Inspired by [brittanychiang.com](https://brittanychiang.com/).
+Inspired by [brittanychiang.com](https://brittanychiang.com/).
 
 ## Sections
 
