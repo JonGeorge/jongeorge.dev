@@ -61,9 +61,9 @@ export function LeftColumn({ activeSection, photo }: LeftColumnProps) {
         </nav>
       </div>
 
-      <div className="flex items-center gap-4 mt-8 ">
+      <div className="flex items-center gap-4 mt-8 justify-center md:justify-start">
         <SocialIcons />
-        <ThemeToggle className="ml-auto md:ml-4" />
+        <ThemeToggle className="ml-1 sm:ml-9" />
       </div>
     </aside>
   )
