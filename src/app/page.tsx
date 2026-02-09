@@ -15,7 +15,7 @@ import explodexScreenshot from '../../public/images/ExplodexAi Screenshot.png'
 // import nihCovidScreenshot from '../../public/images/NIH COVID Biorepository app.png'
 import jonGeorgePhoto from '../../public/images/jongeorge.avif'
 
-const SECTION_IDS: SectionId[] = ['now', 'about', 'projects', 'writing']
+const SECTION_IDS: SectionId[] = ['updates', 'about', 'projects', 'writing']
 
 export default function Home() {
     const activeSection = useActiveSection(SECTION_IDS)
@@ -40,7 +40,7 @@ export default function Home() {
 
                 <main className="md:w-[55%] lg:w-[60%] md:py-24">
                     {/* Now */}
-                    <Section id="now" title="Updates" first>
+                    <Section id="updates" title="Updates" first>
                         <div className="text-[var(--color-text-muted)] text-lg leading-relaxed space-y-4">
                             <p>
                                 I&apos;m currently building out the database for{" "}

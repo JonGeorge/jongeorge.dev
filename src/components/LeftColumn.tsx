@@ -26,16 +26,16 @@ export function LeftColumn({ activeSection, photo }: LeftColumnProps) {
       {/*</div>*/}
 
       {photo && (
-          <div className="mb-8">
+          <div className="mb-8 justify-items-center">
             {photo}
           </div>
         )}
 
-        <h1 className="font-serif text-4xl lg:text-5xl font-bold text-[var(--color-text-primary)] mb-3">
+        <h1 className="font-serif text-center md:text-left text-4xl lg:text-5xl font-bold text-[var(--color-text-primary)] mb-3">
           Jon George
         </h1>
 
-        <p className="font-sans text-lg text-[var(--color-text-muted)] mb-8 leading-relaxed">
+        <p className="font-sans text-center md:text-left text-lg text-[var(--color-text-muted)] mb-8 leading-relaxed">
           Technical leader. Building{' '}
           <a
             href="https://softwaredb.com"
@@ -61,7 +61,7 @@ export function LeftColumn({ activeSection, photo }: LeftColumnProps) {
         </nav>
       </div>
 
-      <div className="flex items-center gap-4 mt-8">
+      <div className="flex items-center gap-4 mt-8 ">
         <SocialIcons />
         <ThemeToggle className="ml-auto md:ml-4" />
       </div>
