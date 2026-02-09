@@ -40,7 +40,7 @@ export default function Home() {
 
                 <main className="md:w-[55%] lg:w-[60%] md:py-24">
                     {/* Now */}
-                    <Section id="now" title="Now" first>
+                    <Section id="now" title="Updates" first>
                         <div className="text-[var(--color-text-muted)] text-lg leading-relaxed space-y-4">
                             <p>
                                 I&apos;m currently building out the database for{" "}
