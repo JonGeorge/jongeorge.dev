@@ -11,7 +11,7 @@ interface LeftColumnProps {
 }
 
 const NAV_ITEMS = [
-  { id: 'now', label: 'Now' },
+  { id: 'now', label: 'Updates' },
   { id: 'about', label: 'About' },
   { id: 'projects', label: 'Projects' },
   { id: 'writing', label: 'Writing' },
