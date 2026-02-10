@@ -3,8 +3,8 @@ import { getAllPosts } from '@/lib/writing'
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-  title: 'Writing — Jon George',
-  description: 'Articles about software development, security, and technology.',
+  title: "Writing — Jon George",
+  description: "Writing about the stuff that matters when you're building software: security, architecture, and making good decisions under constraints.",
 }
 
 export default function WritingIndex() {
