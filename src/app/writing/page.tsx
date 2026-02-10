@@ -15,7 +15,7 @@ export default function WritingIndex() {
         Writing
       </h1>
       <p className="text-[var(--color-text-muted)] mb-5">
-        Thinking out loud about building software – architecture decisions, security, developer tools, and lessons from shipping at scale.
+        Thinking out loud about building software, architecture decisions, security, developer tools, and lessons learned.
       </p>
 
       <div>
