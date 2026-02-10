@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { getAllPosts } from '@/lib/writing'
+import {Metadata} from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Writing — Jon George',
   description: 'Articles about software development, security, and technology.',
 }
