@@ -1,9 +1,10 @@
 import Link from 'next/link'
+import { ReactNode } from 'react'
 
 interface SocialLink {
   href: string
   label: string
-  icon: React.ReactNode
+  icon: ReactNode
   internal?: boolean
 }
 

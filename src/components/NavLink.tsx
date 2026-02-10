@@ -1,7 +1,9 @@
+import { ReactNode } from 'react'
+
 interface NavLinkProps {
   href: string
   isActive: boolean
-  children: React.ReactNode
+  children: ReactNode
 }
 
 export function NavLink({ href, isActive, children }: NavLinkProps) {

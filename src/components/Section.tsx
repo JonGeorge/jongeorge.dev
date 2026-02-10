@@ -1,13 +1,13 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, ReactNode } from 'react'
 import { motion, useInView } from 'framer-motion'
 import clsx from 'clsx'
 
 interface SectionProps {
   id: string
   title?: string
-  children: React.ReactNode
+  children: ReactNode
   className?: string
   first?: boolean
 }

@@ -3,11 +3,12 @@
 import { NavLink } from '@/components/NavLink'
 import { SocialIcons } from '@/components/SocialIcons'
 import { ThemeToggle } from '@/components/ThemeToggle'
+import { ReactNode } from 'react'
 // import {Logo, Logomark} from "@/components/Logo";
 
 interface LeftColumnProps {
   activeSection: string
-  photo?: React.ReactNode
+  photo?: ReactNode
 }
 
 const NAV_ITEMS = [
