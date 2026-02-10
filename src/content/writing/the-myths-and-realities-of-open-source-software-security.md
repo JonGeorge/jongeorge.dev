@@ -2,8 +2,10 @@
 title: "The myths and realities of open source software security"
 date: 2024-11-06T00:24:00.000Z
 author: "Jon George"
-featuredImage: "code-on-computer.webp"
+featuredImage: "/images/writing/the-myths-and-realities-of-open-source-software-security/code-on-computer.webp"
 featuredImageAlt: "The myths and realities of open source software security"
+description: "\"Many eyes\" sounds reassuring until you look at who's actually watching. What really makes open source secure (and what doesn't)."
+category: "Security"
 ---
 
 The debate around open source security has intensified over recent years. Many consider open source software (OSS) safer due to its transparency, while others point to recent security breaches as evidence of its vulnerabilities. But is OSS genuinely safer than proprietary code? The answer is nuanced and depends on a balance between open source's strengths, such as community involvement, and the practical challenges of maintenance.

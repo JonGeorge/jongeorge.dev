@@ -2,8 +2,10 @@
 title: "Secure software development using zero trust"
 date: 2024-10-23T01:20:23.000Z
 author: "Jon George"
-featuredImage: "photo-1709477544343-56ceb8272ceb.jpeg"
+featuredImage: "/images/writing/zero-trust-in-code/photo-1709477544343-56ceb8272ceb.jpeg"
 featuredImageAlt: "Secure software development using zero trust"
+description: "Zero trust usually means networks and infrastructure. Here's what it looks like applied to the code itself."
+category: "Security"
 ---
 
 Zero trust is often discussed in terms of networks, devices, and infrastructure because these are usually the first line of defense against external threats. However, as modern software development moves toward microservices, APIs, infrastructure-as-code and cloud architectures, the boundaries between infrastructure and applications are blurring. Here I provide a brief introduction to zero trust and provide use cases for applying its concepts directly to software application code.

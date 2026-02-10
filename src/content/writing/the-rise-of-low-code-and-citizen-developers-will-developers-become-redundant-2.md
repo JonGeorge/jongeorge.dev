@@ -2,8 +2,10 @@
 title: "The rise of low code and citizen developers: Will developers become redundant?"
 date: 2024-10-25T23:33:23.000Z
 author: "Jon George"
-featuredImage: "photo-1563536310477-c7b4e3a800c2.jpeg"
+featuredImage: "/images/writing/the-rise-of-low-code-and-citizen-developers-will-developers-become-redundant-2/photo-1563536310477-c7b4e3a800c2.jpeg"
 featuredImageAlt: "The rise of low code and citizen developers: Will developers become redundant?"
+description: "Low-code makes app creation feel like building a slide deck. What that means for the people who write actual code."
+category: "Industry"
 ---
 
 Low code and no code platforms can make app creation feel like designing a slide deck rather than coding a software project, giving rise to a new crop of creators - citizen developers. For many, this change brings excitement. For others, it may raise some existential questions. Are seasoned developers about to be replaced? No. Is there room for professional developers in a world where anyone can code? Yes!

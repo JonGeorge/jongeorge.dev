@@ -2,8 +2,10 @@
 title: "5 practical tips for secure web development"
 date: 2024-10-31T00:15:28.000Z
 author: "Jon George"
-featuredImage: "photo-1483389127117-b6a2102724ae.jpeg"
+featuredImage: "/images/writing/5-practical-tips-for-secure-software-development/photo-1483389127117-b6a2102724ae.jpeg"
 featuredImageAlt: "5 practical tips for secure web development"
+description: "Security feels like an afterthought when deadlines are tight. A few guidelines that fit into the way you already work."
+category: "Security"
 ---
 
 Even the best developers fall prey to the common pitfalls that leave their code vulnerable to attacks. We all want to write performant, reliable, and secure code, but security can feel like an afterthought when we're up against competing priorities and tight deadlines. By following a few guidelines you can greatly reduce security risks in your applications without it becoming too overwhelming.
@@ -18,7 +20,7 @@ Even the best developers fall prey to the common pitfalls that leave their code 
 
 ### Sanitize user input and use output encoding
 ##### Input sanitization
-Many programming languages provide libraries for sanitizing inputs. These libraries are the preferred tool for input sanitization compared to creating custom solutions, which may be prone to human error. Take [a zero trust approach](/secure-software-development-using-zero-trust/) by always assuming breech. Treat data from users and even from your own database, as malicious. For example, when working with HTML text inputs, sanitize the data by stripping away any script tags or unexpected character sequences.
+Many programming languages provide libraries for sanitizing inputs. These libraries are the preferred tool for input sanitization compared to creating custom solutions, which may be prone to human error. Take [a zero trust approach](/writing/zero-trust-in-code) by always assuming breech. Treat data from users and even from your own database, as malicious. For example, when working with HTML text inputs, sanitize the data by stripping away any script tags or unexpected character sequences.
 
 It's best practice to implement input sanitization on both the client side and the server side. Client side code can be changed by the user or someone with malicious intent, but including sanitization on the client can help reduce the load of the server. Make sure that you do not modify the data after sanitization, else the data becomes dirty and untrusted again.
 

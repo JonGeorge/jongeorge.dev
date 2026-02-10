@@ -2,8 +2,10 @@
 title: "From black box to open book: Understand your browser's behavior using net logs"
 date: 2024-10-31T09:23:06.000Z
 author: "Jon George"
-featuredImage: "http-keys-1.jpg"
+featuredImage: "/images/writing/from-black-box-to-open-book-using-net-logs-to-understand-your-browsers-behavior/http-keys-1.jpg"
 featuredImageAlt: "From black box to open book: Understand your browser's behavior using net logs"
+description: "Your browser knows more than it shows you. How to use network logs to troubleshoot, evaluate, and secure what's really happening."
+category: "Tooling"
 ---
 
 Software engineers understand the importance of transparency in a system. When it comes to network communication, the most critical insights are often hidden in mundane technical details. We need visibility into software behavior to effectively troubleshoot, evaluate, and secure our systems. Network logs offer a look under the hood into a browser's inner workings. It reveals insights that can help identify performance issues, improve web app security, and ensure user privacy. We will walk through why net logs are useful, how to collect them, and how to use them to understand your browser's behavior.

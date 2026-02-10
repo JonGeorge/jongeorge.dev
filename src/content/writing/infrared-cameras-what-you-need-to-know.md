@@ -2,8 +2,10 @@
 title: "Infrared cameras: What you need to know"
 date: 2024-10-29T23:06:16.000Z
 author: "Jon George"
-featuredImage: "photo-1453574503519-1ae2536262ec.jpeg"
+featuredImage: "/images/writing/infrared-cameras-what-you-need-to-know/photo-1453574503519-1ae2536262ec.jpeg"
 featuredImageAlt: "Infrared cameras: What you need to know"
+description: "IR cameras are everywhere now — laptops, phones, doorbells. Three things users should think about before trusting them."
+category: "Privacy"
 ---
 
 Infrared cameras are becoming the norm for logging into laptops and mobile devices. They provide added convenience for authenticating and presence detection using facial recognition, but they also present new avenues for exploitation. This post discusses three things that users should consider when purchasing or using devices with IR sensors.

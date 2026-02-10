@@ -2,8 +2,10 @@
 title: "Data privacy: How developers can prepare for the future"
 date: 2024-10-24T20:49:14.000Z
 author: "Jon George"
-featuredImage: "photo-1461685265823-f8d5d0b08b9b.jpeg"
+featuredImage: "/images/writing/data-privacy-how-developers-can-prepare-for-the-future/photo-1461685265823-f8d5d0b08b9b.jpeg"
 featuredImageAlt: "Data privacy: How developers can prepare for the future"
+description: "Privacy laws are catching up to how data actually gets collected. What engineers should be doing now before they're forced to."
+category: "Privacy"
 ---
 
 As technology advances, so do the ways in which our personal data is collected, stored, and shared. The evolution of data collection has prompted law makers to be more privacy-conscious and invested in when, how, and why attributes about us are collected. As software engineers, we are at the forefront of these changes. Our work impacts how data is managed, and we have a responsibility to anticipate and adapt to privacy demands. Here is a look at the future of privacy, why it matters, and how developers can prepare.
@@ -24,11 +26,11 @@ Privacy starts at the inception of a product. Evaluate and make considerations f
 If you are handling user data of any kind, encryption is your best friend. Encrypt data in transit and at rest, making sure that only authorized users and devices have access to it. For analytics where you don't need to identify individual users, anonymize the data. It's a win-win, you get the data you need, and users' privacy stays in tact.
 
 ##### Use a zero trust approach
-[Trust no one by default, and always verify.](/secure-software-development-using-zero-trust/) Verify every user and device before granting access to a resource. Striking a balance between security and convenience can be challenging, but zero trust provides a solution to the traditional security-convenience trade off.
+[Trust no one by default, and always verify.](/writing/zero-trust-in-code) Verify every user and device before granting access to a resource. Striking a balance between security and convenience can be challenging, but zero trust provides a solution to the traditional security-convenience trade off.
 
-![](Screen-Shot-2021-11-01-at-1.00.52-PM-1024x343.png)
+![](/images/writing/data-privacy-how-developers-can-prepare-for-the-future/Screen-Shot-2021-11-01-at-1.00.52-PM-1024x343.png)
 
-![](Screen-Shot-2021-11-01-at-1.02.43-PM-1024x394.png)
+![](/images/writing/data-privacy-how-developers-can-prepare-for-the-future/Screen-Shot-2021-11-01-at-1.02.43-PM-1024x394.png)
 Source: [VMware End-User Computing Blog](https://blogs.vmware.com/euc/2021/11/zero-trust-avoids-the-traditional-security-versus-convenience-tradeoffs.html#:~:text=It%20literally%20changes%20the%20relationship,or%20a%20lot%20of%20security.)
 
 ##### Make privacy usable

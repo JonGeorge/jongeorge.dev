@@ -1,5 +1,6 @@
 @config "../../tailwind.config.ts";
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 html {
   scroll-behavior: smooth;
@@ -33,4 +34,69 @@ html {
 
 section[id] {
   scroll-margin-top: 2rem;
+}
+
+/* Prose styling for blog posts */
+.prose {
+  --tw-prose-body: var(--color-text-muted);
+  --tw-prose-headings: var(--color-text-primary);
+  --tw-prose-lead: var(--color-text-muted);
+  --tw-prose-links: var(--color-accent);
+  --tw-prose-bold: var(--color-text-primary);
+  --tw-prose-counters: var(--color-text-muted);
+  --tw-prose-bullets: var(--color-text-muted);
+  --tw-prose-hr: var(--color-border);
+  --tw-prose-quotes: var(--color-text-primary);
+  --tw-prose-quote-borders: var(--color-accent);
+  --tw-prose-captions: var(--color-text-muted);
+  --tw-prose-code: var(--color-text-primary);
+  --tw-prose-pre-code: #e8e4df;
+  --tw-prose-pre-bg: #1a1a18;
+  --tw-prose-th-borders: var(--color-border);
+  --tw-prose-td-borders: var(--color-border);
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  font-family: var(--font-lora), Georgia, 'Times New Roman', serif;
+}
+
+.prose code {
+  font-family: var(--font-mono), 'Courier New', monospace;
+}
+
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.prose a:hover {
+  color: var(--color-accent-hover);
+  text-decoration-color: var(--color-accent-hover);
+}
+
+.prose blockquote {
+  border-left-color: var(--color-accent);
+}
+
+.prose img {
+  border-radius: 0.5rem;
+}
+
+.prose pre {
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+
+.prose :where(code):not(:where(pre *)) {
+  background-color: color-mix(in srgb, var(--color-text-muted) 10%, transparent);
+  padding: 0.15em 0.35em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
 }

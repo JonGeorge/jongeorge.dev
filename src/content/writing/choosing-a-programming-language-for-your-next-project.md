@@ -2,8 +2,10 @@
 title: "Choosing a programming language for your next project"
 date: 2024-11-05T00:35:29.000Z
 author: "Jon George"
-featuredImage: "technology-8490011_1280.png"
+featuredImage: "/images/writing/choosing-a-programming-language-for-your-next-project/technology-8490011_1280.png"
 featuredImageAlt: "Choosing a programming language for your next project"
+description: "A framework for greenfield decisions when there's no legacy code forcing your hand. Trade-offs over trends."
+category: "Engineering"
 ---
 
 In a greenfield project, where there are no pre-existing code constraints, the selection of a programming language is a foundational decision with broad implications. The criteria to consider when choosing a language for a new project involves balancing theory with practicality and provides a stable foundation for scalability, efficiency, and sustainability.

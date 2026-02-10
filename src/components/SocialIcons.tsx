@@ -4,6 +4,7 @@ interface SocialLink {
   href: string
   label: string
   icon: React.ReactNode
+  internal?: boolean
 }
 
 const SOCIAL_LINKS: SocialLink[] = [
@@ -44,8 +45,9 @@ const SOCIAL_LINKS: SocialLink[] = [
     ),
   },
   {
-    href: 'https://devpler.com',
+    href: '/writing',
     label: 'Blog',
+    internal: true,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
         <path d="M12 20h9" />
@@ -62,8 +64,7 @@ export function SocialIcons() {
         <Link
           key={link.href}
           href={link.href}
-          target="_blank"
-          rel="noopener noreferrer"
+          {...(!link.internal && { target: '_blank', rel: 'noopener noreferrer' })}
           aria-label={link.label}
           className="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors duration-200"
         >

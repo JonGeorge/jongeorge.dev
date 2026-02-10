@@ -2,8 +2,10 @@
 title: "Techniques for protecting web APIs from common threats in 2024"
 date: 2024-11-01T23:18:29.000Z
 author: "Jon George"
-featuredImage: "cyber-punk-small.webp"
+featuredImage: "/images/writing/protect-modern-web-apis/cyber-punk-small.webp"
 featuredImageAlt: "Techniques for protecting web APIs from common threats in 2024"
+description: "APIs are the most common threat vector in 2024. Here's what actually stops attacks in production."
+category: "Security"
 ---
 
 APIs are one of the most common threat vectors, [according to a 2024 Gartner report](https://www.gartner.com/en/documents/5471595). APIs provide a pathway for data exchange and facilitate access to critical resources. They are the lifeline of modern web applications, bridging the gap between various services, platforms, and devices. This makes APIs prime targets for bad actors looking for valuables. Here we'll share practices that every developer should be familiar with to secure their web APIs.

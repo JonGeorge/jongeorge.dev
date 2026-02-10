@@ -2,8 +2,10 @@
 title: "Are larger, monolithic functions actually better?"
 date: 2024-10-23T23:37:49.000Z
 author: "Jon George"
-featuredImage: "photo-1523800503107-5bc3ba2a6f81.jpeg"
+featuredImage: "/images/writing/are-larger-monolithic-functions-actually-better/photo-1523800503107-5bc3ba2a6f81.jpeg"
 featuredImageAlt: "Are larger, monolithic functions actually better?"
+description: "The \"extract everything into small functions\" reflex isn't always right. When keeping things together actually makes code better."
+category: "Engineering"
 ---
 
 Deciding whether to decompose code into smaller functions significantly impacts the maintainability, readability, and sometimes the performance of our software projects. A blanket, one-size-fits-all, approach is rarely appropriate for engineering decisions and this topic is no exception. Are monolithic functions better? It depends. Below you'll find a strategy to evaluate when to break down functions or methods into smaller ones.
@@ -39,7 +41,7 @@ Breaking down a code solution into more manageable parts seems intuitive, but th
 - Is cyclomatic or cognitive complexity high?If we reached this point and cyclomatic or cognitive complexity is high, consider decomposition to make your code easier for others to digest.
 - Is the function large? Large is subjective. [NASA's Power of 10 rules](https://en.wikipedia.org/wiki/The_Power_of_10:_Rules_for_Developing_Safety-Critical_Code) says to avoid functions larger than a printed page. This does not account for font size, but you or your team may elect to choose a more appropriate, concrete threshold. Consider decomposition of large functions to make your code easier for others to digest.
 
-![](Decision-Tree-for-Function-Decomposition--simplified-.svg)
+![](/images/writing/are-larger-monolithic-functions-actually-better/Decision-Tree-for-Function-Decomposition--simplified-.svg)
 
 ### Benefits of decomposed functions
 

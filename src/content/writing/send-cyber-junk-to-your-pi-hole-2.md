@@ -2,8 +2,10 @@
 title: "Send cyber junk to your Pi-hole: Protect your home network"
 date: 2024-10-22T00:06:28.000Z
 author: "Jon George"
-featuredImage: "photo-1708113457279-af6af999c415.jpeg"
+featuredImage: "/images/writing/send-cyber-junk-to-your-pi-hole-2/photo-1708113457279-af6af999c415.jpeg"
 featuredImageAlt: "Send cyber junk to your Pi-hole: Protect your home network"
+description: "Block ads, telemetry, and tracking at the DNS level. Simple to set up, no maintenance, and it actually works."
+category: "Tooling"
 ---
 
 In today's world of digital advertisements, telemetry, and data collection, Pi-hole provides a layer of protection to your home network. It's simple to set up, consumes little resources, and requires no maintenance.

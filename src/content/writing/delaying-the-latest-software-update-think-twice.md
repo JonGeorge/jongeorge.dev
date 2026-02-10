@@ -2,8 +2,10 @@
 title: "Delaying the latest software update? Think twice"
 date: 2024-10-29T01:18:43.000Z
 author: "Jon George"
-featuredImage: "change-1080p.jpg"
+featuredImage: "/images/writing/delaying-the-latest-software-update-think-twice/change-1080p.jpg"
 featuredImageAlt: "Delaying the latest software update? Think twice"
+description: "Skipping updates feels safe until it isn't. Why \"the current version works fine\" is a more dangerous stance than it sounds."
+category: "Engineering"
 ---
 
 Some organizations avoid updating their third party applications for fear of introducing new defects or changes that require development, testing, deployment, and end user training. After all, the current version has been tested and works great, right? As someone who is averse to change, I'm here to urge you to think again. Here are some factors to consider when "waiting until the kinks are worked out" in the latest software version.
@@ -11,7 +13,7 @@ Some organizations avoid updating their third party applications for fear of int
 ### Why do we need software updates?
 To non-software engineers, software can seem like a black box where things magically happen, but that's hardly the case. In fact, it's more like this:
 
-![](image-3.png)
+![](/images/writing/delaying-the-latest-software-update-think-twice/image-3.png)
 Source: [https://xkcd.com/2347/](https://xkcd.com/2347/)
 
 Most modern software applications are composed of software built by other individuals and organizations. For most of us, the code that we write leverages other software projects to accomplishes some task in a way that meets our use case. This perspective is critical to understanding why we need software updates in the first place - change.
