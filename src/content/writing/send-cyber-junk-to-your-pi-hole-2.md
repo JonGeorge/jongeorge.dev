@@ -35,7 +35,7 @@ Pi-hole is a forwarding DNS server. This means, when your computer tries to look
 
 Where does Pi-hole get the list of domains to block? It comes with a list of common sites using [Steven Black's list of known advertisement domains](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) which currently includes 117,700 domains. You can also find additional Adlists online or create your own.
 
-[GitHub - mullvad/dns-blocklists: Lists and configuration for our DNS blocking serviceLists and configuration for our DNS blocking service - mullvad/dns-blocklists![](https://github.githubassets.com/assets/pinned-octocat-093da3e6fa40.svg)GitHubmullvad![](https://opengraph.githubassets.com/77d4990a8c4113dda2f8e676bbc327eff852e34e1f4cd6f2d2872084048ddc85/mullvad/dns-blocklists)](https://github.com/mullvad/dns-blocklists?tab=readme-ov-file#lists)A collection of domains you may consider adding to your Pi-hole Adlist
+[mullvad/dns-blocklists](https://github.com/mullvad/dns-blocklists?tab=readme-ov-file#lists) — A collection of domains you may consider adding to your Pi-hole Adlist
 
 ### Limitations
 DNS settings on a device control what DNS server the device uses. This means that it's possible for a device to be configured to use a DNS server other than your Pi-hole, effectively circumventing your block lists.
