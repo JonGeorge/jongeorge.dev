@@ -9,7 +9,7 @@ Inspired by [brittanychiang.com](https://brittanychiang.com/).
 - **Now** — What I'm currently working on. Updated regularly.
 - **About** — Background, interests, and what I care about.
 - **Projects** — Active projects: SoftwareDB, Explodex, Save A Playlist.
-- **Writing** — Blog posts and external writing via [devpler.com](https://devpler.com).
+- **Writing** — Blog posts and external writing via [jg.dev/writing](https://jg.dev/writing).
 
 
 ## Links
