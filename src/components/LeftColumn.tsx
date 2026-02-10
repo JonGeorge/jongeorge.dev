@@ -32,17 +32,17 @@ export function LeftColumn({ activeSection, photo }: LeftColumnProps) {
           </div>
         )}
 
-        <h1 className="font-serif text-center md:text-left text-4xl lg:text-5xl font-bold text-[var(--color-text-primary)] mb-3">
+        <h1 className="font-serif text-center md:text-left text-4xl lg:text-5xl font-bold text-(--color-text-primary) mb-3">
           Jon George
         </h1>
 
-        <p className="font-sans text-center md:text-left text-lg text-[var(--color-text-muted)] mb-8 leading-relaxed">
+        <p className="font-sans text-center md:text-left text-lg text-(--color-text-muted) mb-8 leading-relaxed">
           Technical leader. Building{' '}
           <a
             href="https://softwaredb.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--color-accent)] hover:text-[var(--color-accent-hover)] transition-colors"
+            className="text-(--color-accent) hover:text-(--color-accent-hover) transition-colors"
           >
             SoftwareDB
           </a>

@@ -28,7 +28,7 @@ export function Section({ id, title, children, className, first }: SectionProps)
         transition={{ duration: 0.5, ease: 'easeOut' }}
       >
         {title && (
-          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-[var(--color-text-primary)] mb-8">
+          <h2 className="font-serif text-2xl md:text-3xl font-semibold text-(--color-text-primary) mb-8">
             {title}
           </h2>
         )}

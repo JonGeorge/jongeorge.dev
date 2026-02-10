@@ -71,7 +71,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
         <body
-            className={`${lora.variable} ${dmSans.variable} ${jetBrainsMono.variable} font-sans antialiased bg-[var(--color-bg)] text-[var(--color-text-primary)] transition-colors duration-300`}
+            className={`${lora.variable} ${dmSans.variable} ${jetBrainsMono.variable} font-sans antialiased bg-(--color-bg) text-(--color-text-primary) transition-colors duration-300`}
         >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}

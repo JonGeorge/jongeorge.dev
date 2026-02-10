@@ -67,7 +67,7 @@ export function SocialIcons() {
           href={link.href}
           {...(!link.internal && { target: '_blank', rel: 'noopener noreferrer' })}
           aria-label={link.label}
-          className="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors duration-200"
+          className="text-(--color-text-muted) hover:text-(--color-accent) transition-colors duration-200"
         >
           {link.icon}
         </Link>
