@@ -22,15 +22,22 @@ export async function generateMetadata({
     const post = getPostBySlug(slug)
     return {
       title: `${post.frontmatter.title} — Jon George`,
+
       description: post.frontmatter.description || post.content.slice(0, 160),
+
       openGraph: {
         title: post.frontmatter.title,
         description: post.frontmatter.description || post.content.slice(0, 160),
         type: 'article',
         publishedTime: post.frontmatter.date,
         authors: [post.frontmatter.author],
+
         ...(post.frontmatter.featuredImage && {
           images: [{ url: post.frontmatter.featuredImage }],
+        }),
+
+        ...(post.frontmatter.updated && {
+          updateDate: post.frontmatter.updated
         }),
       },
     }
@@ -57,9 +64,14 @@ export default async function PostPage({
   const { prev, next } = getAdjacentPosts(slug)
   const date = new Date(frontmatter.date).toLocaleDateString('en-US', {
     year: 'numeric',
-    month: 'long',
+    month: 'short',
     day: 'numeric',
   })
+  const updated = frontmatter.updated ? new Date(frontmatter.updated).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }) : ""
 
   return (
     <article className="max-w-[720px] mx-auto">
@@ -76,6 +88,10 @@ export default async function PostPage({
         </h1>
         <div className="font-mono text-sm text-[var(--color-text-muted)]">
           <time dateTime={frontmatter.date}>{date}</time>
+          {frontmatter.updated && (
+              <> &middot; Updated <time dateTime={frontmatter.updated}>{updated}</time> </>
+          )}
+
           {frontmatter.category && (
             <> &middot; {frontmatter.category}</>
           )}

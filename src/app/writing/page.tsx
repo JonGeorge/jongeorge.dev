@@ -21,7 +21,11 @@ export default function WritingIndex() {
 
       <div>
         {posts.map((post, i) => {
-          const date = new Date(post.frontmatter.date).toLocaleDateString(
+          const date = post.frontmatter.updated ? new Date(post.frontmatter.updated).toLocaleDateString(
+            'en-US',
+            { year: 'numeric', month: 'short', day: 'numeric' }
+          ) :
+              new Date(post.frontmatter.date).toLocaleDateString(
             'en-US',
             { year: 'numeric', month: 'short', day: 'numeric' }
           )

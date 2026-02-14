@@ -7,6 +7,7 @@ const CONTENT_DIR = path.join(process.cwd(), 'src/content/writing')
 export interface PostFrontmatter {
   title: string
   date: string
+  updated?: string
   author: string
   featuredImage?: string
   featuredImageAlt?: string
@@ -45,8 +46,8 @@ export function getAllPosts(): Post[] {
     .map((slug) => getPostBySlug(slug))
     .sort(
       (a, b) =>
-        new Date(b.frontmatter.date).getTime() -
-        new Date(a.frontmatter.date).getTime()
+        new Date(b.frontmatter.updated || b.frontmatter.date).getTime() -
+        new Date(a.frontmatter.updated || a.frontmatter.date).getTime()
     )
 }
 
