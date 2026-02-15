@@ -1,5 +1,5 @@
 ---
-title: Slow Cook Your Ideas
+title: Slow cook your ideas
 date: 2026-02-15T12:00:00.000Z
 author: Jon George
 description: "I’ve been using LLMs to simmer ideas before I build. The result is better output and a stronger mental model."
