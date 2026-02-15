@@ -2,7 +2,7 @@
 title: Slow Cook Your Ideas
 date: 2026-02-15T12:00:00.000Z
 author: Jon George
-description: "I’ve been using LLMs to simmer ideas before I build. The result is better output and a stronger mental model. Here’s the cycle: zoom out, zoom in, build, repeat."
+description: "I’ve been using LLMs to simmer ideas before I build. The result is better output and a stronger mental model."
 category: Engineering
 ---
 After you have been marinating on a thought for some time, there’s something sweet about putting it on a slow simmer. An idea you didn’t rush to the terminal with, instead one that sat in conversation for days or weeks, getting turned over, pressure-tested, shaped, and then built only after it was fully cooked.
