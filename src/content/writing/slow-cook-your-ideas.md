@@ -68,7 +68,7 @@ But it’s not as fast as handing everything to AI and accepting whatever comes 
 
 There’s a term gaining traction that I think captures the real risk of AI-first development: cognitive debt. It’s what accumulates when you build things you don’t understand.
 
-And it’s accumulating fast. Spotify’s co-CEO Gustav Söderström recently told investors that the company’s most senior engineers haven’t written a single line of code since December, they only generate and supervise it. Entire teams are optimizing their codebases for AI readability rather than human readability. Developers are fully outsourcing code generation to models and becoming dependent on them not just for productivity, but for comprehension of their own systems.
+And it’s accumulating fast. Spotify’s co-CEO Gustav Söderström recently told investors that [the company’s most senior engineers haven’t written a single line of code since December](https://techcrunch.com/2026/02/12/spotify-says-its-best-developers-havent-written-a-line-of-code-since-december-thanks-to-ai/), they only generate and supervise it. Entire teams are optimizing their codebases for AI readability rather than human readability. Developers are fully outsourcing code generation to models and becoming dependent on them not just for productivity, but for comprehension of their own systems.
 
 The result is a growing number of people who are shipping software they cannot reason about. They can prompt for changes. They can ask the model to fix bugs. But they’ve lost, or never built, the mental model of how their system actually works. They can’t trace a request through their own architecture. They can’t predict what will break when they change something. They’re operating on faith in the model, not understanding of the code.
 
