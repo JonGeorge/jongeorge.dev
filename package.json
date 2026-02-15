@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "generate:og": "node scripts/generate-og-images.mjs",
-    "prebuild": "node scripts/generate-og-images.mjs",
+    "prebuild": "node scripts/generate-og-images.mjs && node scripts/generate-sitemap.mjs",
     "build": "next build",
     "start": "npx serve@latest out",
     "lint": "next lint"
