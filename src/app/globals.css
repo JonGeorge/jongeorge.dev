@@ -21,7 +21,7 @@ html {
   --color-bg: #1a1a18;
   --color-bg-surface: #242420;
   --color-text-primary: #e8e4df;
-  --color-text-muted: #8a857d;
+  --color-text-muted: #a8a29a /*#8a857d*/;
   --color-accent: #b8975a;
   --color-accent-hover: #caa96b;
   --color-border: #2a2a26;
@@ -54,6 +54,14 @@ section[id] {
   --tw-prose-pre-bg: #1a1a18;
   --tw-prose-th-borders: var(--color-border);
   --tw-prose-td-borders: var(--color-border);
+
+  font-size: 1.125rem;
+  /*line-height: 1.8;*/
+  /*max-width: 65ch;*/
+}
+
+.prose p {
+  margin-bottom: 1.75em;
 }
 
 .prose h1,

@@ -15,7 +15,7 @@ export default function WritingIndex() {
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-[var(--color-text-primary)] mb-2">
         Writing
       </h1>
-      <p className="text-[var(--color-text-muted)] mb-5">
+      <p className="text-[var(--color-text-muted)] text-lg mb-9">
         Thinking out loud about building software, architecture decisions, security, developer tools, and lessons learned.
       </p>
 
@@ -34,13 +34,13 @@ export default function WritingIndex() {
             <Link
               key={post.slug}
               href={`/writing/${post.slug}`}
-              className={`group block py-5 transition-colors duration-200 ${i < posts.length - 1 ? 'border-b border-[var(--color-border)]' : ''}`}
+              className={`group block py-7 transition-colors duration-200 ${i < posts.length - 1 ? 'border-b border-[var(--color-border)]' : ''}`}
             >
-              <h2 className="font-serif text-lg font-medium text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors duration-200">
+              <h2 className="font-serif text-xl font-medium text-[var(--color-text-primary)] group-hover:text-[var(--color-accent)] transition-colors duration-200">
                 {post.frontmatter.title}
               </h2>
               {post.frontmatter.description && (
-                <p className="text-sm text-[var(--color-text-muted)] mt-1">
+                <p className="text-md text-[var(--color-text-muted)] mt-1">
                   {post.frontmatter.description}
                 </p>
               )}
