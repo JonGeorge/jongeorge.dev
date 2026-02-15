@@ -107,7 +107,7 @@ function buildTemplate2({ title, category, date }) {
                         props: {
                             style: {
                                 fontFamily: "JetBrains Mono",
-                                fontSize: "14px",
+                                fontSize: "20px",
                                 color: tokens.accent,
                                 textTransform: "uppercase",
                                 letterSpacing: "0.12em",
@@ -151,7 +151,7 @@ function buildTemplate2({ title, category, date }) {
                                 props: {
                                     style: {
                                         fontFamily: "JetBrains Mono",
-                                        fontSize: "16px",
+                                        fontSize: "28px",
                                         color: tokens.textMuted,
                                     },
                                     children: "jg.dev",
@@ -174,7 +174,7 @@ function buildTemplate2({ title, category, date }) {
                                 props: {
                                     style: {
                                         fontFamily: "JetBrains Mono",
-                                        fontSize: "16px",
+                                        fontSize: "28px",
                                         color: tokens.textMuted,
                                     },
                                     children: formattedDate,
