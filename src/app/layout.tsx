@@ -1,25 +1,32 @@
 import type {ReactNode} from "react";
 import type {Metadata} from "next";
-import {DM_Sans, JetBrains_Mono, Lora} from "next/font/google";
+import localFonts from "next/font/local";
 import "./globals.css";
 import {ThemeProvider} from "@/components/ThemeProvider";
 
-const lora = Lora({
+const lora = localFonts({
+    src: [
+        {path: "../lib/fonts/Lora-Regular.ttf", weight: "400"},
+        {path: "../lib/fonts/Lora-Bold.ttf", weight: "700"}
+    ],
     variable: "--font-lora",
-    subsets: ["latin"],
     display: "swap",
 });
 
-const dmSans = DM_Sans({
+const dmSans = localFonts({
+    src: [
+        {path: "../lib/fonts/DMSans-Regular.ttf", weight: "400"}
+    ],
     variable: "--font-dm-sans",
-    subsets: ["latin"],
-    display: "swap",
+    display: "swap"
 });
 
-const jetBrainsMono = JetBrains_Mono({
+const jetBrainsMono = localFonts({
+    src: [
+        {path: "../lib/fonts/JetBrainsMono-Regular.ttf", weight: "400"}
+    ],
     variable: "--font-mono",
-    subsets: ["latin"],
-    display: "swap",
+    display: "swap"
 });
 
 export const metadata: Metadata = {

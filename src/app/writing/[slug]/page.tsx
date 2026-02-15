@@ -16,29 +16,38 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>
 }): Promise<Metadata> {
-  const { slug } = await params
+  const {slug} = await params
 
   try {
     const post = getPostBySlug(slug)
+    const ogImage = `/images/writing/${slug}/og.png`
+
     return {
       title: `${post.frontmatter.title} — Jon George`,
-
       description: post.frontmatter.description || post.content.slice(0, 160),
-
       openGraph: {
         title: post.frontmatter.title,
         description: post.frontmatter.description || post.content.slice(0, 160),
         type: 'article',
         publishedTime: post.frontmatter.date,
         authors: [post.frontmatter.author],
-
-        ...(post.frontmatter.featuredImage && {
-          images: [{ url: post.frontmatter.featuredImage }],
-        }),
-
+        images: [
+          {
+            url: ogImage,
+            width: 1200,
+            height: 630,
+            alt: post.frontmatter.title,
+          },
+        ],
         ...(post.frontmatter.updated && {
-          updateDate: post.frontmatter.updated
+          modifiedTime: post.frontmatter.updated,
         }),
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: post.frontmatter.title,
+        description: post.frontmatter.description || post.content.slice(0, 160),
+        images: [ogImage],
       },
     }
   } catch {
