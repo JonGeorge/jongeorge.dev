@@ -30,6 +30,8 @@ export async function generateMetadata({
         description: post.frontmatter.description || post.content.slice(0, 160),
         type: 'article',
         publishedTime: post.frontmatter.date,
+        locale: 'en_US',
+        url: `https://jg.dev/writing/${slug}`,
         authors: [post.frontmatter.author],
         images: [
           {
@@ -48,6 +50,8 @@ export async function generateMetadata({
         title: post.frontmatter.title,
         description: post.frontmatter.description || post.content.slice(0, 160),
         images: [ogImage],
+        site: '@jongeorgedev',
+        creator: '@jongeorgedev',
       },
     }
   } catch {

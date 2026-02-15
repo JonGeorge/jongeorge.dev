@@ -52,6 +52,7 @@ export const metadata: Metadata = {
         description: 'Technical leader. Building SoftwareDB.',
         creator: '@jongeorgedev',
         images: ["/1200x630.png"],
+        site: '@jongeorgedev',
     },
 
     /**
