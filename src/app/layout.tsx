@@ -54,8 +54,15 @@ export const metadata: Metadata = {
         images: ["/1200x630.png"],
     },
 
+    /**
+     * Since metadataBase is defined above, Next.js resolves './' against the current route automatically.
+     * So "/writing/zero-trust-in-code" becomes "https://jg.dev/writing/zero-trust-in-code" without needing to hardcode
+     * the domain or slug anywhere. That said, for the "post" page you can skip setting alternates entirely since the
+     * root layout's canonical: './' already applies to every page in the tree through metadata merging. You only need
+     * to override it on a specific page if the canonical differs from the actual URL.
+     */
     alternates: {
-        canonical: 'https://jg.dev',
+        canonical: './',
     },
 
     icons: {
