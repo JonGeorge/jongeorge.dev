@@ -22,8 +22,13 @@
 .DS_Store
 *.pem
 *.obsidian*
+
+# Regenerated with every prod build
 *og.png
 *sitemap.xml
+public/feed.atom
+public/feed.json
+public/feed.xml
 
 # debug
 npm-debug.log*
