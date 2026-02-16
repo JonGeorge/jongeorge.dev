@@ -23,6 +23,7 @@
 *.pem
 *.obsidian*
 *og.png
+*sitemap.xml
 
 # debug
 npm-debug.log*
