@@ -3,6 +3,7 @@ Hash: SHA512
 
 # Security Contact for jg.dev
 # https://securitytxt.org/
+# Fingerprint: 121C 13ED FA93 C552 91CD  1E4A 3AD6 CE03 49A5 96C8
 
 Contact: mailto:security@jg.dev
 Encryption: https://jg.dev/pgp.asc
@@ -13,8 +14,8 @@ Canonical: https://jg.dev/.well-known/security.txt
 
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQQSHBPt+pPFUpHNHko61s4DSaWWyAUCaZLHIQAKCRA61s4DSaWW
-yGpXAP0WW28cB3ZaIkx3PvfFD4ZVaU5nXfkIddJLWC+r5oB8xAEA27kXtPrEivs0
-rUZ6Iby4821dliJ8jWrur4HWOq5CGAc=
-=VsX1
+iHUEARYKAB0WIQQSHBPt+pPFUpHNHko61s4DSaWWyAUCaZLQKwAKCRA61s4DSaWW
+yKsPAPwP9tI1j1vZDnkQ0xmENq29EYDMDtXpBF0MEmGsy1kpdwEA1P7Yrv4P9A/W
+gA5/Eh4ZgYMgY6MBOoCkjZUxLHoXPwU=
+=iiQk
 -----END PGP SIGNATURE-----
