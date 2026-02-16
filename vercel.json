@@ -3,6 +3,10 @@
     {
       "source": "/.well-known/webfinger",
       "destination": "/.well-known/webfinger"
+    },
+    {
+      "source": "/.well-known/README.md",
+      "destination": "/404"
     }
   ],
   "headers": [
