@@ -21,7 +21,7 @@ export default function WritingLayout({
 
             <div className="flex items-center gap-5 mb-3 sm:mb-0" aria-label="Social links">
                 <div className="[&_svg]:h-4 [&_svg]:w-4 sm:[&_svg]:h-4 sm:[&_svg]:w-4">
-                    <SocialIcons/>
+                    <SocialIcons tooltipPosition="below" />
                 </div>
                 <ThemeToggle className="[&_svg]:h-4 [&_svg]:w-4"/>
             </div>

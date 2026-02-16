@@ -63,7 +63,7 @@ export function LeftColumn({ activeSection, photo }: LeftColumnProps) {
       </div>
 
       <div className="flex items-center gap-4 mt-8 justify-center md:justify-start">
-        <SocialIcons />
+        <SocialIcons tooltipPosition="above" />
         <ThemeToggle className="ml-1 sm:ml-9" />
       </div>
     </aside>
