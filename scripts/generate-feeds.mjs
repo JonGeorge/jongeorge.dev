@@ -13,7 +13,7 @@ const PUBLIC_DIR = path.join(ROOT, 'public')
 const SITE = 'https://jg.dev'
 
 const author = {
-    name: 'Jon George',
+    name: 'feed@jg.dev',
     link: SITE,
 }
 
@@ -64,14 +64,15 @@ for (const post of posts) {
     // Convert markdown body to HTML for full-content feeds
     const html = await marked.parse(post.content)
 
-    const absoluteHtml = html.replace(/src="\/images\//g, `src="${SITE}/images/`);
+    const htmlAbsoluteSrc = html.replace(/src="\/images\//g, `src="${SITE}/images/`);
+    const htmlAbsoluteSrcAndHref = htmlAbsoluteSrc.replace(/href="\//g, `href="${SITE}/`);
 
     feed.addItem({
         title: post.title,
         id: `${SITE}/writing/${post.slug}`,
         link: `${SITE}/writing/${post.slug}`,
         description: post.description,
-        content: absoluteHtml,
+        content: htmlAbsoluteSrcAndHref,
         date: post.date,
         author: [author],
         ...(post.category && {
