@@ -64,6 +64,11 @@ export const metadata: Metadata = {
      */
     alternates: {
         canonical: './',
+        types: {
+            'application/rss+xml': '/feed.xml',
+            'application/atom+xml': '/feed.atom',
+            'application/feed+json': '/feed.json',
+        }
     },
 
     icons: {
