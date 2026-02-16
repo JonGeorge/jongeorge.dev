@@ -53,7 +53,7 @@ const feed = new Feed({
     copyright: `© ${new Date().getFullYear()} Jon George`,
     updated: latestDate,
     feedLinks: {
-        rss2: `${SITE}/feed.xml`,
+        rss: `${SITE}/feed.xml`,
         atom: `${SITE}/feed.atom`,
         json: `${SITE}/feed.json`,
     },
