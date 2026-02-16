@@ -1,0 +1,20 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+# Security Contact for jg.dev
+# https://securitytxt.org/
+
+Contact: mailto:security@jg.dev
+Encryption: https://jg.dev/pgp.asc
+Encryption: https://jg.dev/.well-known/openpgp/hu/t5s8ztdbon8yzntexy6oz5y48etqsnbb
+Expires: 2027-02-16T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://jg.dev/.well-known/security.txt
+
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQSHBPt+pPFUpHNHko61s4DSaWWyAUCaZLHIQAKCRA61s4DSaWW
+yGpXAP0WW28cB3ZaIkx3PvfFD4ZVaU5nXfkIddJLWC+r5oB8xAEA27kXtPrEivs0
+rUZ6Iby4821dliJ8jWrur4HWOq5CGAc=
+=VsX1
+-----END PGP SIGNATURE-----
