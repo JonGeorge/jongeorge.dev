@@ -1,0 +1,19 @@
+{
+  "subject": "acct:jg@jg.dev",
+  "aliases": [
+    "https://indieweb.social/@jg",
+    "https://indieweb.social/users/jg"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://indieweb.social/@jg"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://indieweb.social/users/jg"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    {
+      "source": "/.well-known/webfinger",
+      "destination": "/.well-known/webfinger"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/.well-known/webfinger",
+      "headers": [
+        { "key": "Content-Type", "value": "application/jrd+json" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    }
+  ]
+}
