@@ -22,6 +22,7 @@
 .DS_Store
 *.pem
 *.obsidian*
+*og.png
 
 # debug
 npm-debug.log*
