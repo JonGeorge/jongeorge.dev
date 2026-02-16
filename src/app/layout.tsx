@@ -81,6 +81,10 @@ export const metadata: Metadata = {
     creator: 'Jon George',
 
     publisher: 'Jon George',
+
+    other: {
+        "fediverse:creator": "@jg@indieweb.social",
+    }
 };
 
 export default function RootLayout({
