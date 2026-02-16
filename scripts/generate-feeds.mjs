@@ -66,13 +66,14 @@ for (const post of posts) {
 
     const htmlAbsoluteSrc = html.replace(/src="\/images\//g, `src="${SITE}/images/`);
     const htmlAbsoluteSrcAndHref = htmlAbsoluteSrc.replace(/href="\//g, `href="${SITE}/`);
+    const htmlAbsoluteSrcAndHrefWithBrs = htmlAbsoluteSrcAndHref.replace(/\n/g, '<br>');
 
     feed.addItem({
         title: post.title,
         id: `${SITE}/writing/${post.slug}`,
         link: `${SITE}/writing/${post.slug}`,
         description: post.description,
-        content: htmlAbsoluteSrcAndHref,
+        content: htmlAbsoluteSrcAndHrefWithBrs,
         date: post.date,
         author: [author],
         ...(post.category && {
