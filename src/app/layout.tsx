@@ -96,7 +96,7 @@ export default function RootLayout({
         <html lang="en" suppressHydrationWarning>
         <head>
             {/*{Mastodon Verification: When I link to jg.dev from my Mastodon profile, they will check that the jg.dev links back to my profile and show a visual indicator on it.}*/}
-            <link rel="me" href="https://social.dev.jg/@jg" />
+            <link rel="me" href="https://social.jg.dev/@jg" />
         </head>
         <body
             className={`${lora.variable} ${dmSans.variable} ${jetBrainsMono.variable} font-sans antialiased bg-(--color-bg) text-(--color-text-primary) transition-colors duration-300`}
