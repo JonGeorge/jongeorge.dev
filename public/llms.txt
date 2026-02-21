@@ -1,0 +1,34 @@
+# jg.dev — Jon George
+
+> Personal site of Jon George, a technical leader and systems architect building SoftwareDB. Jon architects government-scale data systems and builds consumer software products.
+
+Jon George is a technical manager specializing in large-scale system architecture, data pipelines, and enterprise software in the U.S. government space. He is the founder of SoftwareDB, a platform for tracking your software stack and discovering what tools others are using.
+
+This site is Jon's personal hub — not a portfolio or consulting page. It includes current status updates, background, active projects, and technical writing on software security, engineering, and developer tooling.
+
+## Writing
+
+- [Zero Trust in Code](https://jg.dev/writing/zero-trust-in-code): Applying zero-trust principles to software development
+- [The Myths and Realities of Open Source Software Security](https://jg.dev/writing/the-myths-and-realities-of-open-source-software-security): Common misconceptions about open source security
+- [Protect Modern Web APIs](https://jg.dev/writing/protect-modern-web-apis): Security patterns for modern API development
+- [Are Larger Monolithic Functions Actually Better?](https://jg.dev/writing/are-larger-monolithic-functions-actually-better): Challenging conventional wisdom on function size
+- [Choosing a Programming Language for Your Next Project](https://jg.dev/writing/choosing-a-programming-language-for-your-next-project): Practical framework for language selection
+- [5 Practical Tips for Secure Software Development](https://jg.dev/writing/5-practical-tips-for-secure-software-development): Actionable security practices for developers
+
+## Projects
+
+- [SoftwareDB](https://softwaredb.com): Track your software stack, rate your tools, and see what others are using. Jon's primary side project.
+- [Save a Playlist](https://saveaplaylist.com): Export and save Spotify playlists
+- [Explodex](https://explodex.ai): AI-powered training data platform
+
+## Social
+
+- [X / Twitter](https://x.com/jongeorgedev): @jongeorgedev — Jon's primary social presence
+- [GitHub](https://github.com/jongeorge): Code and open source
+- [LinkedIn](https://linkedin.com/in/jongeorgedev): Professional background
+
+## Feeds
+
+- [RSS](https://jg.dev/feed.xml): Blog feed in XML format
+- [Atom](https://jg.dev/feed.atom): Blog feed in Atom format
+- [JSON Feed](https://jg.dev/feed.json): Blog feed in JSON format
