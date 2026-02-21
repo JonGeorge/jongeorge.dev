@@ -28,13 +28,13 @@ Over the past few years I've become aware of five distinct dimensions of cogniti
 
 If you map load against output, you get four quadrants. 
 
-High load, high output is the dream. It's complex work that produces visible results. People get promoted for this. 
+*High load, high output* is the dream. It's complex work that produces visible results. People get promoted for this. 
 
-High output, low load is the grind. This is repetitive work that fills up a commit history without taxing the brain. It looks productive and it is, just not in the way that grows you. 
+*High output, low load* is the grind. This is repetitive work that fills up a commit history without taxing the brain. It looks productive and it is, just not in the way that grows you. 
 
-Low load, low output is downtime, and every team needs some. 
+*Low load, low output* is downtime, and every team needs some. 
 
-High load, low output is where the invisible work has the greatest impact. You spent the whole day reasoning through a system, tracing dependencies, weighing tradeoffs, and the only artifact is a one-line fix or a decision not to change anything at all. This is some of the most valuable work in software engineering, and it's the quadrant that's completely invisible to every productivity metric we use.
+*High load, low output* is where the invisible work has the greatest impact. You spent the whole day reasoning through a system, tracing dependencies, weighing tradeoffs, and the only artifact is a one-line fix or a decision not to change anything at all. This is some of the most valuable work in software engineering, and it's the quadrant that's completely invisible to every productivity metric we use.
 
 **Cognitive capacity** is how much you can hold in your mind at once. Think of it like RAM. A computer doesn't get slower because the task is harder. It gets slower when it runs out of memory and starts swapping to disk. Your brain does the same thing. When you exceed your capacity, things start falling out. You forget the edge case you were tracking. You lose the thread of why you made a decision three files ago. The system you were holding in your head collapses, and you have to rebuild it from scratch. But unlike a computer, you can't check your resource monitor or task manager app. You rarely know you've exceeded capacity until something drops.
 
