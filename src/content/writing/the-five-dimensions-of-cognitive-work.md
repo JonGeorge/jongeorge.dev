@@ -2,7 +2,7 @@
 title: The five dimensions of cognitive work
 date: 2026-02-21T14:29:34.000Z
 author: Jon George
-description: We track lines of code, tickets closed, PRs merged. Nobody tracks the four hours you spent holding a system in your head to find a one-line fix.
+description: We track lines of code, tickets closed, PRs merged. Nobody tracks the four hours you spent holding a system in your head to find a one line of code fix.
 category: Engineering
 ---
 
