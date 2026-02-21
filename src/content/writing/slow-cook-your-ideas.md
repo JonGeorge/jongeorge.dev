@@ -90,4 +90,4 @@ Your ideas will be better for it. And so will your code.
 
 -----
 
-*I’ve been reading a lot about cognitive debt, and I think there’s a related concept that doesn’t get enough attention: cognitive endurance, the ability to sustain deep understanding of a system as it grows in complexity, and the cognitive load that comes with it. That’s what I’m writing about next.*
+*I’ve been reading a lot about cognitive debt, and I think there’s a related concept that doesn’t get enough attention: cognitive endurance, the ability to sustain deep understanding of a system as it grows in complexity, and the cognitive load that comes with it. [Read the next post](/writing/the-five-dimensions-of-cognitive-work).*
