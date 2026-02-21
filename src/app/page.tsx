@@ -6,7 +6,8 @@ export default function Home() {
         // "the-myths-and-realities-of-open-source-software-security",
         "from-black-box-to-open-book-using-net-logs-to-understand-your-browsers-behavior",
         "are-larger-monolithic-functions-actually-better",
-        "zero-trust-in-code",
+        // "zero-trust-in-code",
+        "the-five-dimensions-of-cognitive-work",
         "send-cyber-junk-to-your-pi-hole-2",
         "slow-cook-your-ideas"
     ];
